@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        div.manu_bar {
+            background-color: rgb(255, 249, 241);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 80px;
+        }
+
+        div.logo {
+            width: 15%;
+        }
+
+        div.manu {
+            display: flex;
+            gap: 30px;
+            font-size: 50%;
+            font-weight: normal;
+        }
+
+        div.services {
+            color: #F2612F;
+        }
+
+        div.contact_button {
+            background-color: #F2612F;
+            color: white;
+            border: 0px solid;
+            border-radius: 5px;
+            margin: 0px 1px;
+            padding: 10px 15px;
+        }
+
+        div.phone_contact {
+            display: flex;
+        }
+
+        img.phone {
+            margin: auto;
+            align-items: center;
+        }
+
+        div.burger {
+            display: none;
+        }
+
+        @media screen and (max-width: 780px) {
+            div.contact_button {
+                display: none;
+            }
+
+            div.manu {
+                display: none;
+            }
+
+            div.burger {
+                display: block;
+            }
+
+            div.manu_bar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        @media screen and (max-width: 520px) {
+            div.phonecontact {
+                display: none;
+            }
+
+            div.burger {
+                display: block;
+            }
+
+            div.manu {
+                display: none;
+            }
+
+            div.manu_bar {
+                display: flex;
+                align-items: center;
+                justify-content: center
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="manu_bar">
+
+        <div class="logo">
+            <img src="img/Logo.png" alt="Logo" width="100%">
+        </div>
+
+        <div class="manu">
+            <div class="home">Home</div>
+            <div class="services">Services</div>
+            <div class="work">Work</div>
+            <div class="project">Project Details</div>
+            <div class="contact">Contact</div>
+        </div>
+
+        <div class="phone_contact">
+            <div><img class="phone" src="img/Phone-Icon.png" alt="Phone Icon" width="20%"><span>555-123-4567</span>
+            </div>
+            <div class="contact_button">Contact</div>
+        </div>
+
+        <div class="burger">
+            <img src="img/Burger-bar.png" alt="Burger-Bar" width="5%">
+        </div>
+    </div>
+</body>
+
+</html>
