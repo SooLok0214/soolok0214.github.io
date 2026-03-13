@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Menu</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
         body {
             margin: 0px;
         }
@@ -16,6 +18,8 @@
             align-items: center;
             justify-content: space-between;
             padding: 10px 80px;
+            font-family: "Archivo", sans-serif;
+            font-weight: bold;
         }
 
         div.logo {
@@ -27,6 +31,7 @@
             gap: 30px;
             font-size: 50%;
             font-weight: normal;
+            margin-top: -5px;
         }
 
         div.services {
@@ -39,23 +44,43 @@
             border: 0px solid;
             border-radius: 5px;
             margin: 0px 1px;
-            padding: 10px 15px;
+            padding: 12px 18px;
+            font-size: 14px;
         }
 
         div.phone_contact {
             display: flex;
+            align-items: center;
+            gap: 10px;
+
         }
 
-        img.phone {
-            margin: auto;
-            align-items: center;
+        img.phoneicon {
+            margin-top: 5px;
+            width: 18px;
+        }
+
+        div.number {
+            margin-top: -5px;
+            width: 110px;
         }
 
         div.burger {
             display: none;
         }
 
-        @media screen and (max-width: 780px) {
+        @media screen and (max-width: 1040px) {
+
+            div.manu_bar {
+                background-color: rgb(255, 249, 241);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 80px;
+                font-family: "Archivo", sans-serif;
+                font-weight: bold;
+            }
+
             div.contact_button {
                 display: none;
             }
@@ -66,17 +91,17 @@
 
             div.burger {
                 display: block;
+                margin-left: auto;
             }
 
             div.manu_bar {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
             }
         }
 
         @media screen and (max-width: 520px) {
-            div.phonecontact {
+            .phone_contact {
                 display: none;
             }
 
@@ -101,7 +126,7 @@
     <div class="manu_bar">
 
         <div class="logo">
-            <img src="img/Logo.png" alt="Logo" width="100%">
+            <img src="img/Logo.png" alt="Logo" width="205px">
         </div>
 
         <div class="manu">
@@ -113,8 +138,8 @@
         </div>
 
         <div class="phone_contact">
-            <div><img class="phone" src="img/Phone-Icon.png" alt="Phone Icon" width="20%"><span>555-123-4567</span>
-            </div>
+            <div><img class="phoneicon" src="img/Phone-Icon.png" alt="Phone Icon" width="100%"></div>
+            <div class="number">555-123-4567</div>
             <div class="contact_button">Contact</div>
         </div>
 
