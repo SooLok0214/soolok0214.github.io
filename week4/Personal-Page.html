@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Page</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=VT323&display=swap');
 
         body {
             background-color: #fef5c5;
             margin: 0px;
-            font-family: "Noto Serif", serif;
+            font-family: "VT323", monospace;
         }
 
         /*上面bar*/
@@ -42,6 +42,7 @@
             align-items: center;
             justify-content: center;
             margin-top: 2%;
+            font-family: "Noto Serif", serif;
         }
 
         div.head_pic {
@@ -89,16 +90,70 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-
+            margin: 2.5% 0px;
         }
 
         div.assignment {
             background-color: #FFFFFF;
-            opacity: 20%;
+            /*opacity: 30%;*/
+            border-radius: 0.7vw;
+            display: block;
+            padding: 2% 5%;
+            margin: 0px 8%;
+            align-items: center;
+        }
+
+        div.assignment.week2 {
+            margin: 0px -7%;
         }
 
         div.time {
             display: flex;
+            gap: 0%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div.celendar {
+            width: 2.5vw;
+        }
+
+        div.timeweek {
+            font-size: 2.5vw;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        div.exelink {
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #ccc;
+            width: 16vw;
+            margin: -1px 0;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        hr.long {
+            width: 74vw;
+        }
+
+        div.assignment.week4 {
+            margin-top: 2%;
+        }
+
+        p.exelinklink {
+            font-size: 1.5vw;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
 
         /*功课*/
@@ -146,38 +201,66 @@
             <!-- week1 -->
             <div class="assignment week1">
                 <div class="time">
-                    <div><img class="celendar" src="img/Personal Page/calendar.png" alt="celendar" width="100%"></div>
-                    <div></div>
+                    <div class="celendar"><img class="celendar" src="img/Personal Page/calendar.png" alt="celendar"
+                            width="100%"></div>
+                    <div class="timeweek"> Week 2</div>
+
                 </div>
-                <div></div>
+                <div class="exelink">
+                    <hr>
+                    <p class="exelinklink"><a href="http://soolok0214.github.io/week1/exe1.html"></a>Exercise 1</p>
+                    <p class="exelinklink"><a href="http://soolok0214.github.io/week1/exe2.html"></a>Exercise 2</p>
+                    <span><br>ㅤ</span>
+                </div>
             </div>
             <!-- week1 -->
             <!-- week2-->
             <div class="assignment week2">
                 <div class="time">
-                    <div></div>
-                    <div></div>
+                    <div class="celendar"><img class="celendar" src="img/Personal Page/calendar.png" alt="celendar"
+                            width="100%"></div>
+                    <div class="timeweek"> Week 3</div>
+
                 </div>
-                <div></div>
+                <div class="exelink">
+                    <hr>
+                    <p class="exelinklink"><a href="http://soolok0214.github.io/week2/artist.html"></a>Exercise 1</p>
+                    <p class="exelinklink"><a href="http://soolok0214.github.io/week2/button.html"></a>Exercise 2</p>
+                    <p class="exelinklink"><a href="http://soolok0214.github.io/week2/self-intro.html"></a>Exercise 3
+                    </p>
+                </div>
             </div>
             <!-- week2-->
             <!-- week3-->
             <div class="assignment week3">
                 <div class="time">
-                    <div></div>
-                    <div></div>
+                    <div class="celendar"><img class="celendar" src="img/Personal Page/calendar.png" alt="celendar"
+                            width="100%"></div>
+                    <div class="timeweek">Week 4</div>
                 </div>
-                <div></div>
+                <div class="exelink">
+                    <hr>
+                    <p class="exelinklink"><a href="http://soolok0214.github.io/week3/flexbox1.html"></a>Exercise 1</p>
+                    <p class="exelinklink"><a href="http://soolok0214.github.io/week3/flexbox2.html"></a>Exercise 2</p>
+                    <span><br>ㅤ</span>
+                </div>
             </div>
             <!-- week3-->
         </div>
         <!-- week4 -->
         <div class="assignment week4">
             <div class="time">
-                <div></div>
-                <div></div>
+                <div class="celendar"><img class="celendar" src="img/Personal Page/calendar.png" alt="celendar"
+                        width="100%"></div>
+                <div class="timeweek">Week 5</div>
+
             </div>
-            <div></div>
+            <div class="exelink">
+                <hr class="long">
+                <p class="exelinklink"><a href="http://soolok0214.github.io/week4/flexbox1.html"></a>Exercise 1</p>
+                <p class="exelinklink"><a href="xxx"></a>Exercise 2</p>
+                <p class="exelinklink"><a href="xxx"></a>Exercise 3</p>
+            </div>
         </div>
         <!-- week4 -->
         <!-- 功课 -->
