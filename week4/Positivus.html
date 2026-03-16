@@ -50,7 +50,6 @@
         }
 
         div.logo {
-            display: flex;
             font-size: 40px;
         }
 
@@ -73,6 +72,7 @@
             border-radius: 15px;
             margin-top: 20px;
             padding: 20px 35px;
+
         }
 
         div.content1 {
@@ -82,7 +82,7 @@
 
         div.illus {
             margin: auto;
-            width: 50%;
+            width: 90%;
         }
 
         div.company1 {
@@ -160,6 +160,10 @@
 
         div.company2 {
             display: none;
+            width: 85%;
+            align-items: center;
+            justify-self: center;
+            margin-top: auto;
         }
 
         div.content2 {
@@ -174,14 +178,41 @@
             justify-content: center;
         }
 
-        div.booking {
-            width: 40%;
+        div.button {
+            width: 100%;
         }
 
         @media screen and (max-width:575px) {
 
             div.mobile.menu {
                 width: 10%
+            }
+
+            h1.logo {
+                width: 15%;
+                font-size: 100%;
+            }
+
+            div.logo {
+                font-size: 30px;
+            }
+
+
+
+            div.services_container {
+                display: none;
+            }
+
+            div.services_bar {
+                display: none;
+            }
+
+            div.service-img {
+                display: none;
+            }
+
+            div.services_intro {
+                display: none;
             }
         }
 
@@ -240,12 +271,21 @@
                 align-items: center;
                 font-size: 100%;
                 border-radius: 15px;
-                margin-top: 20px;
-                padding: 20px 30px;
+                margin-top: 3%;
+                padding: 20px 28%;
+                font-weight: 100px
             }
         }
 
         @media screen and (max-width:695px) {
+            h1.typeoftitle {
+                font-size: 48px;
+            }
+
+            p.intro {
+                font-size: 12.5px;
+            }
+
             div.services_bar {
                 display: block;
                 align-items: left;
@@ -303,7 +343,7 @@
 
         <div class="content2">
             <div class="title2">
-                <h1>Navigating the <br />digital landscape <br />for success</h1>
+                <h1 class="typeoftitle">Navigating the <br />digital landscape <br />for success</h1>
                 <div class="illus">
                     <img src="img/positivus/illstration.png" alt="Content Image" width="100%">
                 </div>
