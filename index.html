@@ -9,7 +9,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=VT323&display=swap');
 
         body {
-            background-color: #fef5c5;
+            background-image: url('index_img/background.JPG');
             margin: 0px;
             font-family: "VT323", monospace;
         }
@@ -24,7 +24,7 @@
 
         h1.logo {
             color: antiquewhite;
-            font-size: 2.5vw;
+            font-size: 40px;
             font-family: "Bebas Neue", sans-serif;
         }
 
@@ -32,7 +32,7 @@
             display: flex;
             justify-content: space-around;
             gap: 0.5vw;
-            width: 7vw;
+            width: 150px;
             align-items: center;
         }
 
@@ -41,12 +41,12 @@
         div.intro_part {
             align-items: center;
             justify-content: center;
-            margin-top: 2%;
+            margin-top: 10px;
             font-family: "Noto Serif", serif;
         }
 
         div.head_pic {
-            width: 9vw;
+            width: 140px;
             align-items: center;
             margin: auto;
         }
@@ -63,24 +63,23 @@
         }
 
         h3.name {
-            font-size: 2.5vw;
-            margin-top: -0.5%;
+            font-size: 50px;
+            margin-top: -5px;
         }
 
         h4.subject {
             font-weight: 500;
-            font-size: 1.5vw;
-            margin-top: -2%;
+            font-size: 35px;
+            margin-top: -40px;
         }
 
         p.introduct {
-            font-size: 1vw;
+            font-size: 18px;
             width: 50vw;
             text-align: center;
-            align-items: center;
             margin: auto;
-            justify-content: center;
             line-height: 1.4;
+            margin-top: -30px;
         }
 
         /*介绍*/
@@ -88,41 +87,35 @@
         /*功课*/
         div.assignment_container {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 2.5% 0px;
+            justify-content: center;
+            margin: 20px 0px;
         }
 
         div.assignment {
-            background-color: #FFFFFF;
+            background-color: #ffffff6b;
             /*opacity: 30%;*/
             border-radius: 0.7vw;
-            display: block;
-            padding: 2% 5%;
-            margin: 0px 8%;
-            align-items: center;
-        }
-
-        div.assignment.week2 {
-            margin: 0px -7%;
+            padding: 25px 40px;
+            margin: 20px;
+            width: 310px;
+            height: 215px;
         }
 
         div.time {
             display: flex;
-            gap: 0%;
-            width: 100%;
-            align-items: center;
+            gap: 5px;
+            width: 250px;
+            margin: auto;
             justify-content: center;
         }
 
         div.celendar {
-            width: 2.5vw;
+            width: 40px;
         }
 
         div.timeweek {
-            font-size: 2.5vw;
-            justify-content: space-around;
-            flex-direction: column;
+            font-size: 45px;
+            width: 120px;
         }
 
         div.exelink {
@@ -133,28 +126,24 @@
 
         hr {
             border: none;
-            border-top: 2px solid #ccc;
-            width: 16vw;
+            border-top: 3px solid #7a7a7a7f;
+            width: 100%;
             margin: -1px 0;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
         }
 
         hr.long {
-            width: 74vw;
+            width: 100%;
         }
 
         div.assignment.week4 {
-            margin-top: 2%;
-            margin-bottom: 3%;
+            margin: auto;
+            width: 1165px;
+            margin-bottom: 25px;
         }
 
         p.exelinklink {
             color: #91D06C;
-            font-size: 1.5vw;
-            align-items: center;
-            justify-content: center;
+            font-size: 24px;
             text-align: center;
         }
 
@@ -176,51 +165,66 @@
 
         div.under_Social_Media_Logo {
             display: flex;
-            justify-content: center;
-            gap: 0.5vw;
-            width: 8vw;
+            gap: 5px;
+            width: 150px;
             align-items: center;
-            text-align: center;
-            margin: auto;
-        }
-
-        p.under_Social_Media_Logo {
-            text-align: center;
-            align-items: center;
-            justify-content: center;
             margin: auto;
         }
 
         div.idk {
-            margin-top: 4%;
-            font-size: 2vw;
+            color: white;
+            margin-top: 40px;
+            font-size: 12px;
         }
 
         /*下面bar*/
+
+        @media screen and (max-width: 1280px) {
+            div.assignment_container {
+                display: block;
+            }
+
+            div.assignment {
+                margin: auto;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+
+            div.assignment.week4 {
+                margin: auto;
+                width: 310px;
+                height: 215px;
+                margin-bottom: 25px;
+            }
+
+            p.introduct {
+                font-size: 15px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div>
-        <!-- 上面bar -->
+        <!-- 上面bar --> <!-- done -->
         <div class="manu_bar">
             <div class="logo">
                 <h1 class="logo">SooWLok</h1>
             </div>
             <!-- Social Media Logo -->
             <div class="Social_Media_Logo">
-                <div class="icon_logo the1"><img src="img/Personal Page/twitter.png" alt="twitter" width="100%"></div>
-                <div class="icon_logo the2"><img src="img/Personal Page/linkedin.png" alt="linkedin" width="100%"></div>
-                <div class="icon_logo the3"><img src="img/Personal Page/github.png" alt="github" width="100%"></div>
+                <div class="icon_logo the1"><img src="index_img/twitter.png" alt="twitter" width="100%"></div>
+                <div class="icon_logo the2"><img src="index_img/linkedin.png" alt="linkedin" width="100%"></div>
+                <div class="icon_logo the3"><img src="index_img/github.png" alt="github" width="100%"></div>
             </div>
             <!-- Social Media Logo -->
         </div>
         <!-- 上面bar -->
 
-        <!-- 介绍 -->
+        <!-- 介绍 --> <!-- done -->
         <div class="intro_part">
             <!-- 照片 -->
-            <div class="head_pic"><img class="head_pic" src="img/Personal Page/头像.jpg" alt="Head" width="100%"></div>
+            <div class="head_pic"><img class="head_pic" src="index_img/头像.jpg" alt="Head" width="100%"></div>
             <!-- 照片 -->
             <!-- Introduct -->
             <div class="intro">
@@ -236,12 +240,14 @@
             <!-- Introduct -->
         </div>
         <!-- 介绍 -->
+
+
         <!-- 功课 -->
         <div class="assignment_container">
             <!-- week1 -->
             <div class="assignment week1">
                 <div class="time">
-                    <div class="celendar"><img class="celendar" src="img/Personal Page/calendar.png" alt="celendar"
+                    <div class="celendar"><img class="celendar" src="index_img/calendar.png" alt="celendar"
                             width="100%"></div>
                     <div class="timeweek"> Week 2</div>
 
@@ -250,14 +256,13 @@
                     <hr>
                     <p class="exelinklink"><a href="http://soolok0214.github.io/week1/exe1.html">Exercise 1</a></p>
                     <p class="exelinklink"><a href="http://soolok0214.github.io/week1/exe2.html">Exercise 2</a></p>
-                    <span><br>ㅤ</span>
                 </div>
             </div>
             <!-- week1 -->
             <!-- week2-->
             <div class="assignment week2">
                 <div class="time">
-                    <div class="celendar"><img class="celendar" src="img/Personal Page/calendar.png" alt="celendar"
+                    <div class="celendar"><img class="celendar" src="index_img/calendar.png" alt="celendar"
                             width="100%"></div>
                     <div class="timeweek"> Week 3</div>
 
@@ -274,7 +279,7 @@
             <!-- week3-->
             <div class="assignment week3">
                 <div class="time">
-                    <div class="celendar"><img class="celendar" src="img/Personal Page/calendar.png" alt="celendar"
+                    <div class="celendar"><img class="celendar" src="index_img/calendar.png" alt="celendar"
                             width="100%"></div>
                     <div class="timeweek">Week 4</div>
                 </div>
@@ -282,7 +287,6 @@
                     <hr>
                     <p class="exelinklink"><a href="http://soolok0214.github.io/week3/flexbox1.html">Exercise 1</a></p>
                     <p class="exelinklink"><a href="http://soolok0214.github.io/week3/flexbox2.html">Exercise 2</a></p>
-                    <span><br>ㅤ</span>
                 </div>
             </div>
             <!-- week3-->
@@ -290,33 +294,27 @@
         <!-- week4 -->
         <div class="assignment week4">
             <div class="time">
-                <div class="celendar"><img class="celendar" src="img/Personal Page/calendar.png" alt="celendar"
-                        width="100%"></div>
+                <div class="celendar"><img class="celendar" src="index_img/calendar.png" alt="celendar" width="100%">
+                </div>
                 <div class="timeweek">Week 5</div>
 
             </div>
             <div class="exelink">
                 <hr class="long">
-                <p class="exelinklink"><a href="http://soolok0214.github.io/week4/Responsive-Menu.html">Exercise 1</a>
-                </p>
-                <p class="exelinklink"><a href="http://soolok0214.github.io/week4/Positivus.html">Exercise 2</a></p>
-                <p class="exelinklink"><a href="http://soolok0214.github.io/week4/Personal-Page.html">Exercise 3</a></p>
+                <p class="exelinklink"><a href="http://soolok0214.github.io/week4/menu.html">Exercise 1</a></p>
+                <p class="exelinklink"><a href="http://soolok0214.github.io/week4/home.html">Exercise 2</a></p>
             </div>
         </div>
         <!-- week4 -->
         <!-- 功课 -->
 
-        <!-- 下面bar -->
+
+        <!-- 下面bar --> <!-- done -->
         <div class="under_bar">
             <div class="under_Social_Media_Logo">
-                <p class="under_Social_Media_Logo">
-                <div class="under_icon_logo the1"><img src="img/Personal Page/twitter.png" alt="twitter" width="100%">
-                </div>
-                <div class="under_icon_logo the2"><img src="img/Personal Page/linkedin.png" alt="linkedin" width="100%">
-                </div>
-                <div class="under_icon_logo the3"><img src="img/Personal Page/github.png" alt="github" width="100%">
-                </div>
-                </p>
+                <div class="under_icon_logo the1"><img src="index_img/twitter.png" alt="twitter" width="100%"></div>
+                <div class="under_icon_logo the2"><img src="index_img/linkedin.png" alt="linkedin" width="100%"></div>
+                <div class="under_icon_logo the3"><img src="index_img/github.png" alt="github" width="100%"></div>
             </div>
             <div class="idk">@ 2026 Soo Weng Lok.All right reserved.</div>
         </div>
