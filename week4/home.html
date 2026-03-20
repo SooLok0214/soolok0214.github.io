@@ -9,6 +9,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+        #body {
+            margin: auto;
+            max-width: 1920px;
+        }
+
         body {
             margin: 10px 8%;
             font-family: "Space Grotesk", sans-serif;
@@ -41,14 +46,9 @@
 
         h1.logo {
             display: flex;
-            width: 20%;
-            font-size: 3vw;
+            font-size: 60px;
             font-weight: bold;
             align-items: center;
-        }
-
-        div.logo {
-            font-size: 40px;
         }
 
         div.mobile.menu {
@@ -68,11 +68,11 @@
         }
 
         h1.content1_title {
-            font-size: 4vw;
+            font-size: 400%;
         }
 
         p.intro {
-            font-size: 1.3vw;
+            font-size: 130%;
             line-height: 1.5;
             letter-spacing: 2px;
         }
@@ -80,10 +80,10 @@
         button.booking {
             background-color: rgb(0, 0, 0);
             color: white;
-            font-size: 1.3vw;
+            font-size: 25px;
             border-radius: 15px;
-            margin-top: 5%;
-            padding: 2vw 2.5vw;
+            margin-top: 30px;
+            padding: 42px 40px;
         }
 
         div.illus {
@@ -95,24 +95,21 @@
         /*公司logo1*/
         div.company1 {
             display: flex;
-            justify-content: space-around;
-            gap: 5%;
-            margin-top: 8%;
-            width: 100%;
+            justify-content: space-between;
             align-items: center;
+            margin: 5% 0px;
         }
 
         div.companylogo1 {
-            padding: 1%;
             align-items: center;
         }
 
         div.companylogo1.spacial {
-            padding-bottom: 2%;
+            padding-bottom: 4px;
         }
 
         img.companylogo1 {
-            width: 100%;
+            width: 110%;
         }
 
         /*公司logo1*/
@@ -123,75 +120,81 @@
 
         div.companylogo2 {
             display: flex;
-            gap: 15%;
+            gap: 30px;
             align-items: center;
-            width: 100%;
-            justify-content: center;
-            padding: 1%;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 10px;
         }
 
         /*公司logo2*/
         /*service_intro*/
         div.service_bar {
             display: flex;
-            gap: 3%;
-            margin-top: 5%;
+            gap: 50px;
+            height: 100px;
+            align-items: center;
         }
 
-        h2.service_title {
+        div.service_title {
             background-color: #B9FF66;
-            font-size: 2vw;
+            font-size: 40px;
+            font-weight: 500;
             text-align: center;
-            align-items: center;
             padding: 2px 8px;
-            border-radius: 5px;
+            border-radius: 10px;
         }
 
-        p.service_intro {
-            font-size: 1.2vw;
+        div.service_intro {
+            font-size: 20px;
+            width: 770px;
             align-items: center;
-            margin: auto;
-            margin-top: 3.7%;
         }
 
         /*service_intro*/
 
         /*service_card*/
         div.service_container {
+            margin: auto;
             align-items: center;
-            margin-top: 3%;
-        }
-
-        div.block_card {
-            align-items: center;
-        }
-
-        div.block {
-            display: flex;
-            gap: 2.5%;
-            margin-bottom: 2.5%;
             justify-content: center;
         }
 
+        div.block_card {
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div.block {
+            margin: auto;
+            display: flex;
+            gap: 50px;
+            justify-content: space-between;
+        }
+
         h3 {
-            font-size: 2vw;
-            font-weight: 450;
-            border-radius: 0.7vw;
-            padding: 0.3vw;
+            font-size: 170%;
+            font-weight: 600;
+            border-radius: 10px;
+            padding: 2px 5px;
         }
 
         h3.green {
             background-color: #B9FF66;
+            margin: 0px;
         }
 
         h3.white {
             background-color: #ffffff;
+            margin: 0px;
         }
 
         div.card_font.white {
             color: #ffffff;
         }
 
+        /*
         h3.card2.to1 {
             margin-top: -15%;
         }
@@ -215,22 +218,19 @@
         h3.card2.to6 {
             margin-top: -16%;
         }
-
+*/
         div.card {
             display: flex;
-            border-radius: 3vw;
-            width: 45%;
-            height: 10vw;
-            padding: 3%;
-            align-items: center;
+            border-radius: 50px;
+            width: 700px;
+            height: 250px;
+            padding: 60px;
             justify-content: space-between;
-        }
-
-        div.card_img_illus {
-            width: 35%;
+            box-shadow: 0px 5px;
+            margin: auto;
             align-items: center;
+            margin-bottom: 5%;
         }
-
 
         div.card.card1 {
             background-color: #F3F3F3;
@@ -264,17 +264,75 @@
 
         div.card_illus {
             display: flex;
-            width: 6vw;
-            gap: 10%;
+            width: 190px;
+            gap: 12px;
         }
 
         div.card_font {
-            font-size: 1.2vw;
-            justify-content: center;
+            font-size: 24px;
+            margin: auto 0px;
+            width: 70%;
+            align-items: center;
+        }
+
+        div.card_img {
+            width: 45px;
         }
 
         div.card_intro {
-            margin-top: -5%;
+            display: flex;
+            width: 70%;
+            width: 38%;
+            height: 250px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        div.card_img_illus {
+            width: 40%;
+            align-items: center;
+            justify-content: left;
+        }
+
+        div.block_card4 {
+            display: flex;
+            background-color: #F3F3F3;
+            border-radius: 50px;
+            width: auto;
+            height: 320px;
+            padding: 60px;
+            justify-content: space-between;
+            margin: 2.5% 0px;
+        }
+
+        div.block_card4_illus {
+            width: 450px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-top: -80px;
+        }
+
+        div.block_card4_font {
+            font-size: 170%;
+            font-weight: 600;
+        }
+
+        div.block_card4_intro {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        button.getfree {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-size: 25px;
+            font-weight: 50;
+            border-radius: 15px;
+            margin-top: 30px;
+            padding: 30px 40px;
         }
 
         /*service_card*/
@@ -298,26 +356,21 @@
             width: 100%;
         }
 
-        p.intro {
-            font-size: 12px;
-        }
-
-
         /*hide*/
         /*mobile size*/
-        @media screen and (max-width:575px) {
+        @media screen and (max-width:1080px) {
 
             div.mobile.menu {
                 width: 10%
             }
 
             h1.logo {
-                width: 15%;
+                width: 5vw;
                 font-size: 100%;
             }
 
             div.logo {
-                font-size: 30px;
+                font-size: 5vw;
             }
 
             div.company2 {
@@ -387,6 +440,10 @@
                 display: none;
             }
 
+            div.block_for_illus {
+                display: none;
+            }
+
             /*hide*/
         }
 
@@ -407,7 +464,10 @@
 
             div.company {
                 gap: 50px;
+            }
 
+            div.block {
+                display: block;
             }
         }
 
@@ -418,217 +478,240 @@
 </head>
 
 <body>
-    <!-- start_div-->
-    <div>
+    <div id="body">
         <!-- start_div-->
-        <!-- 上面bar -->
-        <div class="header">
-            <div class="logo">
-                <h1 class="logo"><img src="img/positivus/Logo.png" alt="Positivus Logo" width="100%"> Positivus </h1>
+        <div>
+            <!-- start_div-->
+            <!-- 上面bar -->
+            <div class="header">
+                <div class="logo">
+                    <h1 class="logo"><img src="img/positivus/Logo.png" alt="Positivus Logo" width="100%"> Positivus
+                    </h1>
+                </div>
+                <div class="container">
+                    <div class="about">About us</div>
+                    <div class="service">Services</div>
+                    <div class="cases">Use Cases</div>
+                    <div class="pricing">Pricing</div>
+                    <div class="blog">Blog</div>
+                    <div class="request">Request a quote</div>
+                </div>
+                <div class="mobile menu"><img src="img/positivus/Burger-bar.png" alt="burgerbar" width="100%"></div>
             </div>
-            <div class="container">
-                <div class="about">About us</div>
-                <div class="service">Services</div>
-                <div class="cases">Use Cases</div>
-                <div class="pricing">Pricing</div>
-                <div class="blog">Blog</div>
-                <div class="request">Request a quote</div>
-            </div>
-            <div class="mobile menu"><img src="img/positivus/Burger-bar.png" alt="burgerbar" width="100%"></div>
-        </div>
-        <!-- 上面bar -->
+            <!-- 上面bar -->
 
-        <!-- 内容 1-->
-        <div class="content1">
-            <div class="title">
-                <h1 class="content1_title">Navigating the <br />digital landscape <br />for success</h1>
-                <p class="intro">Our digital marketing agency helps businesses<br>grow and succeed online through a
-                    range of<br>services including SEO, PPC, social media marketing,<br>and content creation.
-                </p>
-                <button class="booking">Book a consultation</button>
-            </div>
-            <div class="illus">
-                <img src="img/positivus/illstration.png" alt="Content Image" width="100%">
-            </div>
-        </div>
-        <!-- 内容 1-->
-
-        <!-- 内容 2-->
-        <div class="content2">
-            <div class="title2">
-                <h1 class="typeoftitle">Navigating the <br />digital landscape <br />for success</h1>
+            <!-- 内容 1-->
+            <div class="content1">
+                <div class="title">
+                    <h1 class="content1_title">Navigating the <br />digital landscape <br />for success</h1>
+                    <p class="intro">Our digital marketing agency helps businesses<br>grow and succeed online through a
+                        range of<br>services including SEO, PPC, social media marketing,<br>and content creation.
+                    </p>
+                    <button class="booking">Book a consultation</button>
+                </div>
                 <div class="illus">
                     <img src="img/positivus/illstration.png" alt="Content Image" width="100%">
                 </div>
-                <p class="intro">Our digital marketing agency helps businesses<br>grow and succeed online through a
-                    range of<br>services including SEO, PPC, social media marketing,<br>and content creation.
-                </p>
-                <div class="booking"><button class="booking">Book a consultation</button></div>
             </div>
-            <div class="booking2">
-                <p class="booking2">Book a consultation</p>
+            <!-- 内容 1-->
+
+            <!-- 内容 2-->
+            <div class="content2">
+                <div class="title2">
+                    <h1 class="typeoftitle">Navigating the <br />digital landscape <br />for success</h1>
+                    <div class="illus">
+                        <img src="img/positivus/illstration.png" alt="Content Image" width="100%">
+                    </div>
+                    <p class="intro">Our digital marketing agency helps businesses<br>grow and succeed online through a
+                        range of<br>services including SEO, PPC, social media marketing,<br>and content creation.
+                    </p>
+                    <div class="booking"><button class="booking">Book a consultation</button></div>
+                </div>
+                <div class="booking2">
+                    <p class="booking2">Book a consultation</p>
+                </div>
             </div>
-        </div>
-        <!-- 内容 2-->
+            <!-- 内容 2-->
 
-        <!-- 公司logo1-->
-        <div class="company1">
-            <div class="companylogo1"><img class="companylogo1" src="img/positivus/Amazon.png" alt="Amazon"></div>
-            <div class="companylogo1 spacial"><img class="companylogo1" src="img/positivus/Lnillle.png" alt="Lnillle">
+            <!-- 公司logo1-->
+            <div class="company1">
+                <div class="companylogo1"><img class="companylogo1" src="img/positivus/Amazon.png" alt="Amazon"></div>
+                <div class="companylogo1 spacial"><img class="companylogo1" src="img/positivus/Lnillle.png"
+                        alt="Lnillle">
+                </div>
+                <div class="companylogo1"><img class="companylogo1" src="img/positivus/Hubspot.png" alt="Hubspot"></div>
+                <div class="companylogo1"><img class="companylogo1" src="img/positivus/Notion.png" alt="Notion"></div>
+                <div class="companylogo1"><img class="companylogo1" src="img/positivus/Netflix.png" alt="Netflix"></div>
+                <div class="companylogo1"><img class="companylogo1" src="img/positivus/Zoom.png" alt="Zoom"></div>
             </div>
-            <div class="companylogo1"><img class="companylogo1" src="img/positivus/Hubspot.png" alt="Hubspot"></div>
-            <div class="companylogo1"><img class="companylogo1" src="img/positivus/Notion.png" alt="Notion"></div>
-            <div class="companylogo1"><img class="companylogo1" src="img/positivus/Netflix.png" alt="Netflix"></div>
-            <div class="companylogo1"><img class="companylogo1" src="img/positivus/Zoom.png" alt="Zoom"></div>
-        </div>
-        <!-- 公司logo1-->
+            <!-- 公司logo1-->
 
-        <!-- 公司logo2-->
-        <div class="company2">
-            <div class="companylogo2"><img class="companylogo2" src="img/positivus/Amazon.png" alt="Amazon"><img
-                    class="companylogo2" src="img/positivus/Lnillle.png" alt="Lnillle"></div>
+            <!-- 公司logo2-->
+            <div class="company2">
+                <div class="companylogo2"><img class="companylogo2" src="img/positivus/Amazon.png" alt="Amazon"
+                        width="49%"><img class="companylogo2" src="img/positivus/Lnillle.png" alt="Lnillle" width="49%">
+                </div>
 
-            <div class="companylogo2"><img class="companylogo2" src="img/positivus/Hubspot.png" alt="Hubspot"><img
-                    class="companylogo2" src="img/positivus/Notion.png" alt="Notion"></div>
+                <div class="companylogo2"><img class="companylogo2" src="img/positivus/Hubspot.png" alt="Hubspot"
+                        width="49%"><img class="companylogo2" src="img/positivus/Notion.png" alt="Notion" width="49%">
+                </div>
 
-            <div class="companylogo2"><img class="companylogo2" src="img/positivus/Netflix.png" alt="Netflix"><img
-                    class="companylogo2" src="img/positivus/Zoom.png" alt="Zoom"></div>
-        </div>
-        <!-- 公司logo2-->
-
-        <!-- service_intro-->
-        <div class="service_bar">
-            <div>
-                <h2 class="service_title">Services</h2>
+                <div class="companylogo2"><img class="companylogo2" src="img/positivus/Netflix.png" alt="Netflix"
+                        width="49%"><img class="companylogo2" src="img/positivus/Zoom.png" alt="Zoom" width="49%"></div>
             </div>
-            <div>
-                <p class="service_intro">
+            <!-- 公司logo2-->
+
+            <!-- service_intro-->
+            <div class="service_bar">
+                <div class="service_title">Services</div>
+                <div class="service_intro">
                     At our digital marketing agency, we offer a range of services to <br>
                     help businesses grow and succeed online. These services include:
-                </p>
+                </div>
             </div>
-        </div>
-        <!-- service_intro-->
+            <!-- service_intro-->
 
-        <!-- service_card-->
-        <div class="service_container">
-            <div class="block_card">
+            <!-- service_card-->
+            <div class="service_container">
+                <div class="block_card">
 
-                <div class="block card1">
-                    <!-- service_card-->
-                    <div class="card card1">
-                        <div class="card_intro">
-                            <h3 class="card green">Search engine</h3>
-                            <h3 class="card2 green to1">optimization</h3>
-                            <div class="card_illus">
-                                <div class="card_img"><img src="img/positivus/Icon1.png" alt="arrow" width="100%"></div>
-                                <div class="card_font">Learn more</div>
+                    <div class="block card1">
+                        <!-- service_card-->
+                        <div class="card card1">
+                            <div class="card_intro">
+                                <div>
+                                    <h3 class="card green">Search engine</h3>
+                                    <h3 class="card2 green to1">optimization</h3>
+                                </div>
+                                <div class="card_illus">
+                                    <div class="card_img"><img src="img/positivus/Icon1.png" alt="arrow" width="100%">
+                                    </div>
+                                    <div class="card_font">Learn more</div>
+                                </div>
+                            </div>
+                            <div class="card_img_illus">
+                                <img src="img/positivus/search_illus.png" alt="search illus" width="100%">
                             </div>
                         </div>
-                        <div class="card_img_illus">
-                            <img src="img/positivus/search_illus.png" alt="search illus" width="100%">
+
+                        <!-- service_card-->
+                        <div class="card card2">
+                            <div class="card_intro">
+                                <div>
+                                    <h3 class="card white">Pay-per-click</h3>
+                                    <h3 class="card2 white to2">advertising</h3>
+                                </div>
+                                <div class="card_illus">
+                                    <div class="card_img"><img src="img/positivus/Icon1.png" alt="arrow" width="100%">
+                                    </div>
+                                    <div class="card_font">Learn more</div>
+                                </div>
+
+                            </div>
+                            <div class="card_img_illus">
+                                <img src="img/positivus/seleting.png" alt="seleting" width="100%">
+                            </div>
                         </div>
                     </div>
 
-                    <!-- service_card-->
-                    <div class="card card2">
-                        <div class="card_intro">
-                            <h3 class="card white">Pay-per-click</h3>
-                            <h3 class="card2 white to2">advertising</h3>
-                            <div class="card_illus">
-                                <div class="card_img"><img src="img/positivus/Icon1.png" alt="arrow" width="100%"></div>
-                                <div class="card_font">Learn more</div>
-                            </div>
+                    <div class="block card2">
+                        <!-- service_card-->
+                        <div class="card card3">
+                            <div class="card_intro">
+                                <div>
+                                    <h3 class="card white">Social Media</h3>
+                                    <h3 class="card2 white to3">Marketing</h3>
+                                </div>
+                                <div class="card_illus">
+                                    <div class="card_img"><img src="img/positivus/Icon2.png" alt="arrow" width="100%">
+                                    </div>
+                                    <div class="card_font white">Learn more</div>
+                                </div>
 
+                            </div>
+                            <div class="card_img_illus">
+                                <img src="img/positivus/window2.png" alt="window2" width="100%">
+                            </div>
                         </div>
-                        <div class="card_img_illus">
-                            <img src="img/positivus/seleting.png" alt="seleting" width="100%">
+                        <!-- service_card-->
+                        <div class="card card4">
+                            <div class="card_intro">
+                                <div>
+                                    <h3 class="card green">Email</h3>
+                                    <h3 class="card2 green to4">Marketing</h3>
+                                </div>
+                                <div class="card_illus">
+                                    <div class="card_img"><img src="img/positivus/Icon1.png" alt="arrow" width="100%">
+                                    </div>
+                                    <div class="card_font">Learn more</div>
+                                </div>
+
+                            </div>
+                            <div class="card_img_illus">
+                                <img src="img/positivus/messages.png" alt="messages" width="100%">
+                            </div>
                         </div>
                     </div>
+
+                    <div class="block card3">
+                        <!-- service_card-->
+                        <div class="card card5">
+                            <div class="card_intro">
+                                <div>
+                                    <h3 class="card white">Content</h3>
+                                    <h3 class="card2 white to5">Creation</h3>
+                                </div>
+                                <div class="card_illus">
+                                    <div class="card_img"><img src="img/positivus/Icon1.png" alt="arrow" width="100%">
+                                    </div>
+                                    <div class="card_font">Learn more</div>
+                                </div>
+
+                            </div>
+                            <div class="card_img_illus">
+                                <img src="img/positivus/window.png" alt="window" width="100%">
+                            </div>
+                        </div>
+                        <!-- service_card-->
+                        <div class="card card6">
+                            <div class="card_intro">
+                                <div>
+                                    <h3 class="card green">Analytics and </h3>
+                                    <h3 class="card2 green to6">Tracking</h3>
+                                </div>
+                                <div class="card_illus">
+                                    <div class="card_img"><img src="img/positivus/Icon2.png" alt="arrow" width="100%">
+                                    </div>
+                                    <div class="card_font white">
+                                        <p>Learn more</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card_img_illus">
+                                <img src="img/positivus/analytics.png" alt="analytics" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- service_card-->
                 </div>
-
-                <div class="block card2">
-                    <!-- service_card-->
-                    <div class="card card3">
-                        <div class="card_intro">
-                            <h3 class="card white">Social Media</h3>
-                            <h3 class="card2 white to3">Marketing</h3>
-                            <div class="card_illus">
-                                <div class="card_img"><img src="img/positivus/Icon2.png" alt="arrow" width="100%">
-                                </div>
-                                <div class="card_font white">Learn more</div>
-                            </div>
-
-                        </div>
-                        <div class="card_img_illus">
-                            <img src="img/positivus/window2.png" alt="window2" width="100%">
-                        </div>
-                    </div>
-                    <!-- service_card-->
-                    <div class="card card4">
-                        <div class="card_intro">
-                            <h3 class="card green">Email</h3>
-                            <h3 class="card2 green to4">Marketing</h3>
-                            <div class="card_illus">
-                                <div class="card_img"><img src="img/positivus/Icon1.png" alt="arrow" width="100%">
-                                </div>
-                                <div class="card_font">Learn more</div>
-                            </div>
-
-                        </div>
-                        <div class="card_img_illus">
-                            <img src="img/positivus/messages.png" alt="messages" width="100%">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="block card3">
-                    <!-- service_card-->
-                    <div class="card card5">
-                        <div class="card_intro">
-                            <h3 class="card white">Content</h3>
-                            <h3 class="card2 white to5">Creation</h3>
-                            <div class="card_illus">
-                                <div class="card_img"><img src="img/positivus/Icon1.png" alt="arrow" width="100%">
-                                </div>
-                                <div class="card_font">Learn more</div>
-                            </div>
-
-                        </div>
-                        <div class="card_img_illus">
-                            <img src="img/positivus/window.png" alt="window" width="100%">
-                        </div>
-                    </div>
-                    <!-- service_card-->
-                    <div class="card card6">
-                        <div class="card_intro">
-                            <h3 class="card green">Analytics and </h3>
-                            <h3 class="card2 green to6">Tracking</h3>
-                            <div class="card_illus">
-                                <div class="card_img"><img src="img/positivus/Icon2.png" alt="arrow" width="100%">
-                                </div>
-                                <div class="card_font white">
-                                    <p>Learn more</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="card_img_illus">
-                            <img src="img/positivus/analytics.png" alt="analytics" width="100%">
-                        </div>
-                    </div>
-                </div>
-                <!-- service_card-->
             </div>
+            <div class="block_for_illus">
+                <div class="block_card4">
+                    <div class="block_card4_intro" card4>
+                        <div class="block_card4_font">Let's make things happen</div>
+                        <div class="card_font">Contact us today to learn more about how our digital marketing services
+                            can
+                            help your business grow and succeed online.</div>
+                        <div><button class="getfree">Get your free propasal</button></div>
+                    </div>
+                    <div class="block_card4_illus"><img src="img/positivus/CTA.png" alt="CTA" width="100%"></div>
+                </div>
+            </div>
+            <!-- end_div-->
         </div>
-
-        <div class="block card4">
-            <img src="img/positivus/CTA block.png" alt="CTAblock" width="100%">
-        </div>
-
         <!-- end_div-->
     </div>
-    <!-- end_div-->
 </body>
 
 </html>
