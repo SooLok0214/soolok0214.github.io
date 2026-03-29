@@ -1,53 +1,3 @@
- /*上面bar*/
- div.header {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
- }
-
- div.header_container {
-     display: flex;
-     gap: 40px;
-     align-items: center;
- }
-
-
-
- div.request {
-     border: 2px solid;
-     border-radius: 10px;
-     padding: 20px 30px;
- }
-
- div.logo {
-     width: 310px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
-
- div.header_logo {
-     width: 40px;
-     height: 40px;
- }
-
- img.header_logo {
-     font-size: 20px;
- }
-
- div.logo_text {
-     width: 85%;
-     font-size: 60px;
-     font-weight: bold;
-     align-items: center;
- }
-
- div.mobile.menu {
-     width: 5%;
- }
-
- /*上面bar*/
-
  /*内容1*/
  div.content1 {
      display: flex;
@@ -194,8 +144,8 @@
      width: 700px;
      height: 250px;
      padding: 60px;
-     justify-content: space-between;
      box-shadow: 0px 5px;
+     justify-content: space-between;
      margin: auto;
      align-items: center;
      margin-bottom: 5%;
@@ -291,10 +241,6 @@
  /*service_card*/
 
  /*hide*/
- div.mobile.menu {
-     display: none;
- }
-
  div.company2 {
      display: none;
      width: 85%;
@@ -310,6 +256,28 @@
  }
 
  /*hide*/
+ /*one resize*/
+ @media screen and (max-width:1350px) {
+     div.header_container {
+         display: none;
+     }
+
+     div.mobile.menu {
+         display: block;
+         width: 50px;
+         height: 50px;
+     }
+
+     div.company {
+         gap: 50px;
+     }
+
+     div.block {
+         display: block;
+     }
+ }
+
+ /*one resize*/
  /*mobile size*/
  @media screen and (max-width:1080px) {
 
@@ -328,9 +296,8 @@
          height: 25px;
      }
 
-     div.logo {
+     div.header_bar_logo {
          width: 170px;
-         gap: 3%;
      }
 
      div.company2 {
@@ -396,27 +363,4 @@
      /*hide*/
  }
 
- /*mobile size*/
- /*one resize*/
- @media screen and (max-width:1350px) {
-     div.header_container {
-         display: none;
-     }
-
-     div.mobile.menu {
-         display: block;
-         width: 50px;
-         height: 50px;
-     }
-
-     div.company {
-         gap: 50px;
-     }
-
-     div.block {
-         display: block;
-     }
- }
-
- /*one resize*/
  /*two    resize*/
