@@ -1,0 +1,61 @@
+ @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+ #body {
+     margin: auto;
+     max-width: 1920px;
+ }
+
+ body {
+     margin: 10px 8%;
+     font-family: "Space Grotesk", sans-serif;
+ }
+
+ /*上面bar*/
+ div.header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ div.header_container {
+     display: flex;
+     gap: 40px;
+     align-items: center;
+ }
+
+
+
+ div.request {
+     border: 2px solid;
+     border-radius: 10px;
+     padding: 20px 30px;
+ }
+
+ div.logo {
+     width: 310px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ div.header_logo {
+     width: 40px;
+     height: 40px;
+ }
+
+ img.header_logo {
+     font-size: 20px;
+ }
+
+ div.logo_text {
+     width: 85%;
+     font-size: 60px;
+     font-weight: bold;
+     align-items: center;
+ }
+
+ div.mobile.menu {
+     width: 5%;
+ }
+
+ /*上面bar*/
