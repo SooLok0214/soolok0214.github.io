@@ -102,6 +102,7 @@
  /*ourworkingprocess_card*/
  div.ourworkingprocess_block_card_green {
      background-color: #B9FF66;
+     border: 2px solid #000000;
      padding: 60px;
      box-shadow: 0px 5px;
      border-radius: 50px;
@@ -110,6 +111,7 @@
 
  div.ourworkingprocess_block_card {
      background-color: #F3F3F3;
+     border: 2px solid #000000;
      padding: 60px;
      box-shadow: 0px 5px;
      border-radius: 50px;
@@ -159,6 +161,7 @@
      gap: 50px;
      height: 100px;
      align-items: center;
+     margin-top: 100px;
  }
 
  div.team_title {
@@ -177,6 +180,82 @@
  }
 
  /*team_intro*/
+ /*team_card*/
+ div.team_block_card_up {
+     display: flex;
+     justify-content: space-between;
+     gap: 30px;
+     margin-top: 40px;
+ }
+
+ div.team_block_card_down {
+     display: flex;
+     justify-content: space-between;
+     gap: 30px;
+     margin-top: 40px;
+ }
+
+ div.team_card {
+     background-color: #ffffff;
+     border: 2px solid #000000;
+     border-radius: 50px;
+     box-shadow: 0px 5px;
+     width: 30%;
+     padding: 40px;
+ }
+
+ div.team_card_header {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+ }
+
+ div.team_card_profile {
+     display: flex;
+     gap: 20px;
+     align-items: flex-end;
+ }
+
+ img.profile_img {
+     width: 100px;
+     /* 固定头像宽度 */
+     height: auto;
+ }
+
+ div.member_name {
+     font-size: 20px;
+     font-weight: 600;
+ }
+
+ div.member_title {
+     font-size: 16px;
+ }
+
+ div.team_card_line {
+     border-top: 1px solid;
+     margin: 28px 0;
+ }
+
+ div.team_card_intro {
+     font-size: 18px;
+     line-height: 1.4;
+ }
+
+ div.see_all_team {
+     display: flex;
+     justify-content: flex-end;
+     margin-top: 40px;
+ }
+
+ button.see_all_team {
+     background-color: #191A23;
+     color: white;
+     padding: 20px 70px;
+     border-radius: 14px;
+     font-size: 20px;
+     cursor: pointer;
+ }
+
  @media screen and (max-width:1350px) {
      div.yee {
          display: none;
