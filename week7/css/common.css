@@ -211,6 +211,19 @@
          margin: 10px 5%;
      }
 
+     div.header_bar_logo {
+         width: 250px;
+     }
+
+     div.header_logo {
+         width: 30px;
+         height: 30px;
+     }
+
+     div.logo_text {
+         font-size: 40px;
+     }
+
      footer.footer_container {
          padding: 50px 30px;
          text-align: center;

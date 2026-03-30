@@ -218,7 +218,6 @@
 
  img.profile_img {
      width: 100px;
-     /* 固定头像宽度 */
      height: auto;
  }
 
@@ -256,24 +255,21 @@
      cursor: pointer;
  }
 
- @media screen and (max-width:1360px) {
-     div.yee {
-         display: none;
-     }
- }
-
  @media screen and (max-width:1080px) {
      div.casestudies_bar {
          flex-direction: column;
          height: auto;
-         align-items: flex-start;
+         justify-content: center;
          gap: 20px;
      }
 
      div.casestudies_intro {
          width: 100%;
          font-size: 18px;
+         text-align: center;
      }
+
+
 
      div.casestudies_block_card {
          flex-direction: column;
@@ -302,11 +298,13 @@
          flex-direction: column;
          height: auto;
          align-items: flex-start;
+         justify-content: center;
          gap: 20px;
      }
 
      div.ourworkingprocess_intro {
          width: 100%;
+         text-align: center;
      }
 
      div.ourworkingprocess_block_card_green,
@@ -328,10 +326,12 @@
          height: auto;
          align-items: flex-start;
          gap: 20px;
+         justify-content: center;
      }
 
      div.team_intro {
          width: 100%;
+         text-align: center;
      }
 
      div.team_block_card_up,

@@ -246,16 +246,6 @@ div.block_card4_illus {
 }
 
 @media screen and (max-width:1350px) {
-    div.header_container {
-        display: none;
-    }
-
-    div.mobile.menu {
-        display: block;
-        width: 30px;
-        height: 30px;
-    }
-
     div.company {
         gap: 50px;
     }
@@ -280,15 +270,6 @@ div.block_card4_illus {
     div.content2 {
         display: block;
         padding: 20px 0;
-    }
-
-    div.header_bar_logo {
-        width: 180px;
-    }
-
-    div.header_logo {
-        width: 20px;
-        height: 20px;
     }
 
     div.logo_text {
