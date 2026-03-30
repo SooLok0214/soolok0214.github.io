@@ -1,366 +1,333 @@
- /*内容1*/
- div.content1 {
-     display: flex;
-     margin-top: 0%;
- }
-
- div.title {
-     letter-spacing: 4px;
- }
-
- h1.content1_title {
-     font-size: 400%;
- }
-
- p.intro {
-     font-size: 130%;
-     line-height: 1.5;
-     letter-spacing: 2px;
- }
-
- button.booking {
-     background-color: rgb(0, 0, 0);
-     color: white;
-     font-size: 25px;
-     border-radius: 15px;
-     margin-top: 30px;
-     padding: 42px 40px;
- }
-
- div.illus {
-     margin: auto;
-     width: 50%;
- }
-
- /*内容1*/
- /*公司logo1*/
- div.company1 {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     margin: 5% 0px;
- }
-
- div.companylogo1 {
-     align-items: center;
- }
-
- div.companylogo1.spacial {
-     padding-bottom: 4px;
- }
-
- img.companylogo1 {
-     width: 110%;
- }
-
- /*公司logo1*/
- /*公司logo2*/
- img.companylogo2 {
-     width: 100%;
- }
-
- div.companylogo2 {
-     display: flex;
-     gap: 30px;
-     align-items: center;
-     justify-content: space-between;
-     margin: auto;
-     margin-top: 10px;
- }
-
- /*公司logo2*/
- /*service_intro*/
- div.service_bar {
-     display: flex;
-     gap: 50px;
-     height: 100px;
-     align-items: center;
- }
-
- div.service_title {
-     background-color: #B9FF66;
-     font-size: 40px;
-     font-weight: 500;
-     text-align: center;
-     padding: 2px 8px;
-     border-radius: 10px;
- }
-
- div.service_intro {
-     font-size: 20px;
-     width: 770px;
-     align-items: center;
- }
-
- /*service_intro*/
-
- /*service_card*/
- div.service_container {
-     margin: auto;
-     align-items: center;
-     justify-content: center;
- }
-
- div.block_card {
-     margin: auto;
-     align-items: center;
-     justify-content: center;
- }
-
- div.block {
-     margin: auto;
-     display: flex;
-     gap: 50px;
-     justify-content: space-between;
- }
-
- div.card_line2_white,
- div.card_line1_white {
-     display: inline-block;
-     font-size: 170%;
-     font-weight: 600;
-     border-radius: 10px;
-     padding: 2px 5px;
-     background-color: #ffffff;
- }
-
- div.card_line1_green,
- div.card_line2_green {
-     display: inline-block;
-     font-size: 170%;
-     font-weight: 600;
-     border-radius: 10px;
-     padding: 2px 5px;
-     background-color: #B9FF66;
- }
-
- div.card_font.white {
-     color: #ffffff;
- }
-
- div.card {
-     display: flex;
-     border-radius: 50px;
-     width: 700px;
-     height: 250px;
-     padding: 60px;
-     box-shadow: 0px 5px;
-     justify-content: space-between;
-     margin: auto;
-     align-items: center;
-     margin-bottom: 5%;
- }
-
- div.card.card1,
- div.card.card4 {
-     background-color: #F3F3F3;
-     border: 2px solid black;
- }
-
- div.card.card2,
- div.card.card5 {
-     background-color: #B9FF66;
-     border: 2px solid black;
- }
-
- div.card.card3,
- div.card.card6 {
-     background-color: #191A23;
-     border: 2px solid black;
- }
-
- div.card_illus {
-     display: flex;
-     width: 190px;
-     gap: 12px;
- }
-
- div.card_font {
-     font-size: 18px;
-     margin: auto 0px;
-     width: 70%;
-     align-items: center;
- }
-
- div.card_img {
-     width: 45px;
- }
-
- div.card_intro {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     width: 52%;
-     height: 250px;
-
- }
-
- div.card_img_illus {
-     width: 40%;
- }
-
- div.block_card4 {
-     display: flex;
-     background-color: #F3F3F3;
-     border-radius: 50px;
-     width: auto;
-     height: 260px;
-     padding: 60px;
-     justify-content: space-between;
- }
-
- div.block_card4_illus {
-     width: 380px;
-     align-items: center;
-     justify-content: center;
-     margin: auto;
-     margin-top: -80px;
- }
-
- div.block_card4_font {
-     font-size: 170%;
-     font-weight: 600;
- }
-
- div.block_card4_intro {
-     width: 60%;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
- }
-
- button.getfree {
-     background-color: rgb(0, 0, 0);
-     color: white;
-     font-size: 25px;
-     font-weight: 50;
-     border-radius: 15px;
-     padding: 30px 40px;
- }
-
- /*service_card*/
-
- /*hide*/
- div.company2 {
-     display: none;
-     width: 85%;
-     align-items: center;
-     justify-self: center;
-     margin-top: auto;
- }
-
- div.content2 {
-     display: none;
-     align-items: center;
-     width: 100%;
- }
-
- /*hide*/
- /*one resize*/
- @media screen and (max-width:1350px) {
-     div.header_container {
-         display: none;
-     }
-
-     div.mobile.menu {
-         display: block;
-         width: 50px;
-         height: 50px;
-     }
-
-     div.company {
-         gap: 50px;
-     }
-
-     div.block {
-         display: block;
-     }
- }
-
- /*one resize*/
- /*mobile size*/
- @media screen and (max-width:1080px) {
-
-     div.mobile.menu {
-         width: 40px;
-         height: 40px;
-     }
-
-     div.logo_text {
-         width: 140px;
-         font-size: 30px;
-     }
-
-     div.header_logo {
-         width: 25px;
-         height: 25px;
-     }
-
-     div.header_bar_logo {
-         width: 170px;
-     }
-
-     div.company2 {
-         display: block;
-     }
-
-     div.content2 {
-         display: block;
-     }
-
-     div.booking2 {
-         display: block;
-         background-color: black;
-         color: #ffffff;
-         border-radius: 2.5vw;
-         padding: 1px 30px;
-         margin-top: 5%;
-         text-align: center;
-     }
-
-     h1.typeoftitle {
-         font-size: 9.5vw;
-     }
-
-     div.illus {
-         width: 80vw;
-     }
-
-     /*hide*/
-
-     div.service-img {
-         display: none;
-     }
-
-     div.companylogo1 {
-         display: none;
-     }
-
-     div.content1 {
-         display: none;
-     }
-
-     div.booking {
-         display: none;
-     }
-
-     div.service_bar {
-         display: none;
-     }
-
-     div.service_container {
-         display: none;
-     }
-
-     div.block.card4 {
-         display: none;
-     }
-
-     div.block_for_illus {
-         display: none;
-     }
-
-     /*hide*/
- }
-
- /*two    resize*/
+/* --- 内容 1--- */
+div.content1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    gap: 50px;
+}
+
+h1.content_title {
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+p.intro {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+button.booking_btn {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 14px;
+    padding: 20px 35px;
+    border: none;
+}
+
+div.illus {
+    width: 50%;
+}
+
+/* --- 内容 1--- */
+/* --- 内容 2--- */
+div.content2 h1.content_title {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+div.content2 div.illus {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+div.content2 p.intro {
+    font-size: 18px;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+button.booking2_btn {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 14px;
+    padding: 20px;
+    border: none;
+}
+
+/* --- 内容 2--- */
+/* --- 隐藏--- */
+div.content2 {
+    display: none;
+}
+
+/* --- 隐藏--- */
+/* --- 公司 logo 1 --- */
+div.company1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+
+div.company_logo img {
+    max-width: 120px;
+}
+
+/* --- service_intro --- */
+div.service_bar {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin: 60px 0;
+}
+
+div.service_title {
+    background-color: #B9FF66;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 2px 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+div.service_intro {
+    font-size: 18px;
+    max-width: 580px;
+}
+
+/* --- service_card --- */
+div.service_container {
+    width: 100%;
+    padding: 20px 0;
+}
+
+div.block {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+div.card {
+    display: flex;
+    width: 50%;
+    min-height: 310px;
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 45px;
+    box-shadow: 0px 5px 0px black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.card_gray {
+    background-color: #F3F3F3;
+}
+
+div.card_green {
+    background-color: #B9FF66;
+}
+
+div.card_dark {
+    background-color: #191A23;
+}
+
+div.card_line_green {
+    background-color: #B9FF66;
+    display: table;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 0 5px;
+    border-radius: 7px;
+    margin-bottom: 2px;
+}
+
+div.card_line_white {
+    background-color: #ffffff;
+    display: table;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 0 5px;
+    border-radius: 7px;
+    margin-bottom: 2px;
+}
+
+div.under {
+    margin-top: -3px;
+}
+
+div.card_intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+div.card_font,
+div.card_font_white {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+div.card_font {
+    color: black;
+}
+
+div.card_font_white {
+    color: white;
+}
+
+div.card_img {
+    width: 41px;
+    display: flex;
+    align-items: center;
+}
+
+div.card_img_illus {
+    width: 210px;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- CTA --- */
+div.block_card4 {
+    display: flex;
+    background-color: #F3F3F3;
+    border-radius: 45px;
+    padding: 60px;
+    margin: 100px 0;
+    justify-content: space-between;
+    align-items: center;
+    overflow: visible;
+}
+
+div.block_card4_intro {
+    width: 50%;
+}
+
+h2.block_card4_font {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+p.block_card4_p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+    max-width: 450px;
+}
+
+button.getfree {
+    background-color: #191A23;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 35px;
+    border: none;
+    border-radius: 14px;
+}
+
+div.block_card4_illus {
+    width: 380px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+
+@media screen and (max-width:1350px) {
+    div.header_container {
+        display: none;
+    }
+
+    div.mobile.menu {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    div.company {
+        gap: 50px;
+    }
+
+    div.company_logo img {
+        margin: 10px 0;
+
+    }
+
+    div.company_logo img {
+        max-width: 200px;
+        width: 200px;
+    }
+}
+
+/* --- mobile styles --- */
+@media screen and (max-width: 1080px) {
+    div.content1 {
+        display: none;
+    }
+
+    div.content2 {
+        display: block;
+        padding: 20px 0;
+    }
+
+    div.header_bar_logo {
+        width: 180px;
+    }
+
+    div.header_logo {
+        width: 20px;
+        height: 20px;
+    }
+
+    div.logo_text {
+        font-size: 30px;
+    }
+
+    div.block {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    div.card {
+        width: 100%;
+        padding: 40px;
+    }
+
+    div.block_card4 {
+        flex-direction: column;
+        padding: 40px;
+        text-align: center;
+    }
+
+    div.block_card4_intro {
+        width: 100%;
+    }
+
+    div.block_card4_illus {
+        display: none;
+    }
+
+    div.service_bar {
+        display: none;
+    }
+
+    div.service_container {
+        display: none;
+    }
+
+    div.block_card4 {
+        display: none;
+    }
+}

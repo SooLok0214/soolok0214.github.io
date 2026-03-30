@@ -256,14 +256,96 @@
      cursor: pointer;
  }
 
- @media screen and (max-width:1350px) {
+ @media screen and (max-width:1360px) {
      div.yee {
          display: none;
      }
  }
 
  @media screen and (max-width:1080px) {
-     div.yee {
+     div.casestudies_bar {
+         flex-direction: column;
+         height: auto;
+         align-items: flex-start;
+         gap: 20px;
+     }
+
+     div.casestudies_intro {
+         width: 100%;
+         font-size: 18px;
+     }
+
+     div.casestudies_block_card {
+         flex-direction: column;
+         padding: 40px;
+         background-color: black;
+     }
+
+     div.casestudies_card_intro {
+         background-color: #191A23;
+         padding: 40px;
+         border-radius: 40px;
+         margin-bottom: 20px;
+         height: auto;
+     }
+
+     div.casestudies_card_intro_text {
+         width: 100%;
+         margin-bottom: 20px;
+     }
+
+     div.casestudies_card_intro_line {
          display: none;
+     }
+
+     div.ourworkingprocess_bar {
+         flex-direction: column;
+         height: auto;
+         align-items: flex-start;
+         gap: 20px;
+     }
+
+     div.ourworkingprocess_intro {
+         width: 100%;
+     }
+
+     div.ourworkingprocess_block_card_green,
+     div.ourworkingprocess_block_card {
+         padding: 30px;
+         border-radius: 30px;
+     }
+
+     div.ourworkingprocess_card_intro_content_title {
+         font-size: 20px;
+     }
+
+     div.ourworkingprocess_card_intro_content_number {
+         font-size: 40px;
+     }
+
+     div.team_bar {
+         flex-direction: column;
+         height: auto;
+         align-items: flex-start;
+         gap: 20px;
+     }
+
+     div.team_intro {
+         width: 100%;
+     }
+
+     div.team_block_card_up,
+     div.team_block_card_down {
+         flex-direction: column;
+         gap: 20px;
+     }
+
+     div.team_card {
+         width: 100%;
+         padding: 30px;
+     }
+
+     button.see_all_team {
+         width: 100%;
      }
  }

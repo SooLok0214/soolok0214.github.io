@@ -2,7 +2,7 @@
 
  #body {
      margin: auto;
-     max-width: 1920px;
+     max-width: 1280px;
  }
 
  body {
@@ -193,3 +193,64 @@
  }
 
  /*下面bar*/
+
+ @media screen and (max-width:1360px) {
+     div.header_container {
+         display: none;
+     }
+
+     div.mobile.menu {
+         display: block;
+         width: 50px;
+         height: 50px;
+     }
+ }
+
+ @media screen and (max-width: 1080px) {
+     body {
+         margin: 10px 5%;
+     }
+
+     footer.footer_container {
+         padding: 50px 30px;
+         text-align: center;
+         border-radius: 0;
+     }
+
+     div.footer_top {
+         flex-direction: column;
+         gap: 30px;
+     }
+
+     div.footer_menu_text {
+         flex-direction: column;
+         gap: 15px;
+     }
+
+     div.contact_label {
+         width: none;
+         margin: auto;
+         align-items: center;
+     }
+
+     div.footer_middle {
+         flex-direction: column;
+         align-items: center;
+         gap: 40px;
+     }
+
+     div.footer_subscribe {
+         width: 100%;
+         padding: 30px 20px;
+     }
+
+     div.signform {
+         flex-direction: column;
+     }
+
+     div.footer_bottom {
+         flex-direction: column;
+         gap: 15px;
+         align-items: center;
+     }
+ }
