@@ -108,12 +108,21 @@
      text-decoration: underline;
  }
 
- div.footer_social {
+ div.footer_social1 {
      display: flex;
      gap: 20px;
  }
 
- div.footer_social img {
+ div.footer_social1 img {
+     width: 30px;
+ }
+
+ div.footer_social2 {
+     display: flex;
+     gap: 30px;
+ }
+
+ div.footer_social2 img {
      width: 30px;
  }
 
@@ -192,6 +201,10 @@
      text-decoration: underline;
  }
 
+ div.footer_social2 {
+     display: none;
+ }
+
  /*下面bar*/
 
  @media screen and (max-width:1360px) {
@@ -265,5 +278,13 @@
          flex-direction: column;
          gap: 15px;
          align-items: center;
+     }
+
+     div.footer_social1 {
+         display: none;
+     }
+
+     div.footer_social2 {
+         display: block;
      }
  }
