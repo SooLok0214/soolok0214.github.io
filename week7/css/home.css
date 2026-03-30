@@ -290,16 +290,19 @@ div.block_card4_illus {
         flex-direction: column;
         padding: 40px;
         text-align: center;
+        margin-top: -20px;
     }
 
     div.block_card4_intro {
         width: 100%;
+
     }
 
     div.block_card4_illus {
         display: none;
     }
 
+    /*delete to show service card mobile*/
     div.service_bar {
         display: none;
     }
@@ -311,4 +314,6 @@ div.block_card4_illus {
     div.block_card4 {
         display: none;
     }
+
+    /*delete to show service card mobile*/
 }
