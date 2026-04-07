@@ -1,0 +1,22 @@
+div.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+div.box_img img {
+    width: 100%;
+    height: auto;
+}
+
+div.box_img {
+    width: 30%;
+    height: 200px;
+
+}
+
+div.readmore {
+    color: rgb(14, 172, 0);
+    font-size: 14px;
+}
