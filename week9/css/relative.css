@@ -44,7 +44,7 @@ div.box_img img {
 }
 
 div.box_img {
-    width: 100%;
+    width: 102%;
 }
 
 div.box_text {
@@ -76,6 +76,12 @@ a {
     text-decoration: underline rgb(0, 162, 255);
     font-size: 18px;
     font-weight: bold;
+}
+
+a.character {
+    position: fixed;
+    bottom: 20px;
+    right: -1150px;
 }
 
 @media screen and (max-width: 1200px) {
