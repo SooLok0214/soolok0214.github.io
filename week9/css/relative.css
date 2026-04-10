@@ -7,7 +7,7 @@ body {
     background-color: rgb(9, 33, 85);
     padding: 50px 70px;
     max-width: 1440px;
-    min-width: 640px;
+    min-width: 380px;
 }
 
 h1 {
@@ -84,8 +84,8 @@ a {
 
 a.character {
     position: fixed;
-    bottom: 20px;
-    right: -1150px;
+    bottom: 50px;
+    right: -1100px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -121,5 +121,12 @@ a.character {
 
     div.box_text {
         top: -60px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    div.box_title {
+        font-size: 20px;
+        width: 150px;
     }
 }
