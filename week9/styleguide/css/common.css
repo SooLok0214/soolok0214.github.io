@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -27,6 +26,7 @@
 
     /* box */
     --box-radius: 20px;
+    --gap-default: 20px;
 
     /* Typography */
     --font-family: "Bricolage Grotesque", sans-serif;
@@ -81,9 +81,30 @@ body {
     letter-spacing: -0.015em;
     background: var(--color-primary);
     font-size: var(--font-default-size);
+
 }
 
 /* === Body Default Setting === */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7FEF6;
+    padding: 16px 110px;
+    align-items: center;
+}
+
+header img {
+    width: 190px;
+    height: 63px;
+    border-radius: 0%;
+}
+
+img.burger-menu {
+    width: 37px;
+    height: 23px;
+}
+
 
 /* ===  TYPOGRAPHY Heading Setting  === */
 h1,
@@ -246,6 +267,8 @@ img {
     padding: var(--btn-padding-default);
     border-radius: var(--btn-radius);
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn a {
@@ -362,8 +385,7 @@ a.btn_white_font:hover {
 
 .btn-full-width {
     display: block;
-    text-align: var(--text-center);
-    margin: 10px 0px;
+    margin: auto;
 }
 
 .btn-transparent {
@@ -372,11 +394,7 @@ a.btn_white_font:hover {
 
 /*
 /* === Layout === */
-.row-flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--gap);
-}
+
 
 /*
 .column-two {
@@ -450,11 +468,16 @@ textarea:focus {
 
 /* === Navigation Menu === */
 #main-menu {
-    width: 600px;
-    margin: 20px auto;
-
-    justify-content: space-around;
+    width: 629px;
     flex-wrap: no-wrap;
+
+}
+
+.row-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--gap-default);
 }
 
 .menu-item a {
