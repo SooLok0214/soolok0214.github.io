@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* === ROOT VARIABLES === */
+/* === ROOT VARIABLES=== */
 :root {
     /* Main Colors */
     --color-primary: #FFFFFF;
@@ -17,10 +17,12 @@
 
     /* Neutral Colors*/
     --color-black: #1C1C1C;
+    --color-black-light: #262626;
     --color-text-body: #383838;
     --color-text-muted: #9EA0A4;
     --color-bg-light: #F4F4F4;
     --color-border: #E0E0E0;
+    --color-heading-text: #212934;
     --color-footer-bg: #171717;
 
     /* box */
@@ -51,7 +53,18 @@
     --ls-normal: -0.010em;
 
     /* button */
-    --btn-yellow-default: var(--color-accent-yellow);
+    --btn-yellow: var(--color-accent-yellow);
+    --btn-white: var(--color-primary);
+    --btn-dark-green: var(--color-accent-dark);
+    --btn-green: var(--color-secondary);
+    --btn-light-green: var(--color-accent-light);
+    --btn-black-light: var(--color-black-light);
+    /* button padding*/
+    --btn-padding-default: 20px 32px;
+    --btn-padding-large: 23px 36px;
+    --btn-text-field-padding: 17px;
+    /* button radius */
+    --btn-radius: 8px;
 
     /* Breakpoints */
     --breakpoint-mobile: 820px;
@@ -199,14 +212,18 @@ p.body8 {
 
 /* === Links === */
 a {
-    color: var(--color-link);
+    color: var(--color-heading-text);
+    font-size: var(--font-default-size);
+    font-weight: var(--fw-bold);
+    letter-spacing: var(--ls-normal);
+    line-height: 1.0;
     text-decoration: none;
-    font-weight: bold;
 }
 
+/*hide
 a:hover {
     color: var(--color-link-hover);
-}
+}*/
 
 /* === Images✔ === */
 img {
@@ -217,7 +234,6 @@ img {
 /* === Icons === */
 
 /* === Buttons === */
-.btn,
 input[type="submit"] {
     display: inline-block;
     background: var(--color-btn-bg);
@@ -229,14 +245,88 @@ input[type="submit"] {
     margin: 10px 10px 10px 0px;
 }
 
-.btn-pink {
-    background-color: var(--color-btn-bg-pink);
+.card.button {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn {
+    width: fit-content;
+    padding: var(--btn-padding-default);
+    border-radius: var(--btn-radius);
+    cursor: pointer;
 }
 
 .btn a {
-    color: #fff;
-    font-weight: normal;
+    color: var(--color-black);
+    font-size: var(--typography-button-font-size);
+    font-weight: var(--fw-bold);
+    letter-spacing: var(--ls-tight);
 }
+
+/* === Buttons 1 === */
+.btn.btn_yellow-to-dark-green {
+    background-color: var(--color-accent-yellow);
+}
+
+.btn.btn_yellow-to-dark-green:hover {
+    background-color: var(--color-accent-dark);
+}
+
+.btn.btn_yellow-to-dark-green:hover a {
+    color: var(--color-primary);
+}
+
+.btn_white-to-dark-green:hover a {
+    color: var(--color-primary);
+}
+
+/* === Buttons 1 === */
+
+/* === Buttons 2 === */
+.btn.btn_yellow-to-light-green {
+    background-color: var(--color-accent-yellow);
+}
+
+.btn.btn_yellow-to-light-green:hover {
+    background-color: var(--color-accent-light);
+}
+
+/* === Buttons 2 === */
+
+/* === Buttons 3 === */
+.btn.btn_light-green-to-white {
+    background-color: var(--color-accent-light);
+}
+
+.btn.btn_light-green-to-white:hover {
+    background-color: var(--color-primary);
+}
+
+/* === Buttons 3 === */
+
+/* === Buttons 4 === */
+.btn.btn_white-to-dark-green {
+    background-color: var(--color-primary);
+}
+
+.btn.btn_white-to-dark-green:hover {
+    background-color: var(--color-accent-dark);
+}
+
+/* === Buttons 4 === */
+
+/* === Buttons 5 === */
+.btn.btn_light-green-to-dark-green {
+    background-color: var(--color-accent-light);
+}
+
+.btn.btn_light-green-to-dark-green:hover {
+    background-color: var(--color-accent-dark);
+}
+
+/* === Buttons 5 === */
 
 .btn-outline {
     background: transparent;
@@ -304,14 +394,10 @@ input[type="submit"] {
 }
 
 .card {
-    background-color: var(--color-bg-light);
+    background-color: var(--color-border);
     border-radius: var(--box-radius);
     padding: 40px;
     margin: 40px 20px;
-}
-
-.box-shadow {
-    box-shadow: 0 0 10px var(--color-box-shadow);
 }
 
 /* === Form Elements === */
@@ -337,18 +423,20 @@ textarea:focus {
 
 /* === Navigation Menu === */
 #main-menu {
-    margin: 20px;
-    justify-content: center;
+    width: 600px;
+    margin: 20px auto;
+
+    justify-content: space-around;
     flex-wrap: no-wrap;
 }
 
 .menu-item a {
     color: var(--color-menu-text);
-    font-weight: normal;
+    font-weight: var(--fw-medium);
 }
 
 .menu-item:hover a {
-    font-weight: bold;
+    color: #18B26F;
 }
 
 .menu-active a {
@@ -358,19 +446,6 @@ textarea:focus {
 
 /* === Screen: Tablet  === */
 @media only screen and (max-width: 1200px) {
-
-    /* === GLOBAL TYPOGRAPHY  === */
-    h1 {
-        font-size: 45px;
-    }
-
-    h2 {
-        font-size: 40px;
-    }
-
-    h3 {
-        font-size: 35px;
-    }
 
     /* === Layout === */
     .column-two,
