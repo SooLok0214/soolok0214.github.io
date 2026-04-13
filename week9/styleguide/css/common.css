@@ -49,6 +49,10 @@
     --fw-bold: 700;
     --ls-tight: -0.015em;
     --ls-normal: -0.010em;
+
+    /* button */
+    --btn-yellow-default: var(--color-accent-yellow);
+
     /* Breakpoints */
     --breakpoint-mobile: 820px;
     --breakpoint-tablet: 1200px;
