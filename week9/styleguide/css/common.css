@@ -212,11 +212,12 @@ p.body8 {
 
 /* === Links === */
 a {
+    /*
     color: var(--color-heading-text);
     font-size: var(--font-default-size);
     font-weight: var(--fw-bold);
     letter-spacing: var(--ls-normal);
-    line-height: 1.0;
+    line-height: 1.0;*/
     text-decoration: none;
 }
 
@@ -234,17 +235,6 @@ img {
 /* === Icons === */
 
 /* === Buttons === */
-input[type="submit"] {
-    display: inline-block;
-    background: var(--color-btn-bg);
-    color: #fff;
-    padding: 10px 18px;
-    border-radius: var(--box-radius);
-    border: none;
-    cursor: pointer;
-    margin: 10px 10px 10px 0px;
-}
-
 .card.button {
     display: flex;
     flex-direction: column;
@@ -278,19 +268,19 @@ input[type="submit"] {
     color: var(--color-primary);
 }
 
-.btn_white-to-dark-green:hover a {
-    color: var(--color-primary);
-}
-
 /* === Buttons 1 === */
 
 /* === Buttons 2 === */
-.btn.btn_yellow-to-light-green {
+.btn.btn_yellow-to-green {
     background-color: var(--color-accent-yellow);
 }
 
-.btn.btn_yellow-to-light-green:hover {
-    background-color: var(--color-accent-light);
+.btn.btn_yellow-to-green:hover {
+    background-color: var(--color-secondary);
+}
+
+.btn.btn_yellow-to-green:hover a {
+    color: var(--color-primary);
 }
 
 /* === Buttons 2 === */
@@ -307,23 +297,40 @@ input[type="submit"] {
 /* === Buttons 3 === */
 
 /* === Buttons 4 === */
-.btn.btn_white-to-dark-green {
-    background-color: var(--color-primary);
+.btn.btn_green-to-dark-green {
+    background-color: var(--color-accent-light);
 }
 
-.btn.btn_white-to-dark-green:hover {
+.btn.btn_green-to-dark-green:hover {
     background-color: var(--color-accent-dark);
+}
+
+.btn.btn_green-to-dark-green:hover a {
+    color: var(--color-primary);
 }
 
 /* === Buttons 4 === */
 
 /* === Buttons 5 === */
-.btn.btn_light-green-to-dark-green {
-    background-color: var(--color-accent-light);
+.btn.btn_black-to-yellow {
+    background-color: var(--color-black);
 }
 
-.btn.btn_light-green-to-dark-green:hover {
-    background-color: var(--color-accent-dark);
+.btn.btn_black-to-yellow:hover {
+    background-color: var(--color-accent-yellow);
+}
+
+.btn.btn_black-to-yellow:hover a {
+    color: var(--color-primary);
+
+}
+
+a.btn_white_font {
+    color: var(--color-primary);
+}
+
+a.btn_white_font:hover {
+    color: var(--color-black);
 }
 
 /* === Buttons 5 === */
@@ -331,33 +338,39 @@ input[type="submit"] {
 .btn-outline {
     background: transparent;
     color: var(--color-text-dark);
-    border: 1px solid var(--color-text-dark);
+    border: 2px solid var(--color-primary);
 }
 
-.btn-icon a::after {
+.btn-underline {
+    background: transparent;
+    color: var(--color-black);
+    border: none;
+    box-shadow: 0px 2px 0px var(--color-black);
+}
+
+.btn:hover:after {
     content: "→";
+    rotate: 45deg;
+    display: inline-block;
     font-weight: bold;
     margin-left: 10px;
 }
 
+.btn.white-arrow:hover:after {
+    color: var(--color-primary);
+}
+
 .btn-full-width {
     display: block;
-    text-align: center;
+    text-align: var(--text-center);
     margin: 10px 0px;
 }
 
-.btn-no-radius {
-    border-radius: unset;
+.btn-transparent {
+    border-radius: 0px 0px 0px 0px;
 }
 
-.btn:hover {
-    opacity: 0.6;
-}
-
-.btn-outline:hover {
-    color: var(--text-light);
-}
-
+/*
 /* === Layout === */
 .row-flex {
     display: flex;
@@ -365,6 +378,7 @@ input[type="submit"] {
     gap: var(--gap);
 }
 
+/*
 .column-two {
     width: calc(50% - calc(var(--gap) / 2));
 }
@@ -376,22 +390,14 @@ input[type="submit"] {
 .column-four {
     width: calc(25% - calc(var(--gap) * 3 / 4));
 }
-
+    
 .content-center {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-
-.padding-default {
-    padding: 20px;
-}
-
-.max-width {
-    margin: 40px auto !important;
-    max-width: 1080px;
-}
+*/
 
 .card {
     background-color: var(--color-border);
@@ -400,12 +406,34 @@ input[type="submit"] {
     margin: 40px 20px;
 }
 
+.max-width {
+    margin: 40px auto !important;
+    max-width: 1080px;
+}
+
+div.SENDMESSAGE_green-to-black {
+    width: 100%;
+    background: var(--color-secondary);
+    color: #fff;
+    padding: var(--btn-padding-large);
+    border-radius: var(--btn-radius);
+    border: none;
+    cursor: pointer;
+    margin: 10px 10px 10px 0px;
+    text-align: center;
+    font-size: var(--typography-button-font-size);
+    font-weight: var(--fw-medium);
+    letter-spacing: var(--ls-tight);
+}
+
+
 /* === Form Elements === */
 input[type="text"],
 textarea {
     border: none;
+    border-radius: var(--btn-radius);
     border-bottom: 2px solid var(--color-border-line);
-    padding: 20px;
+    padding: 17px;
     width: 100%;
     margin: 10px 0px;
     font-size: var(--font-default-size);
@@ -413,7 +441,6 @@ textarea {
 
 textarea {
     min-height: 100px;
-    font-family: var(--font-base);
 }
 
 input[type="text"]:focus,
@@ -447,7 +474,13 @@ textarea:focus {
 /* === Screen: Tablet  === */
 @media only screen and (max-width: 1200px) {
 
-    /* === Layout === */
+    #main-menu {
+        display: none;
+    }
+}
+
+/* === Layout === */
+/*
     .column-two,
     .column-three {
         width: 100%;
@@ -460,7 +493,7 @@ textarea:focus {
     .card {
         padding: 30px;
     }
-}
+*/
 
 /* === Screen: Mobile  === */
 @media only screen and (max-width: 820px) {
@@ -468,11 +501,5 @@ textarea:focus {
     /* === Layout === */
     .column-four {
         width: 100%;
-    }
-
-    /* === Navigation Menu === */
-    #main-menu {
-        flex-direction: column;
-        text-align: center;
     }
 }
