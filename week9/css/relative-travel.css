@@ -10,7 +10,7 @@ body {
     box-sizing: border-box;
     background-color: rgb(110, 8, 8);
     max-width: 1440px;
-    min-width: 520px;
+    min-width: 480px;
 }
 
 h1 {
@@ -26,7 +26,7 @@ p {
     text-align: center;
     width: 80%;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -177,6 +177,14 @@ div.free_box_like_percent {
         justify-content: center;
         align-items: center;
         gap: 60px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
     }
 
     .box {
