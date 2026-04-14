@@ -87,7 +87,13 @@ body {
 
 /* === Body Default Setting === */
 
+
+/* === Navigation Menu === */
 header {
+    /*position: sticky;
+    top: -100px;
+    transition: top 0.5s;
+    try animation scroll*/
     display: flex;
     justify-content: space-between;
     background-color: #F7FEF6;
@@ -99,7 +105,7 @@ header img {
     border-radius: 0%;
 }
 
-/* === Navigation Menu === */
+
 #main-menu {
     width: 500px;
     flex-wrap: no-wrap;
@@ -167,6 +173,13 @@ img.burger-menu {
     width: 37px;
     height: 23px;
 }
+
+img.burger-menu:hover {
+    filter: var(--color-secondaryw);
+    cursor: pointer;
+}
+
+/* === Navigation Menu === */
 
 
 /* ===  TYPOGRAPHY Heading Setting  === */
