@@ -107,8 +107,7 @@ header img {
 
 
 #main-menu {
-    width: 500px;
-    flex-wrap: no-wrap;
+    width: auto;
 }
 
 .row-flex {
