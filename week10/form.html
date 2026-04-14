@@ -11,17 +11,35 @@
 <body>
     <div class="card">
         <h1>Registration Form - Middle School</h1>
+
+        <button class="player-btn">
+            <div class="circle"></div>player 1
+        </button>
+
         <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <div class="display-flex box-line1">
+                <input type="text" id="fname" name="firstname" placeholder="First Name*" required>
+                <input type="text" id="lname" name="lastname" placeholder="Last Name*" required>
+            </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <div class="display-flex box-line2">
+                <input type="text" id="gradelvl" name="gradelevel" placeholder="Grade Level*" required>
+                <input type="text" id="schoolattending" name="schoolattending" placeholder="School Attending*" required>
+            </div>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <div class="display-flex box-line3">
+                <input type="text" id="skilllvl" name="skilllevel" placeholder="Skill Level*" required>
+                <input type="text" id="t-shirt-size" name="tshirtsize" placeholder="T-Shirt Size*" required>
+            </div>
 
-            <button type="submit">Submit</button>
+            <div class="display-flex box-line4">
+                <input type="email" id="email" name="email" placeholder="Email*" required>
+                <input type="email" id="confirmemail" name="confirmemail" placeholder="Confirm Email*" required>
+            </div>
+
+            <div class="display-flex box-line5">
+                <input type="number" id="phone" name="phone" placeholder="Guardian's phone number*" required>
+            </div>
         </form>
     </div>
 

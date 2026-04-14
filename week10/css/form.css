@@ -7,9 +7,30 @@
 :root {
     --color-primary: #120a57;
     --color-secondary: #dceeff;
+    --color-accent: #b7f9ff;
     --color-text: #1C1C1C;
     --box-radius: 50px;
     --btn-radius: 20px;
+}
+
+button {
+    display: flex;
+    gap: 5px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    width: fit-content;
+    border: none;
+    padding: 15px 30px;
+    border-radius: var(--box-radius);
+    cursor: pointer;
+
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-accent);
+    border-radius: 1000px;
 }
 
 .card {
@@ -17,5 +38,23 @@
     margin: 40px auto !important;
     padding: 50px;
     border-radius: var(--btn-radius);
+    max-width: 700px;
+}
+
+.display-flex {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+input[type=text],
+input[type=email],
+input[type=number] {
+    background-color: var(--color-secondary);
+    border: 1px solid #969696;
+    width: 100%;
+    padding: 17px;
+    margin: 8px 0;
+    border-radius: var(--box-radius);
     max-width: 1280px;
 }
