@@ -8,27 +8,38 @@
     --color-primary: #120a57;
     --color-secondary: #dceeff;
     --color-accent: #b7f9ff;
+    --color-gray: #d3d3d3;
     --color-text: #1C1C1C;
     --box-radius: 50px;
     --btn-radius: 20px;
 }
 
+div.button {
+    display: flex;
+}
+
 button {
     display: flex;
     gap: 5px;
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
+    background-color: var(--color-);
+    color: #969696;
     width: fit-content;
     border: none;
     padding: 15px 30px;
     border-radius: var(--box-radius);
+    border: 1px solid #969696;
     cursor: pointer;
+}
 
+button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: 1px solid #969696;
 }
 
 .circle {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     background-color: var(--color-accent);
     border-radius: 1000px;
 }
