@@ -119,6 +119,7 @@ header img {
 
 .menu-item a:hover {
     color: #18B26F;
+    text-decoration: underline 5px;
 }
 
 .menu-active a {
@@ -539,10 +540,6 @@ textarea:focus {
 
     .column-four {
         width: calc(50% - calc(var(--gap) / 2));
-    }
-
-    .card {
-        padding: 30px;
     }
 */
 
