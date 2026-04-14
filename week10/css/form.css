@@ -1,0 +1,21 @@
+*/ {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #120a57;
+    --color-secondary: #dceeff;
+    --color-text: #1C1C1C;
+    --box-radius: 50px;
+    --btn-radius: 20px;
+}
+
+.card {
+    background-color: var(--color-secondary);
+    margin: 40px auto !important;
+    padding: 50px;
+    border-radius: var(--btn-radius);
+    max-width: 1280px;
+}
