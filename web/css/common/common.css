@@ -113,6 +113,7 @@
     --bdt-banner-bodytext-font-size: 22px;
     --bdt-card-bodytext-font-size: 19px;
     --bdt-card-content-font-size: 18px;
+    --bdt-btn-font-size: 17px;
     --bdt-ui-content-font-size: 17px;
     --bdt-banner-bodytext-font-size: 16px;
     --bdt-profile-info-font-size: 14px;
@@ -152,11 +153,13 @@
 }
 
 .btn {
-    font-size: var(--bdt-ui-content-font-size);
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--bdt-btn-font-size);
     font-weight: var(--bdt-ui-content-font-weight);
     letter-spacing: var(--bdt-ui-components-letter-spacing);
     padding: var(--btn-padding-big);
-    border-radius: 8px;
+    border-radius: var(--btn-radius-default);
 }
 
 .btn-padding-small {
@@ -173,6 +176,22 @@
 
 .btn-green-font {
     color: var(--color-btn-text-green);
+}
+
+.btn-default-color-yellow {
+    background-color: var(--color-btn-yellow);
+}
+
+.btn-default-color-green-light {
+    background-color: var(--color-btn-default-green-soft);
+}
+
+.btn-default-color-green {
+    background-color: var(--color-btn-green);
+}
+
+.btn-default-color-black {
+    background-color: var(--color-btn-default-black);
 }
 
 .btn-hover-white:hover {
