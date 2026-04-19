@@ -114,12 +114,12 @@
     --bdt-hero-subtitle-font-size: 28px;
     --bdt-illus-subtitle-font-size: 24px;
     --bdt-banner-subtitle-font-size: 23px;
-    --bdt-banner-bodytext-font-size: 22px;
+    --bdt-banner-bodytext-l-font-size: 22px;
     --bdt-card-bodytext-font-size: 19px;
     --bdt-card-content-font-size: 18px;
     --bdt-btn-font-size: 17px;
     --bdt-ui-content-font-size: 17px;
-    --bdt-banner-bodytext-font-size: 16px;
+    --bdt-banner-bodytext-s-font-size: 16px;
     --bdt-profile-info-font-size: 14px;
 
     /* Font weight*/
@@ -288,7 +288,7 @@ img.burger-menu:hover {
     display: inline-flex;
     align-items: center;
     font-size: var(--bdt-btn-font-size);
-    font-weight: var(--bdt-ui-content-font-weight);
+    font-weight: var(--bdt-semibold-font-weight);
     letter-spacing: var(--bdt-ui-components-letter-spacing);
     padding: var(--btn-padding-big);
     border-radius: var(--btn-radius-default);
@@ -419,12 +419,12 @@ h3 {
 }
 
 h4 {
-    font-weight: var(--line-height-heading-medium);
+    line-height: var(--line-height-heading-medium);
 }
 
 h5,
 h6 {
-    font-weight: var(--line-height-heading-normol);
+    line-height: var(--line-height-heading-normol);
 
 }
 
@@ -489,44 +489,44 @@ p.card-bodytext {
 
 
 p.date {
-    font-size: 34px;
+    font-size: var(--bdt-date-font-size);
 }
 
 p.hero_subtitle {
-    font-size: 28px;
+    font-size: var(--bdt-hero-subtitle-font-size);
 }
 
 p.illus-subtitle {
-    font-size: 24px;
+    font-size: var(--bdt-illus-subtitle-font-size);
 }
 
 p.banner-subtitle {
-    font-size: 23px;
+    font-size: var(--bdt-banner-subtitle-font-size);
 }
 
-p.banner-bodytext {
-    font-size: 22px;
+p.banner-bodytext-l {
+    font-size: var(--bdt-banner-bodytext-l-font-size);
 }
 
 p.card-bodytext {
-    font-size: 19px;
+    font-size: var(--bdt-card-bodytext-font-size);
 }
 
 p.card-content {
-    font-size: 23px;
+    font-size: var(--bdt-card-content-font-size);
 }
 
 p.ui-content {
-    font-size: 17px;
+    font-size: var(--bdt-ui-content-font-size);
     font-weight: var(--bdt-semibold-font-weight);
 }
 
-p.banner-bodytext {
-    font-size: 16px;
+p.banner-bodytext-s {
+    font-size: var(--bdt-banner-bodytext-s-font-size);
 }
 
 p.profile-info {
-    font-size: 14px;
+    font-size: var(--bdt-profile-info-font-size);
 }
 
 
