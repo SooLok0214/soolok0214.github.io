@@ -12,9 +12,7 @@
     --heading-employeename-font-size: 24px;
     --heading-carddetailtitle-font-size: 18px;
     --heading-footertitle-font-size: 18px;
-}
 
-:root {
     /* Heading-mobile-font-size */
     --mb-heading-herotitle-font-size: 52px;
     --mb-heading-maintitle-font-size: 40px;
@@ -24,9 +22,7 @@
     --mb-heading-employeename-font-size: 24px;
     --mb-heading-carddetailtitle-font-size: 18px;
     --mb-heading-footertitle-font-size: 18px;
-}
 
-:root {
     /* Body Text-desktop&table&mobile-font-size */
     --bdt-date-font-size: 34px;
     --bdt-hero-subtitle-font-size: 28px;
@@ -38,34 +34,28 @@
     --bdt-ui-content-font-size: 17px;
     --bdt-banner-bodytext-font-size: 16px;
     --bdt-profile-info-font-size: 14px;
-}
 
-/* Font weight*/
+    /* Font weight*/
 
-:root {
     /* Heading-desktop&table&mobile-font-weight */
     --heading-maintitle-font-weight: 1.3;
     --heading-secondtitle-font-weight: 1.6;
     --heading-ctamaintitle-font-weight: 1.4;
-}
 
-:root {
     /* Body Text-desktop&table&mobile-font-weight */
     --bdt-ui-content-font-weight: 600;
     --bdt-cardmeta-font-weight: 500;
     --bdt-section-bodytext-font-weight: 400;
     --bdt-page-sections-font-weight: 300;
-}
 
 
-/*Letter spacing */
 
-:root {
+    /*Letter spacing */
+
     /* Heading-desktop&table&mobile-letter-spacing */
     --heading-letter-spacing: -0.015em;
-}
 
-:root {
+
     /* Body Text-desktop&table&mobile-letter-spacing */
     --bdt-card-elements-letter-spacing: -0.015em;
     --bdt-ui-components-letter-spacing: -0.010em;

@@ -31,6 +31,11 @@
     --color-btn-text-white: var(--color-primary-white);
     --color-btn-text-black: var(--color-main-black);
     --color-btn-text-green: var(--color-brand-green-dark);
+    --color-body-text-black: var(--color-black-light);
+    --color-body-text-white: var(--color-primary-white);
+    --color-body-text-gray: var(--color-gray-normal);
+    --color-body-text-gray-hover: var(--color-gray-light);
+
 
     --color: var(--color-black-light);
 
