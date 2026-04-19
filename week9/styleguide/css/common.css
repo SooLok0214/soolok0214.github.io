@@ -186,9 +186,9 @@ h3,
 h4,
 h5,
 h6 {
+    color: var(--color-heading-text);
     font-weight: var(--fw-medium);
     letter-spacing: var(--ls-tight);
-    text-transform: capitalize;
 }
 
 h1,
@@ -216,7 +216,6 @@ h6 {
 
 h1 {
     font-size: 56px;
-    color: var(--color-primary);
 }
 
 h2 {
