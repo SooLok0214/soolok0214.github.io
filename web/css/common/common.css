@@ -145,13 +145,138 @@
 
 
     /* Button Padding */
-    --btn-padding-big: 23px 36px;
-    --btn-padding-small: 20px 32px;
+    --btn-padding-big: 20px 36px;
+    --btn-padding-small: 18px 32px;
 
     /* Button Radius */
     --btn-radius-default: 8px;
+
+    /* ETS */
+    --gap-default: 30px;
 }
 
+/* sample use */
+.card {
+    background-color: var(--color-gray-light);
+    border-radius: var(--btn-radius-default);
+    padding: 40px;
+    margin: 40px 20px;
+}
+
+.max-width {
+    margin: 40px auto !important;
+    max-width: 1080px;
+}
+
+/* body setting & default */
+body {
+    font-family: var(--font-family);
+    color: var(--color-body-text-black);
+    background: var(--color-primary);
+    font-size: var(--font-default-size);
+}
+
+img {
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-canter {
+    text-align: center;
+}
+
+/* === Navigation Menu === */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-header-bg);
+    padding: 0px 72px;
+    align-items: center;
+}
+
+header img {
+    border-radius: 0%;
+}
+
+.row-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--gap-default);
+}
+
+.menu-item a {
+    color: var(--color-header-main-menu);
+    font-weight: var(--bdt-cardmeta-font-weight);
+}
+
+.menu-item a:hover {
+    text-decoration: underline 1px var(--color-secondary-green);
+    text-underline-offset: 10px;
+}
+
+.menu-active a {
+    text-decoration: underline 1px var(--color-secondary-green);
+    text-underline-offset: 10px;
+}
+
+.submenu-item {
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s;
+    top: 60px;
+    width: 200px;
+    text-align: center;
+}
+
+.submenu-item a {
+    display: block;
+    padding: 26px 24px;
+}
+
+.has-submenu-item:hover>.submenu-item {
+    opacity: 1;
+    background-color: var(--color-primary-white);
+    box-shadow: #1C1C1C 0px 0px 50px -30px;
+    border-radius: var(--btn-radius-default);
+    overflow: hidden;
+}
+
+a.submenu-item-hover:hover {
+    background-color: var(--color-header-bg);
+}
+
+img.logo {
+    width: 190px;
+    height: 63px;
+}
+
+.header-right {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: var(--gap-default);
+}
+
+img.burger-menu {
+    width: 37px;
+    height: 23px;
+}
+
+img.burger-menu:hover {
+    filter: var(--color-secondaryw);
+    cursor: pointer;
+}
+
+/* === Navigation Menu === */
+
+
+
+
+/* === button setting === */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -160,11 +285,14 @@
     letter-spacing: var(--bdt-ui-components-letter-spacing);
     padding: var(--btn-padding-big);
     border-radius: var(--btn-radius-default);
+    margin: 10px;
 }
 
 .btn-padding-small {
     padding: var(--btn-padding-small);
 }
+
+/* === button font color === */
 
 .btn-white-font {
     color: var(--color-btn-text-white);
@@ -178,6 +306,7 @@
     color: var(--color-btn-text-green);
 }
 
+/* === button color === */
 .btn-default-color-yellow {
     background-color: var(--color-btn-yellow);
 }
@@ -192,8 +321,10 @@
 
 .btn-default-color-black {
     background-color: var(--color-btn-default-black);
+    border: 1.5px solid var(--color-primary-white);
 }
 
+/* === button hover === */
 .btn-hover-white:hover {
     background-color: var(--color-btn-hover-white);
 }
@@ -204,8 +335,45 @@
 
 .btn-hover-yellow:hover {
     background-color: var(--color-btn-yellow);
+    border: 1.5px solid var(--color-btn-yellow);
 }
 
 .btn-hover-green:hover {
     background-color: var(--color-btn-green);
+}
+
+.btn-hover-black:hover {
+    background-color: var(--color-btn-hover-black);
+}
+
+.btn-font-hover-black:hover a {
+    color: var(--color-btn-hover-black);
+}
+
+.btn-font-hover-white:hover a {
+    color: var(--color-btn-hover-white);
+}
+
+.btn-font-hover-green:hover a {
+    color: var(--color-btn-hover-green-dark);
+}
+
+/* === button underline section === */
+.btn-underline {
+    border: none;
+    box-shadow: 0px 2px 0px var(--color-gray-hard);
+}
+
+.btn-underline:hover {
+    box-shadow: 0px 2px 0px var(--color-btn-default-black);
+}
+
+.btn-transparent {
+    border-radius: 0px;
+}
+
+/* === button full width === */
+.btn-full-width {
+    display: block;
+    width: auto;
 }

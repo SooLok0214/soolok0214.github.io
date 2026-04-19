@@ -79,10 +79,8 @@
 body {
     font-family: var(--font-family);
     color: var(--color-black);
-    letter-spacing: -0.015em;
     background: var(--color-primary);
     font-size: var(--font-default-size);
-
 }
 
 /* === Body Default Setting === */
@@ -440,6 +438,10 @@ a.btn_white_font:hover {
     box-shadow: 0px 2px 0px var(--color-black);
 }
 
+.btn-transparent {
+    border-radius: 0px 0px 0px 0px;
+}
+
 .btn:hover:after {
     content: "→";
     rotate: 45deg;
@@ -453,14 +455,7 @@ a.btn_white_font:hover {
     color: var(--color-primary);
 }
 
-.btn-full-width {
-    display: block;
-    margin: auto;
-}
 
-.btn-transparent {
-    border-radius: 0px 0px 0px 0px;
-}
 
 /*
 /* === Layout === */
