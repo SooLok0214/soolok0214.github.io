@@ -1,0 +1,8 @@
+root {
+    /* Button Padding */
+    --btn-padding-big: 23px 36px;
+    --btn-padding-small: 20px 32px;
+
+    /* Button Radius */
+    --btn-radius-default: 8px;
+}

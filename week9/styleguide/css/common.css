@@ -446,6 +446,7 @@ a.btn_white_font:hover {
     display: inline-block;
     font-weight: bold;
     margin-left: 10px;
+    transition: all 0.5s;
 }
 
 .btn.white-arrow:hover:after {

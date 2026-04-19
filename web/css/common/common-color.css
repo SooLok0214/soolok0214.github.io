@@ -66,6 +66,7 @@
     --color-btn-default-green-soft: var(--color-brand-green-soft);
     --color-btn-default-black: var(--color-main-black);
     --color-btn-hover-black: var(--color-black-light);
+    --color-btn-hover-white: var(--color-primary-white);
     --color-btn-border-white: var(--color-primary-white);
 
 
