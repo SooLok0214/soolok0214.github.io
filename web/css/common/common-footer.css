@@ -1,0 +1,13 @@
+root {
+    /* --- Main Colors --- */
+    --color-footer-bg: #171717;
+    --color-footer-bg-highlight: #262626;
+
+    /* Typography Footer Colors */
+    --color-footer-title: #B6E9AF;
+    --color-footer-text: #1C1C1C;
+    --color-footer-text: #D4D4D4;
+    --color-footer-text-hover: #e0e0e0;
+    --color-footer-text-highlight: #FFFFFF;
+    --color-footer-info-highlight: #18B26F;
+}

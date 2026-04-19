@@ -29,14 +29,6 @@
     /* Typography Header Colors */
     --color-header-title: #1C1C1C;
 
-    /* Typography Footer Colors */
-    --color-footer-title: #B6E9AF;
-    --color-footer-text: #1C1C1C;
-    --color-footer-text: #D4D4D4;
-    --color-footer-text-highlight: #FFFFFF;
-    --color-footer-info-highlight: #18B26F;
-
-
     /* --- Button Colors --- */
     --color-btn-green: #18B26F;
     --color-btn-hover-green-dark: #0C5A38;
