@@ -321,7 +321,7 @@ img.burger-menu:hover {
 
 .btn-default-color-black {
     background-color: var(--color-btn-default-black);
-    border: 1.5px solid var(--color-primary-white);
+    border: 2px solid var(--color-primary-white);
 }
 
 /* === button hover === */
@@ -335,7 +335,7 @@ img.burger-menu:hover {
 
 .btn-hover-yellow:hover {
     background-color: var(--color-btn-yellow);
-    border: 1.5px solid var(--color-btn-yellow);
+    border: 2px solid var(--color-btn-yellow);
 }
 
 .btn-hover-green:hover {
