@@ -36,18 +36,20 @@
     --bdt-banner-bodytext-font-size: 16px;
     --bdt-profile-info-font-size: 14px;
 
+
+
+
     /* Font weight*/
 
     /* Heading-desktop&table&mobile-font-weight */
-    --heading-maintitle-font-weight: 1.3;
-    --heading-secondtitle-font-weight: 1.6;
-    --heading-ctamaintitle-font-weight: 1.4;
+    --heading-medium-font-weight: 500;
 
     /* Body Text-desktop&table&mobile-font-weight */
-    --bdt-ui-content-font-weight: 600;
-    --bdt-cardmeta-font-weight: 500;
-    --bdt-section-bodytext-font-weight: 400;
-    --bdt-page-sections-font-weight: 300;
+    --bdt-semibold-font-weight: 600;
+    --bdt-medium-font-weight: 500;
+    --bdt-regular-bodytext-font-weight: 400;
+    --bdt-light-font-weight: 300;
+
 
 
 
@@ -58,6 +60,6 @@
 
 
     /* Body Text-desktop&table&mobile-letter-spacing */
-    --bdt-card-elements-letter-spacing: -0.015em;
-    --bdt-ui-components-letter-spacing: -0.010em;
+    --bdt-extratight-letter-spacing: -0.015em;
+    --bdt-tight-letter-spacing: -0.010em;
 }
