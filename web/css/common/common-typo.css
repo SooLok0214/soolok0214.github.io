@@ -37,7 +37,7 @@
     --bdt-banner-bodytext-font-size: 16px;
     --bdt-profile-info-font-size: 14px;
 
-    /* Footer-desktop & table & mobile */
+    /* Footer-desktop & table */
     --ft-cta-headline-font-size: 28px;
     --ft-phone-number-font-size: 24px;
     --ft-column-title-font-size: 18px;
@@ -45,6 +45,15 @@
     --ft-column-font-size: 16px;
     --ft-date-time-font-size: 14px;
     --ft-copyright-font-size: var(--ft-date-time-font-size);
+
+    /* Footer-mobile */
+    --mb-ft-cta-headline-font-size: 27px;
+    --mb-ft-phone-number-font-size: 24px;
+    --mb-ft-column-title-font-size: 18px;
+    --mb-ft-primary-address-font-size: 17px;
+    --mb-ft-column-font-size: 16px;
+    --mb-ft-date-time-font-size: 14px;
+    --mb-ft-copyright-font-size: var(--ft-date-time-font-size);
 
 
 
@@ -59,6 +68,13 @@
     --bdt-regular-bodytext-font-weight: 400;
     --bdt-light-font-weight: 300;
 
+    /* Footer-desktop & table & mobile */
+    --ft-medium-font-weight: 500;
+    --ft-regular-bodytext-font-weight: 400;
+    --ft-light-font-weight: 300;
+
+
+
 
 
 
@@ -71,4 +87,8 @@
     /* Body Text-desktop & table & mobile */
     --bdt-extratight-letter-spacing: -0.015em;
     --bdt-tight-letter-spacing: -0.010em;
+
+    /* Footer-desktop & table & mobile */
+    --ft-extratight-letter-spacing: -0.015em;
+    --ft-tight-letter-spacing: -0.010em;
 }
