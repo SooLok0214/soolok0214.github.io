@@ -60,6 +60,7 @@
     /* --- Footer Background Colors --- */
     --color-footer-bg: var(--color-footer-bg-black);
     --color-footer-bg-highlight: var(--color-black-light);
+    --color-footer-bg-ctn: var(--color-black-medium);
 
     /* --- Footer Typography Colors --- */
     --color-footer-title: var(--color-brand-green-soft);
@@ -664,13 +665,14 @@ p.profile-info {
 /* Footer */
 .footer {
     background-color: var(--color-footer-bg);
-    padding: 60px 20px
 }
 
 .footer_top {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    padding-bottom: 60px;
+    padding: 23px 100px 72px;
 }
 
 .footer_column {
@@ -691,6 +693,7 @@ p.profile-info {
     font-size: var(--ft-primary-address-font-size);
     font-weight: var(--ft-light-font-weight);
     letter-spacing: var(--ft-tight-letter-spacing);
+    margin-bottom: 15px;
 }
 
 .footer_column a {
@@ -711,6 +714,8 @@ p.profile-info {
     font-size: var(--ft-phone-number-font-size);
     font-weight: var(--ft-regulard-font-weight);
     letter-spacing: var(--ft-tight-letter-spacing);
+    margin-top: 20px;
+    margin: 15px 0;
 }
 
 .footer_column .date_time {
@@ -725,15 +730,23 @@ p.profile-info {
     font-weight: var(--ft-regulard-font-weight);
     letter-spacing: var(--ft-tight-letter-spacing);
     list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
 }
 
+.footer_column li {
+    margin-bottom: 12px;
+}
 
 /* Footer-mid */
 .footer_mid {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-footer-bg-highlight);
+    background-color: var(--color-footer-bg-ctn);
+    padding: 40px 30px;
+    border-top: 1px;
+    padding: 40px 100px;
 }
 
 .logo {
@@ -750,6 +763,7 @@ p.profile-info {
 .cta_text {
     color: var(--color-footer-text-highlight);
     font-size: var(--ft-cta-headline-font-size);
+    padding: 0px 0px 0px 20px;
 }
 
 /* Footer-bottom */
@@ -762,6 +776,8 @@ p.profile-info {
     font-size: var(--ft-copyright-font-size);
     font-weight: var(--ft-light-font-weight);
     letter-spacing: var(--ft-tight-letter-spacing);
+    padding-bottom: 32px;
+    padding: 32px 100px;
 }
 
 .copyright a {
