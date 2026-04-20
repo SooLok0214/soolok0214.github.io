@@ -586,12 +586,6 @@ p.profile-info {
     font-size: var(--bdt-profile-info-font-size);
 }
 
-@media only screen and (max-width: 1200px) {
-    body {
-        padding: var(--tb-mb-body-padding-body-padding);
-    }
-}
-
 /* Footer */
 .footer {
     background-color: var(--color-footer-bg);
@@ -658,6 +652,12 @@ p.profile-info {
     list-style-type: none;
 }
 
+
+@media only screen and (max-width: 1200px) {
+    body {
+        padding: var(--tb-mb-body-padding-body-padding);
+    }
+}
 
 @media only screen and (max-width: 820px) {
     h1 {
