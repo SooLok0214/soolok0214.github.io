@@ -184,8 +184,24 @@
     /* Button Radius */
     --btn-radius-default: 8px;
 
+
+    /* Column Gap */
+    --column-two-main-gap: 66px;
+    --column-two-secondary-gap: 30px;
+    --column-two-special-main-gap: 92px;
+    --column-two-special-secondary-gap: 36px;
+    --column-three-main-gap: 40px;
+    --column-three-secondary-gap: 18px;
+    --column-four-gap: 36px;
+    --column-five-gap: 40px;
+
+    /* body setting */
+    --dt-body-padding: 110px;
+    --tb-mb-body-padding: 30px;
+
     /* ETS */
     --gap-default: 30px;
+    --padding-default: 16px;
 }
 
 /* sample use */
@@ -201,12 +217,18 @@
     max-width: 1080px;
 }
 
+.box-shadow {
+    box-shadow: 0 0 10px var(--color-main-black);
+}
+
+
 /* body setting & default */
 body {
     font-family: var(--font-family);
     color: var(--color-body-text-black);
     background: var(--color-primary);
     font-size: var(--font-default-size);
+    padding: var(--body-padding);
 }
 
 img {
@@ -221,8 +243,14 @@ a {
     text-align: center;
 }
 
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-
+.gap-default {
+    gap: var(--gap-default);
+}
 
 /* === Navigation Menu === */
 header {
@@ -320,6 +348,7 @@ img.burger-menu:hover {
     letter-spacing: var(--bdt-ui-components-letter-spacing);
     padding: var(--btn-padding-big);
     border-radius: var(--btn-radius-default);
+    /* === sample use === */
     margin: 10px;
 }
 
@@ -557,7 +586,6 @@ p.profile-info {
     font-size: var(--bdt-profile-info-font-size);
 }
 
-
 /* Footer */
 .footer {
     background-color: var(--color-footer-bg);
@@ -645,6 +673,12 @@ p.profile-info {
 }
 
 
+
+@media only screen and (max-width: 1200px) {
+    body {
+        padding: var(--tb-mb-body-padding-body-padding);
+    }
+}
 
 @media only screen and (max-width: 820px) {
     h1 {
