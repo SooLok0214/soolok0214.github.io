@@ -5,24 +5,24 @@
     /* Font size */
 
     /* Heading-desktop & table */
-    --heading-herotitle-font-size: 56px;
-    --heading-maintitle-font-size: 42px;
-    --heading-secondtitle-font-size: 36px;
-    --heading-ctamaintitle-font-size: 28px;
-    --heading-ctasecondtitle-font-size: 24px;
-    --heading-employeename-font-size: 24px;
-    --heading-carddetailtitle-font-size: 18px;
-    --heading-footertitle-font-size: var(--heading-carddetailtitle-font-size);
+    --hd-herotitle-font-size: 56px;
+    --hd-maintitle-font-size: 42px;
+    --hd-secondtitle-font-size: 36px;
+    --hd-ctamaintitle-font-size: 28px;
+    --hd-ctasecondtitle-font-size: 24px;
+    --hd-employeename-font-size: 24px;
+    --hd-carddetailtitle-font-size: 18px;
+    --hd-footertitle-font-size: var(--hd-carddetailtitle-font-size);
 
     /* Heading-mobile */
-    --mb-heading-herotitle-font-size: 52px;
-    --mb-heading-maintitle-font-size: 40px;
-    --mb-heading-secondtitle-font-size: 34px;
-    --mb-heading-ctamaintitle-font-size: var(--heading-ctamaintitle-font-size);
-    --mb-heading-ctasecondtitle-font-size: var(--heading-ctamaintitle-font-size);
-    --mb-heading-employeename-font-size: var(--heading-employeename-font-size);
-    --mb-heading-carddetailtitle-font-size: var(--heading-carddetailtitle-font-size);
-    --mb-heading-footertitle-font-size: var(--mb-heading-carddetailtitle-font-size);
+    --mb-hd-herotitle-font-size: 52px;
+    --mb-hd-maintitle-font-size: 40px;
+    --mb-hd-secondtitle-font-size: 34px;
+    --mb-hd-ctamaintitle-font-size: var(--hd-ctamaintitle-font-size);
+    --mb-hd-ctasecondtitle-font-size: var(--hd-ctamaintitle-font-size);
+    --mb-hd-employeename-font-size: var(--hd-employeename-font-size);
+    --mb-hd-carddetailtitle-font-size: var(--hd-carddetailtitle-font-size);
+    --mb-hd-footertitle-font-size: var(--mb-hd-carddetailtitle-font-size);
 
     /* Body Text-desktop & table & mobile */
     --bdt-date-font-size: 34px;
@@ -60,17 +60,17 @@
     /* Font weight*/
 
     /* Heading-desktop & table & mobile */
-    --heading-medium-font-weight: 500;
+    --hd-medium-font-weight: 500;
 
     /* Body Text-desktop & table & mobile */
     --bdt-semibold-font-weight: 600;
     --bdt-medium-font-weight: 500;
-    --bdt-regular-bodytext-font-weight: 400;
+    --bdt-regular-font-weight: 400;
     --bdt-light-font-weight: 300;
 
     /* Footer-desktop & table & mobile */
     --ft-medium-font-weight: 500;
-    --ft-regular-bodytext-font-weight: 400;
+    --ft-regular-font-weight: 400;
     --ft-light-font-weight: 300;
 
 
@@ -81,7 +81,7 @@
     /*Letter spacing */
 
     /* Heading-desktop & table & mobile */
-    --heading-letter-spacing: -0.015em;
+    --hd-letter-spacing: -0.015em;
 
 
     /* Body Text-desktop & table & mobile */
