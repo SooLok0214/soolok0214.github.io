@@ -677,7 +677,47 @@ p.profile-info {
     font-size: var(--ft-cta-headline-font-size);
 }
 
+/* Footer-bottom */
 
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-footer-text);
+    font-size: var(--ft-copyright-font-size);
+    font-weight: var(--ft-light-font-weight);
+    letter-spacing: var(--ft-tight-letter-spacing);
+}
+
+.copyright a {
+    color: var(--color-footer-info-highlight);
+}
+
+
+.copyright a:hover {
+    color: var(--color-footer-text-highlight);
+    text-decoration: underline;
+}
+
+.social_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social_icon {
+    width: 16px;
+    background: var(--color-footer-bg-highlight);
+    border-radius: 8px;
+    padding: 36px;
+    color: var(--color-footer-text-highlight);
+    text-decoration: none;
+}
+
+.social_icon:hover {
+    background: var(--color-footer-info-highlight);
+}
 
 @media only screen and (max-width: 1200px) {
     body {
