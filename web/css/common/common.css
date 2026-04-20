@@ -7,6 +7,7 @@
 }
 
 :root {
+    /* --- Colors soowenglok--- */
     /* --- Main Colors --- */
     --color-primary-white: #FFFFFF;
     --color-secondary-green: #18B26F;
@@ -32,10 +33,6 @@
     --color-blue: #1967D2;
     --color-purple: #250943;
     --color-green: #063D1C;
-
-
-    /* Typo Family */
-    --font-family: "Bricolage Grotesque", sans-serif;
 
     /* Typography Colors */
     --color-heading-text-black: var(--color-main-black);
@@ -88,8 +85,12 @@
 
 
 
-    /* Font size */
 
+    /* --- Typo katherineang--- */
+    /* Typo Family */
+    --font-family: "Bricolage Grotesque", sans-serif;
+
+    /* Font size */
     /* Heading-desktop & table */
     --hd-herotitle-font-size: 56px;
     --hd-maintitle-font-size: 42px;
@@ -142,7 +143,6 @@
     --mb-ft-copyright-font-size: var(--ft-copyright-font-size);
 
     /* Font weight*/
-
     /* Heading-desktop & table & mobile */
     --hd-medium-font-weight: 500;
 
@@ -158,10 +158,8 @@
     --ft-light-font-weight: 300;
 
     /*Letter spacing */
-
     /* Heading-desktop & table & mobile */
     --hd-letter-spacing: -0.015em;
-
 
     /* Body Text-desktop & table & mobile */
     --bdt-extratight-letter-spacing: -0.015em;
@@ -178,6 +176,8 @@
 
 
 
+
+    /* --- button soowenglok--- */
     /* Button Padding */
     --btn-padding-big: 20px 36px;
     --btn-padding-small: 18px 32px;
@@ -186,6 +186,9 @@
     --btn-radius-default: 8px;
 
 
+
+
+    /* --- column soowenglok--- */
     /* Column Gap */
     --column-two-banner-gap: 30px;
     --column-two-main-gap: 66px;
@@ -196,6 +199,9 @@
     --column-three-secondary-gap: 18px;
     --column-four-gap: 36px;
     --column-five-gap: 40px;
+
+
+
 
     /* body setting */
     --dt-body-padding: 0 px 110px;
