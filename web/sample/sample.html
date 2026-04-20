@@ -7,6 +7,7 @@
     <title>Sample</title>
     <link rel="stylesheet" href="../css/common/common.css">
     <script src="https://kit.fontawesome.com/3d31d4945f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -14,7 +15,7 @@
     <!--header-->
     <header>
         <img class="logo" src="../assets/img/logo.png" alt="Logo" />
-        <nav id="main-menu" class="row-flex max-width">
+        <nav id="main-menu" class="row-flex max-width justify-center">
             <div class="menu-item menu-active">
                 <a href="#">Home</a>
             </div>
@@ -43,7 +44,7 @@
             <div class="btn btn-default-color-yellow btn-hover-green-drak  btn-font-hover-white btn-padding-small">
                 <a class="btn-black-font" href="#">Hire A Talent</a>
             </div>
-            <img class="burger-menu" src="../assets/icons/burger_bar.png" alt="burger menu" />
+            <i class="fa-solid fa-bars-staggered"></i>
         </div>
     </header>
 
@@ -119,8 +120,17 @@
 
     <!--column-->
     <div class="card max-width">
+        <h3>2 Columns (Banner Gap: 66px)</h3>
+        <div class="row-flex gap-two-banner justify-center">
+            <div class="column-two-banner box">Two Columns on Desktop/Tablet<br>One Colums on Mobile</div>
+            <div class="column-two-banner box">Two Columns on Desktop/Tablet<br>One Colums on Mobile</div>
+        </div>
+    </div>
+
+
+    <div class="card max-width">
         <h3>2 Columns (Main Gap: 66px)</h3>
-        <div class="row-flex gap-two-main">
+        <div class="row-flex gap-two-main justify-center">
             <div class="column-two-main box">Two Columns on Desktop/Tablet/Mobile</div>
             <div class="column-two-main box">Two Columns on Desktop/Tablet/Mobile </div>
         </div>
@@ -128,61 +138,68 @@
 
     <div class="card max-width">
         <h3>2 Columns (Secondary Gap: 30px)</h3>
-        <div class="row-flex gap-two-secondary">
-            <div class="column-two-secondary box">1</div>
-            <div class="column-two-secondary box">2</div>
+        <div class="row-flex gap-two-secondary justify-center">
+            <div class="column-two-secondary box">Two Columns on Desktop/Tablet<br>One Colums on Mobile</div>
+            <div class="column-two-secondary box">Two Columns on Desktop/Tablet<br>One Colums on Mobile</div>
         </div>
     </div>
     <div class="card max-width">
         <h3>2 Columns (Special Main Gap: 92px)</h3>
-        <div class="row-flex gap-two-special-main">
-            <div class="column-two-special-main box">1</div>
-            <div class="column-two-special-main box">2</div>
+        <div class="row-flex gap-two-special-main justify-center">
+            <div class="column-two-special-main box">Two Columns on Desktop/Tablet<br>One Colums on Mobile</div>
+            <div class="column-two-special-main box">Two Columns on Desktop/Tablet<br>One Colums on Mobile</div>
         </div>
     </div>
     <div class="card max-width">
         <h3>2 Columns (Special Secondary Gap: 36px)</h3>
-        <div class="row-flex gap-two-special-secondary">
-            <div class="column-two-special-secondary box">1</div>
-            <div class="column-two-special-secondary box">2</div>
+        <div class="row-flex gap-two-special-secondary justify-center">
+            <div class="column-two-special-secondary box">Two Columns on Desktop/Tablet<br>One Colums on Mobile</div>
+            <div class="column-two-special-secondary box">Two Columns on Desktop/Tablet<br>One Colums on Mobile</div>
         </div>
     </div>
 
     <div class="card max-width">
         <h3>3 Columns (Main Gap: 40px)</h3>
-        <div class="row-flex gap-three-main">
-            <div class="column-three-main box">1</div>
-            <div class="column-three-main box">2</div>
-            <div class="column-three-main box">3</div>
+        <div class="row-flex gap-three-main flex-start">
+            <div class="column-three-main box">Two Columns on Desktop<br>Two Column on Tablet<br>One Colums on Mobile
+            </div>
+            <div class="column-three-main box">Two Columns on Desktop<br>Two Column on Tablet<br>One Colums on Mobile
+            </div>
+            <div class="column-three-main box">Two Columns on Desktop<br>Two Column on Tablet<br>One Colums on Mobile
+            </div>
         </div>
     </div>
     <div class="card max-width">
         <h3>3 Columns (Secondary Gap: 18px)</h3>
-        <div class="row-flex gap-three-secondary">
-            <div class="column-three-secondary box">1</div>
-            <div class="column-three-secondary box">2</div>
-            <div class="column-three-secondary box">3</div>
+        <div class="row-flex gap-three-secondary flex-start">
+            <div class="column-three-secondary box">Two Columns on Desktop/Tablet<br>Two Colums on Mobile</div>
+            <div class="column-three-secondary box">Two Columns on Desktop/Tablet<br>Two Colums on Mobile</div>
+            <div class="column-three-secondary box">Two Columns on Desktop/Tablet<br>Two Colums on Mobile</div>
         </div>
     </div>
 
     <div class="card max-width">
         <h3>4 Columns (Gap: 36px)</h3>
-        <div class="row-flex gap-four-main">
-            <div class="column-four-main box">1</div>
-            <div class="column-four-main box">2</div>
-            <div class="column-four-main box">3</div>
-            <div class="column-four-main box">4</div>
+        <div class="row-flex gap-four-main justify-center">
+            <div class="column-four-main box">Four Columns on Desktop<br>Two Column on Tablet<br>One Colums on Mobile
+            </div>
+            <div class="column-four-main box">Four Columns on Desktop<br>Two Column on Tablet<br>One Colums on Mobile
+            </div>
+            <div class="column-four-main box">Four Columns on Desktop<br>Two Column on Tablet<br>One Colums on Mobile
+            </div>
+            <div class="column-four-main box">Four Columns on Desktop<br>Two Column on Tablet<br>One Colums on Mobile
+            </div>
         </div>
     </div>
 
     <div class="card max-width">
         <h3>5 Columns (Gap: 40px)</h3>
-        <div class="row-flex gap-five-main">
-            <div class="column-five-main box">1</div>
-            <div class="column-five-main box">2</div>
-            <div class="column-five-main box">3</div>
-            <div class="column-five-main box">4</div>
-            <div class="column-five-main box">5</div>
+        <div class="row-flex gap-five-main justify-center">
+            <div class="column-five-main box">Five Columns on Desktop/Tablet<br>One Colums on Mobile</div>
+            <div class="column-five-main box">Five Columns on Desktop/Tablet<br>One Colums on Mobile</div>
+            <div class="column-five-main box">Five Columns on Desktop/Tablet<br>One Colums on Mobile</div>
+            <div class="column-five-main box">Five Columns on Desktop/Tablet<br>One Colums on Mobile</div>
+            <div class="column-five-main box">Five Columns on Desktop/Tablet<br>One Colums on Mobile</div>
         </div>
     </div>
 

@@ -187,6 +187,7 @@
 
 
     /* Column Gap */
+    --column-two-banner-gap: 30px;
     --column-two-main-gap: 66px;
     --column-two-secondary-gap: 30px;
     --column-two-special-main-gap: 92px;
@@ -244,9 +245,16 @@ a {
     text-align: center;
 }
 
+.flex-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
 .row-flex {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: var(--gap-default);
 }
@@ -321,13 +329,13 @@ img.logo {
     gap: var(--gap-default);
 }
 
-img.burger-menu {
-    width: 37px;
-    height: 23px;
+.fa-bars-staggered {
+    color: var(--color-main-black);
+    font-size: 38px;
 }
 
-img.burger-menu:hover {
-    filter: var(--color-secondaryw);
+.fa-bars-staggered:hover {
+    color: var(--color-secondary-green);
     cursor: pointer;
 }
 
@@ -583,6 +591,10 @@ p.profile-info {
 }
 
 /* === column === */
+.gap-two-banner {
+    gap: var(--column-two-banner-gap)
+}
+
 .gap-two-main {
     gap: var(--column-two-main-gap);
 }
@@ -615,6 +627,9 @@ p.profile-info {
     gap: var(--column-five-gap);
 }
 
+.column-two-banner {
+    width: calc(50% - calc(var(--column-two-main-gap) / 2));
+}
 
 .column-two-main {
     width: calc(50% - calc(var(--column-two-main-gap) / 2));
@@ -652,11 +667,12 @@ p.profile-info {
 .box {
     background-color: var(--color-brand-green-dark);
     color: var(--color-primary-white);
-    height: 150px;
+    height: 200px;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 18px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -815,8 +831,20 @@ p.profile-info {
 }
 
 @media only screen and (max-width: 1200px) {
+    #main-menu {
+        display: none;
+    }
+
     body {
         padding: var(--tb-mb-body-padding);
+    }
+
+    .column-three-main {
+        width: calc(50% - var(--column-three-main-gap) / 2);
+    }
+
+    .column-four-main {
+        width: calc(50% - var(--column-four-gap) / 2);
     }
 }
 
@@ -843,5 +871,23 @@ p.profile-info {
 
     h6 {
         font-size: var(--mb-hd-footertitle-font-size);
+    }
+
+    .column-two-banner,
+    .column-two-secondary,
+    .column-two-special-main,
+    .column-two-special-secondary,
+    .column-three-main,
+    .column-four-main,
+    .column-five-main {
+        width: 100%;
+    }
+
+    .column-two-main {
+        width: calc(50% - var(--column-two-main-gap) / 2);
+    }
+
+    .column-three-secondary {
+        width: calc(50% - var(--column-three-secondary-gap) / 2);
     }
 }
