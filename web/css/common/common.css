@@ -90,24 +90,24 @@
     /* Font size */
 
     /* Heading-desktop & table */
-    --heading-herotitle-font-size: 56px;
-    --heading-maintitle-font-size: 42px;
-    --heading-secondtitle-font-size: 36px;
-    --heading-ctamaintitle-font-size: 28px;
-    --heading-ctasecondtitle-font-size: 24px;
-    --heading-employeename-font-size: 24px;
-    --heading-carddetailtitle-font-size: 18px;
-    --heading-footertitle-font-size: var(--heading-carddetailtitle-font-size);
+    --hd-herotitle-font-size: 56px;
+    --hd-maintitle-font-size: 42px;
+    --hd-secondtitle-font-size: 36px;
+    --hd-ctamaintitle-font-size: 28px;
+    --hd-ctasecondtitle-font-size: 24px;
+    --hd-employeename-font-size: 24px;
+    --hd-carddetailtitle-font-size: 18px;
+    --hd-footertitle-font-size: var(--hd-carddetailtitle-font-size);
 
     /* Heading-mobile */
-    --mb-heading-herotitle-font-size: 52px;
-    --mb-heading-maintitle-font-size: 40px;
-    --mb-heading-secondtitle-font-size: 34px;
-    --mb-heading-ctamaintitle-font-size: var(--heading-ctamaintitle-font-size);
-    --mb-heading-ctasecondtitle-font-size: var(--heading-ctamaintitle-font-size);
-    --mb-heading-employeename-font-size: var(--heading-employeename-font-size);
-    --mb-heading-carddetailtitle-font-size: var(--heading-carddetailtitle-font-size);
-    --mb-heading-footertitle-font-size: var(--mb-heading-carddetailtitle-font-size);
+    --mb-hd-herotitle-font-size: 52px;
+    --mb-hd-maintitle-font-size: 40px;
+    --mb-hd-secondtitle-font-size: 34px;
+    --mb-hd-ctamaintitle-font-size: var(--hd-ctamaintitle-font-size);
+    --mb-hd-ctasecondtitle-font-size: var(--hd-ctamaintitle-font-size);
+    --mb-hd-employeename-font-size: var(--hd-employeename-font-size);
+    --mb-hd-carddetailtitle-font-size: var(--hd-carddetailtitle-font-size);
+    --mb-hd-footertitle-font-size: var(--mb-hd-carddetailtitle-font-size);
 
     /* Body Text-desktop & table & mobile */
     --bdt-date-font-size: 34px;
@@ -143,23 +143,23 @@
     /* Font weight*/
 
     /* Heading-desktop & table & mobile */
-    --heading-medium-font-weight: 500;
+    --hd-medium-font-weight: 500;
 
     /* Body Text-desktop & table & mobile */
     --bdt-semibold-font-weight: 600;
     --bdt-medium-font-weight: 500;
-    --bdt-regular-bodytext-font-weight: 400;
+    --bdt-regular-font-weight: 400;
     --bdt-light-font-weight: 300;
 
     /* Footer-desktop & table & mobile */
     --ft-medium-font-weight: 500;
-    --ft-regular-bodytext-font-weight: 400;
+    --ft-regular-font-weight: 400;
     --ft-light-font-weight: 300;
 
     /*Letter spacing */
 
     /* Heading-desktop & table & mobile */
-    --heading-letter-spacing: -0.015em;
+    --hd-letter-spacing: -0.015em;
 
 
     /* Body Text-desktop & table & mobile */
@@ -455,9 +455,9 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--color-heading-text-black);
-    font-weight: var(--heading-medium-font-weight);
-    letter-spacing: var(--heading-letter-spacing);
+    color: var(--color-hd-text-black);
+    font-weight: var(--hd-medium-font-weight);
+    letter-spacing: var(--hd-letter-spacing);
 }
 
 h1,
@@ -486,27 +486,27 @@ h6 {
 }
 
 h1 {
-    font-size: var(--heading-herotitle-font-size);
+    font-size: var(--hd-herotitle-font-size);
 }
 
 h2 {
-    font-size: var(--heading-maintitle-font-size);
+    font-size: var(--hd-maintitle-font-size);
 }
 
 h3 {
-    font-size: var(--heading-secondtitle-font-size);
+    font-size: var(--hd-secondtitle-font-size);
 }
 
 h4 {
-    font-size: var(--heading-ctamaintitle-font-size);
+    font-size: var(--hd-ctamaintitle-font-size);
 }
 
 h5 {
-    font-size: var(--heading-ctasecondtitle-font-size);
+    font-size: var(--hd-ctasecondtitle-font-size);
 }
 
 h6 {
-    font-size: var(--heading-footertitle-font-size);
+    font-size: var(--hd-footertitle-font-size);
 }
 
 /* Paragraphs */
@@ -592,28 +592,95 @@ p.profile-info {
     }
 }
 
+/* Footer */
+.footer {
+    background-color: var(--color-footer-bg);
+    padding: 60px 20px
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer_column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.column_title {
+    color: var(--color-footer-title);
+    font-size: var(--ft-column-title-font-size);
+    font-weight: var(--ft-medium-font-weight);
+    letter-spacing: var(--ft-extratight-letter-spacing);
+    margin-bottom: 20px;
+}
+
+.footer_column p {
+    color: var(--color-footer-text);
+    font-size: var(--ft-primary-address-font-size);
+    font-weight: var(--ft-light-font-weight);
+    letter-spacing: var(--ft-tight-letter-spacing);
+}
+
+.footer_column a {
+    color: var(--color-footer-text-highlight);
+}
+
+.footer_column p a:hover {
+    color: var(--color-footer-info-highlight);
+    text-decoration: underline;
+}
+
+.footer_column a:hover {
+    color: var(--color-footer-text-hover);
+}
+
+.footer_column .phone_number {
+    color: var(--color-footer-text-highlight);
+    font-size: var(--ft-phone-number-font-size);
+    font-weight: var(--ft-regulard-font-weight);
+    letter-spacing: var(--ft-tight-letter-spacing);
+}
+
+.footer_column .date_time {
+    font-size: var(--ft-date-time-font-size);
+    font-weight: var(--ft-light-font-weight);
+    letter-spacing: var(--ft-tight-letter-spacing);
+}
+
+.footer_column ul {
+    color: var(--color-footer-text);
+    font-size: var(--ft-column-font-size);
+    font-weight: var(--ft-regulard-font-weight);
+    letter-spacing: var(--ft-tight-letter-spacing);
+    list-style-type: none;
+}
+
+
 @media only screen and (max-width: 820px) {
     h1 {
-        font-size: var(--mb-heading-herotitle-font-size);
+        font-size: var(--mb-hd-herotitle-font-size);
     }
 
     h2 {
-        font-size: var(--mb-heading-maintitle-font-size);
+        font-size: var(--mb-hd-maintitle-font-size);
     }
 
     h3 {
-        font-size: var(--mb-heading-secondtitle-font-size);
+        font-size: var(--mb-hd-secondtitle-font-size);
     }
 
     h4 {
-        font-size: var(--mb-heading-ctamaintitle-font-size);
+        font-size: var(--mb-hd-ctamaintitle-font-size);
     }
 
     h5 {
-        font-size: var(--mb-heading-ctasecondtitle-font-size);
+        font-size: var(--mb-hd-ctasecondtitle-font-size);
     }
 
     h6 {
-        font-size: var(--mb-heading-footertitle-font-size);
+        font-size: var(--mb-hd-footertitle-font-size);
     }
 }
