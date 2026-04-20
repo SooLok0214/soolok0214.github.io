@@ -18,10 +18,10 @@
     --mb-heading-herotitle-font-size: 52px;
     --mb-heading-maintitle-font-size: 40px;
     --mb-heading-secondtitle-font-size: 34px;
-    --mb-heading-ctamaintitle-font-size: 28px;
-    --mb-heading-ctasecondtitle-font-size: 24px;
-    --mb-heading-employeename-font-size: 24px;
-    --mb-heading-carddetailtitle-font-size: 18px;
+    --mb-heading-ctamaintitle-font-size: var(--heading-ctamaintitle-font-size);
+    --mb-heading-ctasecondtitle-font-size: var(--heading-ctamaintitle-font-size);
+    --mb-heading-employeename-font-size: var(--heading-employeename-font-size);
+    --mb-heading-carddetailtitle-font-size: var(--heading-carddetailtitle-font-size);
     --mb-heading-footertitle-font-size: var(--mb-heading-carddetailtitle-font-size);
 
     /* Body Text-desktop & table & mobile */
@@ -48,12 +48,12 @@
 
     /* Footer-mobile */
     --mb-ft-cta-headline-font-size: 27px;
-    --mb-ft-phone-number-font-size: 24px;
-    --mb-ft-column-title-font-size: 18px;
-    --mb-ft-primary-address-font-size: 17px;
-    --mb-ft-column-font-size: 16px;
-    --mb-ft-date-time-font-size: 14px;
-    --mb-ft-copyright-font-size: var(--ft-date-time-font-size);
+    --mb-ft-phone-number-font-size: var(--ft-phone-number-font-size);
+    --mb-ft-column-title-font-size: var(--ft-column-font-size);
+    --mb-ft-primary-address-font-size: var(--ft-primary-address-font-size);
+    --mb-ft-column-font-size: var(--ft-column-font-size);
+    --mb-ft-date-time-font-size: var(--ft-date-time-font-size);
+    --mb-ft-copyright-font-size: var(--ft-copyright-font-size);
 
 
 

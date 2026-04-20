@@ -87,9 +87,9 @@
 
 
 
+    /* Font size */
 
-
-    /* Heading-desktop&table-font-size */
+    /* Heading-desktop & table */
     --heading-herotitle-font-size: 56px;
     --heading-maintitle-font-size: 42px;
     --heading-secondtitle-font-size: 36px;
@@ -97,50 +97,78 @@
     --heading-ctasecondtitle-font-size: 24px;
     --heading-employeename-font-size: 24px;
     --heading-carddetailtitle-font-size: 18px;
-    --heading-footertitle-font-size: 18px;
+    --heading-footertitle-font-size: var(--heading-carddetailtitle-font-size);
 
-    /* Heading-mobile-font-size */
+    /* Heading-mobile */
     --mb-heading-herotitle-font-size: 52px;
     --mb-heading-maintitle-font-size: 40px;
     --mb-heading-secondtitle-font-size: 34px;
-    --mb-heading-ctamaintitle-font-size: 28px;
-    --mb-heading-ctasecondtitle-font-size: 24px;
-    --mb-heading-employeename-font-size: 24px;
-    --mb-heading-carddetailtitle-font-size: 18px;
-    --mb-heading-footertitle-font-size: 18px;
+    --mb-heading-ctamaintitle-font-size: var(--heading-ctamaintitle-font-size);
+    --mb-heading-ctasecondtitle-font-size: var(--heading-ctamaintitle-font-size);
+    --mb-heading-employeename-font-size: var(--heading-employeename-font-size);
+    --mb-heading-carddetailtitle-font-size: var(--heading-carddetailtitle-font-size);
+    --mb-heading-footertitle-font-size: var(--mb-heading-carddetailtitle-font-size);
 
-    /* Body Text-desktop&table&mobile-font-size */
+    /* Body Text-desktop & table & mobile */
     --bdt-date-font-size: 34px;
     --bdt-hero-subtitle-font-size: 28px;
     --bdt-illus-subtitle-font-size: 24px;
     --bdt-banner-subtitle-font-size: 23px;
-    --bdt-banner-bodytext-l-font-size: 22px;
+    --bdt-banner-bodytext-font-size: 22px;
     --bdt-card-bodytext-font-size: 19px;
     --bdt-card-content-font-size: 18px;
     --bdt-btn-font-size: 17px;
-    --bdt-ui-content-font-size: 17px;
-    --bdt-banner-bodytext-s-font-size: 16px;
+    --bdt-ui-content-font-size: var(--bdt-btn-font-size);
+    --bdt-banner-bodytext-font-size: 16px;
     --bdt-profile-info-font-size: 14px;
+
+    /* Footer-desktop & table */
+    --ft-cta-headline-font-size: 28px;
+    --ft-phone-number-font-size: 24px;
+    --ft-column-title-font-size: 18px;
+    --ft-primary-address-font-size: 17px;
+    --ft-column-font-size: 16px;
+    --ft-date-time-font-size: 14px;
+    --ft-copyright-font-size: var(--ft-date-time-font-size);
+
+    /* Footer-mobile */
+    --mb-ft-cta-headline-font-size: 27px;
+    --mb-ft-phone-number-font-size: var(--ft-phone-number-font-size);
+    --mb-ft-column-title-font-size: var(--ft-column-font-size);
+    --mb-ft-primary-address-font-size: var(--ft-primary-address-font-size);
+    --mb-ft-column-font-size: var(--ft-column-font-size);
+    --mb-ft-date-time-font-size: var(--ft-date-time-font-size);
+    --mb-ft-copyright-font-size: var(--ft-copyright-font-size);
 
     /* Font weight*/
 
-    /* Heading-desktop&table&mobile-font-weight */
+    /* Heading-desktop & table & mobile */
     --heading-medium-font-weight: 500;
 
-    /* Body Text-desktop&table&mobile-font-weight */
+    /* Body Text-desktop & table & mobile */
     --bdt-semibold-font-weight: 600;
     --bdt-medium-font-weight: 500;
     --bdt-regular-bodytext-font-weight: 400;
     --bdt-light-font-weight: 300;
 
+    /* Footer-desktop & table & mobile */
+    --ft-medium-font-weight: 500;
+    --ft-regular-bodytext-font-weight: 400;
+    --ft-light-font-weight: 300;
+
     /*Letter spacing */
 
-    /* Heading-desktop&table&mobile-letter-spacing */
+    /* Heading-desktop & table & mobile */
     --heading-letter-spacing: -0.015em;
 
-    /* Body Text-desktop&table&mobile-letter-spacing */
+
+    /* Body Text-desktop & table & mobile */
     --bdt-extratight-letter-spacing: -0.015em;
     --bdt-tight-letter-spacing: -0.010em;
+
+    /* Footer-desktop & table & mobile */
+    --ft-extratight-letter-spacing: -0.015em;
+    --ft-tight-letter-spacing: -0.010em;
 
     /*Letter spacing */
     --line-height-heading-medium: 1.6;
