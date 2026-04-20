@@ -601,6 +601,11 @@ p.profile-info {
 
 
 /* === input katherineang === */
+.form-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
 .custom-input,
 .custom-textarea {
     width: 100%;
