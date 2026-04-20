@@ -625,6 +625,27 @@ p.profile-info {
 }
 
 
+/* Footer-mid */
+.footer_mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-footer-bg-highlight);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer_logo {
+    width: 200px;
+    height: 66.5px;
+}
+
+
+
 @media only screen and (max-width: 820px) {
     h1 {
         font-size: var(--mb-hd-herotitle-font-size);
