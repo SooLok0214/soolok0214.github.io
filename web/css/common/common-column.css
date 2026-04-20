@@ -1,0 +1,10 @@
+root {
+    --column-two-main-gap: 66px;
+    --column-two-secondary-gap: 30px;
+    --column-two-special-main-gap: 92px;
+    --column-two-special-secondary-gap: 36px;
+    --column-three-main-gap: 40px;
+    --column-three-secondary-gap: 18px;
+    --column-four-gap: 36px;
+    --column-five-gap: 40px;
+}
