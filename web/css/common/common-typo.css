@@ -40,9 +40,9 @@
     /* Footer-desktop & table & mobile */
     --ft-cta-headline-font-size: 28px;
     --ft-phone-number-font-size: 24px;
-    --ft-footer-title-font-size: 18px;
+    --ft-column-title-font-size: 18px;
     --ft-primary-address-font-size: 17px;
-    --ft-menu-labels-font-size: 16px;
+    --ft-column-font-size: 16px;
     --ft-date-time-font-size: 14px;
     --ft-copyright-font-size: var(--ft-date-time-font-size);
 
