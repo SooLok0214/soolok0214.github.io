@@ -11,7 +11,7 @@
 body {
     font-family: var(--font-family);
     color: var(--color-body-text-black);
-    background: var(--color-primary);
+    background: var(--color-);
     padding: var(--dt-body-padding);
 }
 
@@ -43,4 +43,12 @@ a {
 
 .gap-default {
     gap: var(--gap-default);
+}
+
+
+body {
+    font-family: var(--font-family);
+    color: var(--color-body-text-black);
+    background: var(--color-primary);
+    padding: var(--tb-mb-body-padding);
 }

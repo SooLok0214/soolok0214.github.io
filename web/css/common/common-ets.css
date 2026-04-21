@@ -1,5 +1,3 @@
-@import url("../css/common/common-variables.css");
-
 /* sample use */
 .card {
     background-color: var(--color-gray-light);
