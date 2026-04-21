@@ -749,7 +749,7 @@ p.profile-info {
 
 .footer_column {
     flex: 1;
-    min-width: 200px;
+    mix-width: 200px;
 }
 
 .column_title {
@@ -989,7 +989,6 @@ p.profile-info {
         flex-direction: column;
         padding: 40px 20px;
         text-align: left;
-        align-items: center;
     }
 
     .footer_column {
