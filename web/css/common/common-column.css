@@ -1,0 +1,74 @@
+@import url("../css/common/common-variables.css");
+
+/* === column === soowenglok*/
+.gap-two-banner {
+    gap: var(--column-two-banner-gap)
+}
+
+.gap-two-main {
+    gap: var(--column-two-main-gap);
+}
+
+.gap-two-secondary {
+    gap: var(--column-two-secondary-gap);
+}
+
+.gap-two-special-main {
+    gap: var(--column-two-special-main-gap);
+}
+
+.gap-two-special-secondary {
+    gap: var(--column-two-special-secondary-gap);
+}
+
+.gap-three-main {
+    gap: var(--column-three-main-gap);
+}
+
+.gap-three-secondary {
+    gap: var(--column-three-secondary-gap);
+}
+
+.gap-four-main {
+    gap: var(--column-four-gap);
+}
+
+.gap-five-main {
+    gap: var(--column-five-gap);
+}
+
+.column-two-banner {
+    width: calc(50% - calc(var(--column-two-main-gap) / 2));
+}
+
+.column-two-main {
+    width: calc(50% - calc(var(--column-two-main-gap) / 2));
+}
+
+.column-two-secondary {
+    width: calc(50% - calc(var(--column-two-secondary-gap) / 2));
+}
+
+.column-two-special-main {
+    width: calc(50% - calc(var(--column-two-special-main-gap) / 2));
+}
+
+.column-two-special-secondary {
+    width: calc(50% - calc(var(--column-two-special-secondary-gap) / 2));
+}
+
+.column-three-main {
+    width: calc(33% - calc(var(--column-three-main-gap) * 2 / 3));
+}
+
+.column-three-secondary {
+    width: calc(33% - calc(var(--column-three-secondary-gap) * 2 / 3));
+}
+
+.column-four-main {
+    width: calc(25% - calc(var(--column-four-gap) * 3 / 4));
+}
+
+.column-five-main {
+    width: calc(20% - calc(var(--column-five-gap) * 4 / 5));
+}
