@@ -1,0 +1,140 @@
+@import url("../css/common/common-variables.css");
+
+/* Headings katherineang*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-hd-text-black);
+    font-weight: var(--hd-medium-font-weight);
+    letter-spacing: var(--hd-letter-spacing);
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    text-transform: capitalize;
+}
+
+
+h1,
+h2,
+h3 {
+    line-height: var(--line-height-heading-light);
+}
+
+h4 {
+    line-height: var(--line-height-heading-medium);
+}
+
+h5,
+h6 {
+    line-height: var(--line-height-heading-normol);
+
+}
+
+h1 {
+    font-size: var(--hd-herotitle-font-size);
+}
+
+h2 {
+    font-size: var(--hd-maintitle-font-size);
+}
+
+h3 {
+    font-size: var(--hd-secondtitle-font-size);
+}
+
+h4 {
+    font-size: var(--hd-ctamaintitle-font-size);
+}
+
+h5 {
+    font-size: var(--hd-ctasecondtitle-font-size);
+}
+
+h6 {
+    font-size: var(--hd-footertitle-font-size);
+}
+
+/* Paragraphs */
+p {
+    color: var(--color-black-light);
+}
+
+p.banner-subtitle,
+p.banner-bodytext,
+p.card-bodytext,
+p.ui-content,
+p.banner-bodytext,
+p.profile-info {
+    letter-spacing: var(--bdt-tight-letter-spacing);
+}
+
+p.illus-subtitle,
+p.card-content {
+    letter-spacing: var(--bdt-tight-letter-spacing);
+}
+
+p.illus-subtitle,
+p.card-content {
+    font-weight: var(--bdt-medium-font-weight);
+}
+
+p.banner-subtitle,
+p.banner-bodytext,
+p.profile-info {
+    font-weight: var(--bdt-light-font-weight);
+}
+
+p.banner-bodytext,
+p.card-bodytext {
+    font-weight: var(--bdt-regular-bodytext-font-weight);
+}
+
+
+p.date {
+    font-size: var(--bdt-date-font-size);
+}
+
+p.hero_subtitle {
+    font-size: var(--bdt-hero-subtitle-font-size);
+}
+
+p.illus-subtitle {
+    font-size: var(--bdt-illus-subtitle-font-size);
+}
+
+p.banner-subtitle {
+    font-size: var(--bdt-banner-subtitle-font-size);
+}
+
+p.banner-bodytext-l {
+    font-size: var(--bdt-banner-bodytext-l-font-size);
+}
+
+p.card-bodytext {
+    font-size: var(--bdt-card-bodytext-font-size);
+}
+
+p.card-content {
+    font-size: var(--bdt-card-content-font-size);
+}
+
+p.ui-content {
+    font-size: var(--bdt-ui-content-font-size);
+    font-weight: var(--bdt-semibold-font-weight);
+}
+
+p.banner-bodytext-s {
+    font-size: var(--bdt-banner-bodytext-s-font-size);
+}
+
+p.profile-info {
+    font-size: var(--bdt-profile-info-font-size);
+}

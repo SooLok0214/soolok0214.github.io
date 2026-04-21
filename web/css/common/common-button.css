@@ -1,0 +1,108 @@
+@import url("../css/common/common-variables.css");
+
+/* === button setting === soowenglok */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--bdt-btn-font-size);
+    font-weight: var(--bdt-semibold-font-weight);
+    letter-spacing: var(--bdt-ui-components-letter-spacing);
+    padding: var(--btn-padding-big);
+    border-radius: var(--btn-radius-default);
+    /* === sample use === */
+    margin: 10px;
+}
+
+.btn-padding-small {
+    padding: var(--btn-padding-small);
+}
+
+/* === button font color === */
+
+.btn-white-font {
+    color: var(--color-btn-text-white);
+}
+
+.btn-black-font {
+    color: var(--color-btn-text-black);
+}
+
+.btn-green-font {
+    color: var(--color-btn-text-green);
+}
+
+/* === button color === */
+.btn-default-color-yellow {
+    background-color: var(--color-btn-yellow);
+}
+
+.btn-default-color-green-light {
+    background-color: var(--color-btn-default-green-soft);
+}
+
+.btn-default-color-green {
+    background-color: var(--color-btn-green);
+}
+
+.btn-default-color-black {
+    background-color: var(--color-btn-default-black);
+    border: 2px solid var(--color-primary-white);
+}
+
+/* === button hover === */
+.btn-hover-white:hover {
+    background-color: var(--color-btn-hover-white);
+}
+
+.btn-hover-green-drak:hover {
+    background-color: var(--color-btn-hover-green-dark);
+}
+
+.btn-hover-yellow:hover {
+    background-color: var(--color-btn-yellow);
+    border: 2px solid var(--color-btn-yellow);
+}
+
+.btn-hover-green:hover {
+    background-color: var(--color-btn-green);
+}
+
+.btn-hover-black:hover {
+    background-color: var(--color-btn-hover-black);
+}
+
+.btn-font-hover-black:hover a {
+    color: var(--color-btn-hover-black);
+}
+
+.btn-font-hover-white:hover a {
+    color: var(--color-btn-hover-white);
+}
+
+.btn-font-hover-green:hover a {
+    color: var(--color-btn-hover-green-dark);
+}
+
+/* === button underline section === */
+.btn-underline {
+    border: none;
+    box-shadow: 0px 2px 0px var(--color-gray-hard);
+}
+
+.btn-underline:hover {
+    box-shadow: 0px 2px 0px var(--color-btn-default-black);
+}
+
+.btn-transparent {
+    border-radius: 0px;
+}
+
+/* === button full width === */
+.btn-full-width {
+    display: block;
+    width: auto;
+}
+
+.mb-full-width {
+    width: auto;
+}

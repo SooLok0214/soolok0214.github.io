@@ -1,0 +1,32 @@
+@import url("../css/common/common-variables.css");
+
+/* sample use */
+.card {
+    background-color: var(--color-gray-light);
+    border-radius: var(--btn-radius-default);
+    padding: 40px;
+    margin: 40px 20px;
+}
+
+.max-width {
+    margin: 40px auto !important;
+    max-width: 1080px;
+}
+
+.box-shadow {
+    box-shadow: 0 0 10px var(--color-main-black);
+}
+
+/* Sample Use */
+.box {
+    background-color: var(--color-brand-green-dark);
+    color: var(--color-primary-white);
+    height: 200px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
