@@ -5,8 +5,8 @@
     margin-bottom: 30px;
 }
 
-.custom-input,
-.custom-textarea {
+.input,
+.textarea {
     width: 100%;
     padding: var(--btn-input-padding);
     border: 0px solid var(--color-gray-hard);
@@ -18,12 +18,12 @@
     margin-bottom: 10px;
 }
 
-.custom-textarea {
+.textarea {
     min-height: 120px;
     overflow: auto;
 }
 
-.custom-input:hover,
-.custom-textarea:hover {
+.input:hover,
+.textarea:hover {
     border: 1.5px solid var(--color-secondary-green);
 }
