@@ -106,3 +106,10 @@
 .mb-full-width {
     width: auto;
 }
+
+@media only screen and (max-width: 820px) {
+    .mb-full-width {
+        display: block;
+        text-align: center;
+    }
+}
