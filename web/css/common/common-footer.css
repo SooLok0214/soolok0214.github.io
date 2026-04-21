@@ -10,7 +10,7 @@
     justify-content: space-between;
     gap: 30px;
     padding-bottom: 60px;
-    padding: 23px 30px 72px;
+    padding: 23px 110px 72px;
 }
 
 .footer_column {
@@ -115,7 +115,7 @@
     font-weight: var(--ft-light-font-weight);
     letter-spacing: var(--ft-tight-letter-spacing);
     padding-bottom: 32px;
-    padding: 32px 30px;
+    padding: 32px 110px;
 }
 
 .copyright a {
