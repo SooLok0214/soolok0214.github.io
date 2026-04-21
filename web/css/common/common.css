@@ -233,7 +233,6 @@ body {
     font-family: var(--font-family);
     color: var(--color-body-text-black);
     background: var(--color-primary);
-    font-size: var(--font-default-size);
     padding: var(--dt-body-padding);
 }
 
@@ -269,8 +268,6 @@ a {
 
 /* === Navigation Menu soowenglok === */
 header {
-    display: flex;
-    justify-content: space-between;
     background-color: var(--color-header-bg);
     padding: 0px 72px;
     align-items: center;
@@ -278,6 +275,11 @@ header {
 
 header img {
     border-radius: 0%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu-item a {
@@ -333,6 +335,7 @@ img.logo {
     gap: var(--gap-default);
 }
 
+
 .fa-bars-staggered {
     color: var(--color-main-black);
     font-size: 38px;
@@ -343,6 +346,17 @@ img.logo {
     cursor: pointer;
 }
 
+.ri-arrow-drop-down-line {
+    font-size: 17px;
+}
+
+.menu-btn {
+    display: block;
+}
+
+div.btn.menu-btn-mb {
+    display: none;
+}
 
 
 
@@ -591,10 +605,10 @@ p.profile-info {
 .btn-full-width {
     display: block;
     width: auto;
+}
 
-    .mb-full-width {
-        width: auto;
-    }
+.mb-full-width {
+    width: auto;
 }
 
 
@@ -878,7 +892,7 @@ p.profile-info {
     }
 
     body {
-        padding: var(--tb-mb-body-padding);
+        padding: xx;
     }
 
     .column-three-main {
@@ -936,6 +950,14 @@ p.profile-info {
 
     .column-three-secondary {
         width: calc(50% - var(--column-three-secondary-gap) / 2);
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    div.btn.menu-btn-mb {
+        display: block;
     }
 }
 
