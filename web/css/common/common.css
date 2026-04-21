@@ -902,6 +902,23 @@ p.profile-info {
     .column-four-main {
         width: calc(50% - var(--column-four-gap) / 2);
     }
+
+    .footer_mid {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .cta_text {
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 820px) {
@@ -959,29 +976,6 @@ p.profile-info {
     div.btn.menu-btn-mb {
         display: block;
     }
-}
-
-@media only screen and (max-width: 1200px) {
-    .footer_mid {
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        gap: 30px;
-    }
-
-    .cta_text {
-        width: 100%;
-        padding: 0;
-    }
-
-    .logo {
-        width: 100%;
-        justify-content: center;
-    }
-}
-
-
-@media only screen and (max-width: 820px) {
 
     .footer_top,
     .footer_mid,
