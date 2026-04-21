@@ -45,10 +45,8 @@ a {
     gap: var(--gap-default);
 }
 
-
-body {
-    font-family: var(--font-family);
-    color: var(--color-body-text-black);
-    background: var(--color-primary);
-    padding: var(--tb-mb-body-padding);
+@media only screen and (max-width: 1200px) {
+    body {
+        padding: var(--tb-mb-body-padding);
+    }
 }
