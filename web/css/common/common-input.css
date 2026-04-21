@@ -26,5 +26,5 @@
 
 .custom-input:hover,
 .custom-textarea:hover {
-    border: 1.5px solid var(--color-gray-hard);
+    border: 1.5px solid var(--color-secondary-green);
 }
