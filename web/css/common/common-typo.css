@@ -65,34 +65,43 @@ p {
     color: var(--color-black-light);
 }
 
+.date .hero_subtitle,
+.illus-subtitle,
+.card-content,
+.banner-bodytext {
+    letter-spacing: var(--bdt-extratight-letter-spacing);
+}
+
 .banner-subtitle,
-.banner-bodytext,
+.banner-bodytext-l,
 .card-bodytext,
+.btn,
 .ui-content,
-.banner-bodytext,
+.banner-bodytext-s,
 .profile-info {
-    letter-spacing: var(--bdt-tight-letter-spacing);
+    letter-spacing: var(--ft-extratight-letter-spacing);
 }
 
-.illus-subtitle,
-.card-content {
-    letter-spacing: var(--bdt-tight-letter-spacing);
+.btn,
+.ui-content {
+    font-weight: var(--bdt-semibold-font-weight);
 }
 
-.illus-subtitle,
+.date,
+.hero_subtitle .illus-subtitle,
 .card-content {
     font-weight: var(--bdt-medium-font-weight);
 }
 
-.banner-subtitle,
-.banner-bodytext,
-.profile-info {
-    font-weight: var(--bdt-light-font-weight);
-}
-
-.banner-bodytext,
+.banner-bodytext-l,
 .card-bodytext {
     font-weight: var(--bdt-regular-bodytext-font-weight);
+}
+
+.banner-subtitle,
+.banner-bodytext-s,
+.profile-info {
+    font-weight: var(--bdt-light-font-weight);
 }
 
 
@@ -124,9 +133,12 @@ p {
     font-size: var(--bdt-card-content-font-size);
 }
 
+.btn {
+    font-size: var(--bdt-btn-font-size);
+}
+
 .ui-content {
     font-size: var(--bdt-ui-content-font-size);
-    font-weight: var(--bdt-semibold-font-weight);
 }
 
 .banner-bodytext-s {
