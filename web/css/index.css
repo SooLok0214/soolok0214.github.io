@@ -28,6 +28,10 @@
     margin-bottom: 60px;
 }
 
+.section-header p {
+    margin-bottom: 30px;
+}
+
 .sector-card {
     display: flex;
     flex-direction: column;
@@ -70,27 +74,86 @@
 .three-section {
     background-color: var(--color-white-light);
     border-radius: var(--card-radius-default);
-    padding: 107px 61px 80px 61px;
+    padding: 107px 30px 80px 30px;
     margin-bottom: 60px;
 }
 
 .employee-card {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: left;
-
 }
 
 .employee-image img {
     width: 100%;
+    display: block;
 }
 
 .employee-image {
-    width: 249px;
+    max-width: 280px;
 }
 
 .employee-info {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    padding: 20px;
+    width: auto;
+    padding: 0px 20px;
+}
+
+.four-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+}
+
+.faq-container {
+    width: 70%;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.banner-bodytext-l,
+.faq-icon {
+    transition: all 0.3s;
+}
+
+.faq-question:hover .banner-bodytext-l {
+    color: var(--color-secondary-green);
+    text-decoration: underline 1px var(--color-secondary-green);
+}
+
+.faq-icon {
+    color: var(--color-btn-text-black);
+    font-size: var(--bdt-banner-bodytext-l-font-size);
+    background-color: var(--color-accent-yellow-light);
+}
+
+.faq-question:hover .faq-icon {
+    background-color: var(--color-secondary-green);
+}
+
+.faq-line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-white-light)
+}
+
+@media only screen and (max-width: 1200px) {
+    .employee-image {
+        width: 28vw;
+    }
 }
