@@ -175,8 +175,6 @@
     --btn-padding-small: 18px 32px;
     --btn-input-padding: 17px;
 
-    /* Button Radius */
-    --btn-radius-default: 8px;
 
 
 
@@ -190,7 +188,7 @@
     --column-two-special-secondary-gap: 36px;
     --column-three-main-gap: 40px;
     --column-three-secondary-gap: 18px;
-    --column-four-gap: 36px;
+    --column-four-gap: 34px;
     --column-five-gap: 40px;
 
     /* body setting */
@@ -200,4 +198,8 @@
     /* ETS */
     --gap-default: 30px;
     --padding-default: 16px;
+
+    /* Radius */
+    --btn-radius-default: 8px;
+    --card-radius-default: 20px;
 }

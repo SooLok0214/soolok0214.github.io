@@ -47,6 +47,11 @@ a {
     gap: var(--gap-default);
 }
 
+.row-flex-no-gap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .gap-default {
     gap: var(--gap-default);
 }
