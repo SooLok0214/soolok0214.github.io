@@ -1,0 +1,29 @@
+@import url("common/common-variables.css");
+
+.hero-section {
+    width: 100%;
+    height: 737px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0)),
+        url('../assets/img/avada-recruitment-06.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    margin: 40px 0;
+    overflow: hidden;
+    padding: 195px 109px;
+}
+
+.index-section2-arrow {
+    color: var(--color-secondary-green);
+}
+
+.two-section {
+    padding: 100px 0;
+}
+
+.section-header {
+    margin-bottom: 60px;
+}
