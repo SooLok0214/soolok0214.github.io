@@ -104,6 +104,9 @@ p {
     font-weight: var(--bdt-light-font-weight);
 }
 
+.state-number {
+    font-size: var(--bdt-state-number-size);
+}
 
 .date {
     font-size: var(--bdt-date-font-size);

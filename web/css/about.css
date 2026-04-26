@@ -131,9 +131,44 @@
     letter-spacing: var(--bdt-tight-letter-spacing);
 }
 
+.stats_container {
+    display: flex;
+    gap: 20px
+}
 
+.stats_card {
+    flex: 1;
+    justify-content: center;
+    margin: 0px 8.6px;
+    padding: 48px 40px;
+    border-radius: 16px;
+    text-align: left;
+}
 
+.stats_card.pink {
+    background-color: var(--color-pink);
+}
 
+.stats_card.green {
+    background-color: var(--color-light-green);
+}
+
+.icon {
+    width: 50px;
+}
+
+.stat_number {
+    font-size: var(--bdt-state-number-size);
+    font-weight: var(bdt --hd-medium-font-weight);
+    letter-spacing: var(--bdt-extratight-letter-spacing);
+    margin: 10px 0;
+}
+
+.stats_card p {
+    font-size: var(--bdt-card-bodytext-font-size);
+    font-weight: var(--bdt-regular-font-weight);
+    letter-spacing: var(--bdt-tight-letter-spacing);
+}
 
 @media (max-width: 820px) {
     .hero_image {
