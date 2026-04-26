@@ -73,8 +73,11 @@
 }
 
 .section_header {
-    margin-bottom: 60px;
-    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 70px;
+    padding-bottom: 40px;
     border-bottom: 1px solid var(--color-gray-light);
 }
 
@@ -82,15 +85,32 @@
     font-size: var(--bdt-card-bodytext-font-size);
     font-weight: var(--bdt-regular-font-weight);
     letter-spacing: var(--bdt-tight-letter-spacing);
-    padding: 2px 8px;
+    color: var(--color-black-light);
+    position: relative;
+}
+
+.subtitle:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    border-top: 10px solid #FBDF2D;
+    width: 100%;
+    z-index: -10;
 }
 
 .heading {
     font-size: var(--hd-maintitle-font-size);
     font-weight: var(--hd-medium-font-weight);
     letter-spacing: var(--hd-letter-spacing);
+    color: var(--color-main-black);
     margin-top: 20px;
     max-width: 700px;
+}
+
+.header_arrow {
+    font-size: 120px;
+    color: var(--color-gray-light);
 }
 
 .content_wrapper {
@@ -131,6 +151,7 @@
     font-weight: var(--hd-medium-font-weight);
     letter-spacing: var(--hd-letter-spacing);
     line-height: var(--line-height-heading-normol);
+    color: var(--color-main-black);
     margin-bottom: 20px;
     text-transform: none;
     padding-right: 22%;
@@ -141,6 +162,7 @@
     font-weight: var(--bdt-light-font-weight);
     letter-spacing: var(--bdt-extratight-letter-spacing);
     line-height: var(--line-height-heading-medium);
+    color: var(--color-black-light);
     margin-bottom: 30px;
     padding-right: 16%;
 }
@@ -185,6 +207,7 @@
     font-weight: var(--bdt-regular-font-weight);
     letter-spacing: var(--bdt-tight-letter-spacing);
     line-height: var(--line-height-heading-light);
+    color: var(--color-black-light);
     padding: 0;
     margin: 0;
 }
@@ -200,6 +223,7 @@
     font-weight: var(--bdt-medium-font-weight);
     letter-spacing: var(--bdt-extratight-letter-spacing);
     line-height: var(--line-height-heading-light);
+    color: var(--color-black-light);
 }
 
 @media (max-width: 820px) {
