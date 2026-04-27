@@ -7,7 +7,7 @@
     letter-spacing: var(--bdt-ui-components-letter-spacing);
     padding: var(--btn-padding-big);
     border-radius: var(--btn-radius-default);
-    transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1), background-color 0.3s ease;
+    transition: transform 0.3s, background-color 0.3s ease;
     /* === sample use === */
     margin: 10px;
 }
