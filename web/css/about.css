@@ -62,8 +62,11 @@
 }
 
 /*section_two*/
+
 .section_two {
-    margin: 0 -30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     padding: 96px 110px;
 }
 
@@ -167,7 +170,7 @@
     padding-right: 16%;
 }
 
-.btn {
+.section_two_content .btn {
     margin-bottom: 90px;
     margin-left: 0;
 
@@ -226,7 +229,111 @@
     color: var(--color-black-light);
 }
 
+/* section_three */
+
+.section_three {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 96px 110px;
+    background-color: var(--color-white-light);
+    border-radius: 20px;
+}
+
+.three_header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px 0;
+    margin: 0 -20px;
+}
+
+.three_header_text {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 24px 72px 0 0;
+    margin: 0 19px;
+}
+
+.three_subtitle {
+    font-size: var(--bdt-card-bodytext-font-size);
+    font-weight: var(--bdt-regular-font-weight);
+    letter-spacing: var(--bdt-tight-letter-spacing);
+    position: relative;
+}
+
+.three_subtitle:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    border-top: 10px solid #FBDF2D;
+    width: 100%;
+    z-index: -10;
+}
+
+.three_heading {
+    font-size: var(--hd-maintitle-font-size);
+    font-weight: var(--hd-medium-font-weight);
+    letter-spacing: var(--hd-letter-spacing);
+    line-height: var(--line-height-heading-light);
+    margin-bottom: 25px;
+    color: var(--color-heading-text-black);
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.three_text {
+    font-size: var(--bdt-ui-content-font-size);
+    font-weight: var(--bdt-light-font-weight);
+    letter-spacing: var(--bdt-tight-letter-spacing);
+    color: var(--color-body-text-black);
+    line-height: var(--line-height-heading-medium);
+    max-width: 500px;
+}
+
+.expert_card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 19px;
+}
+
+.expert_image {
+    width: 100%;
+    aspect-ratio: 1 / 1.1;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.expert_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.expert_card h5 {
+    font-size: var(--bdt-illus-subtitle-font-size);
+    font-weight: var(--bdt-medium-font-weight);
+    letter-spacing: var(--bdt-extratight-letter-spacing);
+    line-height: var(--line-height-heading-normol);
+    margin-bottom: 8px;
+    color: var(--color-heading-text-black);
+}
+
+.expert_card p {
+    font-size: var(--bdt-profile-info-font-size);
+    font-weight: var(--bdt-light-font-weight);
+    letter-spacing: var(--bdt-tight-letter-spacing);
+    line-height: var(--line-height-heading-medium);
+    color: var(--color-body-text-black);
+}
+
+
+
 @media (max-width: 820px) {
+
     .hero_image {
         display: none;
     }
@@ -238,4 +345,99 @@
     .section_part {
         padding: 0px 30px;
     }
+
+    /* section_two */
+
+    .section_two {
+        padding: 40px 0;
+        width: 100%;
+    }
+
+    .content_wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .image_area {
+        width: 100%;
+        max-width: 600px;
+        aspect-ratio: 1 / 1;
+        position: relative;
+    }
+
+    .section_header {
+        max-width: 700px;
+    }
+
+    .section_two_content {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .header_arrow {
+        display: none;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .text h4,
+    .text p {
+        padding-right: 0;
+        max-width: 100%;
+    }
+
+    .stats_container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .stats_card {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+
+    /* section_three */
+
+    .section_three {
+        padding: 40px 0;
+        width: 100%;
+    }
+
+    .three_header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        gap: 40px;
+    }
+
+    .three_heading {
+        font-size: var(--mb-hd-maintitle-font-size);
+    }
+
+    .three_header_text {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .expert_card {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .expert_image {
+        width: 100%;
+        max-width: 700px;
+        aspect-ratio: 1;
+        margin-bottom: 15px;
+    }
+
 }
