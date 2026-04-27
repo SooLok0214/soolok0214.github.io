@@ -108,6 +108,7 @@
 
     /* Body Text-desktop & table & mobile */
     --bdt-state-number-size: 80px;
+    --bdt-percent_number-size: 50px;
     --bdt-date-font-size: 34px;
     --bdt-hero-subtitle-font-size: 28px;
     --bdt-illus-subtitle-font-size: 24px;
@@ -166,6 +167,7 @@
     --ft-tight-letter-spacing: -0.010em;
 
     /* Line Height */
+    --line-height-heading-extra: 1.7;
     --line-height-heading-medium: 1.6;
     --line-height-heading-normol: 1.4;
     --line-height-heading-light: 1.3;
