@@ -28,3 +28,27 @@
 .textarea:hover {
     border: 1.5px solid var(--color-secondary-green);
 }
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primary-white);
+    border-radius: var(--btn-radius-default);
+    padding: var(--btn-input-padding);
+}
+
+.subscribe_input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: var(--color-primary-white);
+    font-size: var(--bdt-btn-font-size);
+    font-family: "Bricolage Grotesque", sans-serif;
+    padding: var(--btn-input-padding);
+    margin: 0;
+}
+
+.subscribe_input:hover {
+    border-radius: var(--btn-radius-default);
+    border: 1.5px solid var(--color-secondary-green);
+}
