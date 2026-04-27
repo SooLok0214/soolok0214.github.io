@@ -19,7 +19,7 @@
     background-size: contain;
     background-position: top right;
     background-repeat: no-repeat;
-    background-color: (var(--color-footer-bg));
+    background-color: var(--color-footer-bg);
     width: 40%;
 }
 
