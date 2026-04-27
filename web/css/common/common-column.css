@@ -90,7 +90,9 @@
     .column-three-main,
     .column-four-main,
     .column-five-main {
-        width: 100%;
+        display: block;
+        flex: none;
+        width: 100% !important;
     }
 
     .column-two-main {

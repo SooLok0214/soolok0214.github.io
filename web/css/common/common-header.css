@@ -2,7 +2,6 @@
 /* === Navigation Menu soowenglok === */
 header {
     background-color: var(--color-header-bg);
-    padding: 0px 72px;
 }
 
 header img {
@@ -13,6 +12,7 @@ header img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 72px;
 }
 
 .menu-item a {
@@ -92,6 +92,10 @@ div.btn.menu-btn-mb {
 }
 
 @media only screen and (max-width: 1200px) {
+    .header {
+        padding: 0px 30px;
+    }
+
     #main-menu {
         display: none;
     }
