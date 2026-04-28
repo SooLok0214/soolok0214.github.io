@@ -1,21 +1,72 @@
 /* === button setting === soowenglok */
 .btn {
+    position: relative;
     display: inline-flex;
     align-items: center;
+    justify-content: cen ter;
     font-size: var(--bdt-btn-font-size);
     font-weight: var(--bdt-semibold-font-weight);
     letter-spacing: var(--bdt-ui-components-letter-spacing);
     padding: var(--btn-padding-big);
     border-radius: var(--btn-radius-default);
-    transition: transform 0.3s, background-color 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
     /* === sample use === */
     margin: 10px;
 }
 
-.btn i {
-    display: inline-block;
-    transition: transform 0.4s ease-out;
-    margin-left: 8px;
+.btn-white-arrow::before {
+    color: var(--color-btn-hover-white);
+    content: "\ea6a";
+    font-family: 'remixicon';
+    position: absolute;
+    left: -5px;
+    opacity: 0;
+    transition: all 0.4s ease;
+    font-size: var(--bdt-btn-font-size);
+}
+
+.btn-black-arrow::before {
+    color: var(--color-btn-hover-black);
+    content: "\ea6a";
+    font-family: 'remixicon';
+    position: absolute;
+    left: -5px;
+    opacity: 0;
+    transition: all 0.4s ease;
+    font-size: var(--bdt-btn-font-size);
+}
+
+.btn-green-arrow::before {
+    color: var(--color-btn-hover-green-dark);
+    content: "\ea6a";
+    font-family: 'remixicon';
+    position: absolute;
+    left: -5px;
+    opacity: 0;
+    transition: all 0.4s ease;
+    font-size: var(--bdt-btn-font-size);
+}
+
+.btn i,
+.btn a {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.btn:hover::before {
+    left: 20px;
+    opacity: 1;
+}
+
+.btn:hover a {
+    transform: translateX(12px);
+}
+
+.btn:hover i {
+    transform: translateX(-30px);
+    opacity: 0;
 }
 
 .btn-padding-small {
