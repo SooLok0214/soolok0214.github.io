@@ -80,6 +80,13 @@
     border-radius: var(--card-radius-default);
     padding: 107px 30px 80px 30px;
     margin-bottom: 60px;
+    position: relative;
+    z-index: -3;
+}
+
+.position {
+    position: relative;
+    z-index: 3;
 }
 
 .employee-card {
