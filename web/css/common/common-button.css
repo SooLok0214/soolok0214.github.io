@@ -168,7 +168,23 @@
 }
 
 .mb-full-width {
-    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--bdt-btn-font-size);
+    font-weight: var(--bdt-semibold-font-weight);
+    padding: var(--btn-padding-big);
+    border-radius: var(--btn-radius-default);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+    text-decoration: none;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.mb-full-width {
+    display: none;
 }
 
 @media only screen and (max-width: 820px) {
