@@ -2,7 +2,7 @@
 /* === Navigation Menu soowenglok === */
 header {
     background-color: var(--color-header-bg);
-    padding: 20px 72px;
+    padding: 10px 72px;
 }
 
 header img {
@@ -15,14 +15,6 @@ header img {
     align-items: center;
 }
 
-
-#main-menu {
-    width: 40%;
-}
-
-.menu-item {
-    margin: 2px 0px;
-}
 
 .menu-item a {
     color: var(--color-header-main-menu);
@@ -94,7 +86,7 @@ img.logo {
     cursor: pointer;
 }
 
-.ri-arrow-drop-down-line {
+.has-submenu-item a.ri-arrow-drop-down-line {
     font-size: 17px;
 }
 
@@ -117,7 +109,7 @@ div.btn.menu-btn-mb {
 }
 
 @media only screen and (max-width: 820px) {
-    div.btn {
+    div.header-right div.btn {
         display: none;
     }
 
