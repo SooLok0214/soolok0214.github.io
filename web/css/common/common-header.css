@@ -37,6 +37,7 @@ header img {
     text-underline-offset: 10px;
 }
 
+.menu-active,
 .menu-active a {
     text-decoration: underline 1px var(--color-secondary-green);
     text-underline-offset: 10px;
