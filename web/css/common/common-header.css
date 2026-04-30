@@ -2,7 +2,7 @@
 /* === Navigation Menu soowenglok === */
 header {
     background-color: var(--color-header-bg);
-    padding: 0px 72px;
+    padding: 20px 72px;
 }
 
 header img {
