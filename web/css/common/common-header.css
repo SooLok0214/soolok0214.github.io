@@ -46,7 +46,8 @@ header img {
     opacity: 0;
     position: absolute;
     transition: all 0.5s;
-    top: 120px;
+    top: 130px;
+    left: 42%;
     width: 200px;
     text-align: center;
 }
