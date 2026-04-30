@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 /* body setting & default soowenglok*/
 body {
     font-family: var(--font-family);
@@ -22,6 +21,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 0;
+    margin-top: 40px;
     gap: 30px;
 }
 
@@ -132,6 +132,14 @@ a {
 }
 
 @media only screen and (max-width: 1200px) {
+    .hero_container {
+        padding: 0;
+    }
+
+    .hero_card {
+        padding: 80px 40px;
+    }
+
     .section-part {
         margin: var(--tb-mb-body-padding);
     }
@@ -139,6 +147,13 @@ a {
 
 
 @media only screen and (max-width: 820px) {
+    .hero_image {
+        display: none;
+    }
+
+    .hero_title {
+        font-size: var(--mb-hd-herotitle-font-size);
+    }
 
     .row-flex-no-gap,
     .row-flex {
