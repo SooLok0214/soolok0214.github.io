@@ -92,7 +92,7 @@
     --hd-secondtitle-font-size: 36px;
     --hd-ctamaintitle-font-size: 28px;
     --hd-ctasecondtitle-font-size: 24px;
-    --hd-employeename-font-size: 24px;
+    --hd-employeename-font-size: var(--hd-ctasecondtitle-font-size);
     --hd-carddetailtitle-font-size: 18px;
     --hd-footertitle-font-size: var(--hd-carddetailtitle-font-size);
 
