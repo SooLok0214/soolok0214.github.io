@@ -40,13 +40,11 @@
     max-width: 200px;
 }
 
-.marking-yellow {
+.marking-yellow-green {
     color: var(--color-brand-green-soft);
     font-size: var(--ft-column-title-font-size);
     font-weight: var(--ft-medium-font-weight);
     letter-spacing: var(--ft-extratight-letter-spacing);
-    margin-bottom: 20px;
-    position: relative;
     z-index: 1;
 }
 
