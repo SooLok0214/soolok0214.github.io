@@ -1,13 +1,17 @@
 /* section_one */
 
-.section_one {
+.section_one,
+.section_two,
+.section_three {
     width: 100%;
-    padding: 96px 110px 0;
+    padding: 180px 110px 0;
     display: flex;
     justify-content: center;
 }
 
-.container_one {
+.container_one,
+.container_two,
+.container_three {
     width: 100%;
     max-width: 1440px;
     padding: 0 30px;
@@ -115,19 +119,6 @@
 
 
 /* section_two */
-
-.section_two {
-    width: 100%;
-    padding: 96px 110px 0;
-    display: flex;
-    justify-content: center;
-}
-
-.container_two {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 30px;
-}
 
 .section_two_header {
     display: flex;
@@ -286,19 +277,6 @@
 
 /* section_three */
 
-.section_three {
-    width: 100%;
-    padding: 96px 110px 0;
-    display: flex;
-    justify-content: center;
-}
-
-.container_three {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 30px;
-}
-
 .blog_list_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -375,7 +353,7 @@
 
 .section_four {
     width: 100%;
-    padding: 96px 110px 0;
+    padding: 180px 110px 96px;
     display: flex;
     justify-content: center;
 }
@@ -421,7 +399,7 @@
 .card_inner {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 70%;
 }
 
 .card_inner h5,
@@ -504,15 +482,30 @@
     margin-top: 40px;
 }
 
+.bottom_title:hover,
+.four_bg_green h5:hover {
+    text-decoration: underline;
+    color: var(--color-gray-light);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    transition: all 0.3s ease;
+}
 
 
 @media (max-width: 1200px) {
-    .section_one {
+
+    .section_one,
+    .section_two,
+    .section_three {
         padding: 96px 30px 0;
     }
 
-    .container_one {
+    .container_one,
+    .container_two,
+    .container_three,
+    .container_four {
         max-width: 1200px;
+        padding: 0;
     }
 
     .content_group {
@@ -536,15 +529,6 @@
 
     /* section_two */
 
-    .section_two {
-        padding: 96px 30px 0;
-    }
-
-    .container_two {
-        max-width: 1200px;
-        padding: 0;
-    }
-
     .news_grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -566,16 +550,6 @@
 
     /* section_three */
 
-    .section_three {
-        padding: 96px 30px 0;
-    }
-
-    .container_three {
-        max-width: 100%;
-        padding: 0;
-    }
-
-
     .blog_list_grid {
         column-gap: 60px;
         row-gap: 60px;
@@ -591,11 +565,7 @@
     /* section_four */
 
     .section_four {
-        padding: 96px 30px 0;
-    }
-
-    .container_four {
-        max-width: 100%;
+        padding: 96px 30px;
     }
 
     .hero_banner {
