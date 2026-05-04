@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    align-items: center;
     padding-bottom: 96px;
 }
 
@@ -21,6 +22,11 @@
     letter-spacing: var(--hd-letter-spacing);
     line-height: var(--line-height-heading-light);
     color: var(--color-heading-text-black);
+}
+
+.header_logo {
+    width: 200px;
+    margin: 0 100px;
 }
 
 .content_grid {
@@ -124,7 +130,12 @@
     align-items: flex-start;
     padding: 32px 48px;
     margin: 0 18px;
-    border-left: 1px solid #e0e0e0;
+    border-left: 1px solid var(--color-gray-light);
+    transition: all 0.3s ease;
+}
+
+.service_item:hover {
+    border-color: var(--color-secondary-green);
 }
 
 .icon_box {
@@ -136,6 +147,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.icon_box:hover {
+    background-color: color-mix(in srgb, var(--color-white-light), transparent 80%);
 }
 
 .icon_box img {
@@ -177,6 +192,7 @@
     width: 100%;
     max-width: 1220px;
     background-color: var(--color-green);
+    z-index: -1;
     padding: 32px 80px 80px;
     border-radius: 30px;
     position: relative;
@@ -184,24 +200,13 @@
     color: var(--color-heading-text-white);
 }
 
-.tagline {
-    position: relative;
+.marking-green {
     display: inline-block;
     font-size: var(--bdt-card-bodytext-font-size);
     font-weight: var(--bdt-regular-font-weight);
     letter-spacing: var(--bdt-tight-letter-spacing);
     color: var(--color-brand-green-soft);
     margin-bottom: 24px;
-}
-
-.tagline:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    border-top: 12px solid color-mix(in srgb, var(--color-yellow), transparent 80%);
-    width: 100%;
-    z-index: 0;
 }
 
 .section_title {
@@ -284,7 +289,7 @@
     margin-bottom: 60px;
 }
 
-.tagline {
+.marking-yellow {
     display: inline-block;
     position: relative;
     font-size: var(--bdt-card-bodytext-font-size);
@@ -292,17 +297,6 @@
     letter-spacing: var(--bdt-tight-letter-spacing);
     color: var(--color-body-text-black);
     margin-bottom: 15px;
-    z-index: 1;
-}
-
-.tagline:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    border-top: 12px solid color-mix(in srgb, var(--color-yellow), transparent 60%);
-    width: 100%;
-    z-index: -1;
 }
 
 .section_four_title {
