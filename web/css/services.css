@@ -177,7 +177,7 @@
     margin: 100px 0px;
 }
 
-.row-flex.section-four-wrapper {
+.section-four-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
