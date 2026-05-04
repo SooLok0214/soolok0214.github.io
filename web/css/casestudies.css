@@ -201,7 +201,6 @@
 }
 
 .marking-green {
-    display: inline-block;
     font-size: var(--bdt-card-bodytext-font-size);
     font-weight: var(--bdt-regular-font-weight);
     letter-spacing: var(--bdt-tight-letter-spacing);
@@ -290,7 +289,6 @@
 }
 
 .marking-yellow {
-    display: inline-block;
     position: relative;
     font-size: var(--bdt-card-bodytext-font-size);
     font-weight: var(--bdt-regular-font-weight);
