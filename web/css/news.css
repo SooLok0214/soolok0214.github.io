@@ -306,6 +306,37 @@
         flex: 1;
         height: auto;
     }
+
+
+
+    /* section_two */
+
+    .section_two {
+        padding: 96px 30px 0;
+    }
+
+    .container_two {
+        max-width: 1200px;
+        padding: 0;
+    }
+
+    .news_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+    }
+
+    .card_image {
+        height: 520px;
+    }
+
+    .date_badge {
+        width: 133px;
+        right: 15px;
+        bottom: 15px;
+        padding: 8px 10px;
+    }
+
 }
 
 
@@ -336,4 +367,49 @@
     .info_column {
         flex: 0 0 100%;
     }
+
+
+
+    /* section_two */
+
+    .section_two {
+        padding: 96px 30px 0;
+    }
+
+    .container_two {
+        max-width: 100%;
+    }
+
+    .section_two_header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .main_title {
+        font-size: var(--mb-hd-maintitle-font-size);
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .news_grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .card_image {
+        height: 760px;
+    }
+
+    .date_badge {
+        width: 277px;
+        padding: 10px 15px;
+        right: 56px;
+        bottom: 30px;
+    }
+
 }
