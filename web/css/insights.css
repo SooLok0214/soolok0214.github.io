@@ -71,7 +71,7 @@
     font-size: 48px;
 }
 
-h5 {
+.talent-recruit-card h5 {
     max-width: 300px;
     text-align: center;
     margin-bottom: 10px;
@@ -141,8 +141,123 @@ h5 {
 }
 
 
+.section-three {
+    margin: 100px 0px;
+}
+
+.section-three-header {
+    margin-bottom: 40px;
+}
+
+.section-three-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
 
 
+
+.blog-card {
+    flex: 1;
+    background-color: var(--color-white-light);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-image-box {
+    position: relative;
+    width: 100%;
+    height: 361px;
+}
+
+.blog-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.date-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-brand-yellow);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 70px;
+}
+
+.date-day {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-black);
+}
+
+.date-month {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-black);
+}
+
+.blog-content-card {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.secondary-green-font {
+    color: var(--color-secondary-green);
+}
+
+.category-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.blog-content-card h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: auto;
+}
+
+.section-four {
+    margin: 0px 0px 100px 0px;
+}
+
+.newsletter-card {
+    background-color: var(--color-brand-yellow);
+    border-radius: 30px;
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.newsletter-content p {
+    text-align: center;
+    color: var(--color-gray-hard);
+    margin-bottom: 40px;
+}
+
+.subscribe div.btn {
+    margin-left: 20px
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .blog-image-box {
+        height: 420px;
+    }
+}
 
 @media only screen and (max-width: 820px) {
     .section-one-wrapper {
@@ -155,10 +270,38 @@ h5 {
 
     .spotlight-active-title {
         padding: 0 25px;
-        font-size: 14px;
     }
 
-    h5 {
+    .talent-recruit-card h5 {
         max-width: 600px;
+    }
+
+    .section-three-wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .blog-image-box {
+        height: 520px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        gap: 25px;
+        background-color: white;
+    }
+
+    .subscribe_input {
+        width: 100%;
+        text-align: left;
+    }
+
+    .subscribe .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .subscribe div.btn {
+        margin-left: 0px
     }
 }
