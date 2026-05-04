@@ -1,0 +1,116 @@
+/* section_one */
+
+.section_one {
+    width: 100%;
+    padding: 96px 110px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container_one {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 30px;
+}
+
+.content_group {
+    display: flex;
+    align-items: stretch;
+}
+
+.image_column {
+    flex: 65%;
+}
+
+.image_column img {
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    display: block;
+}
+
+.info_column {
+    flex: 32%;
+    background-color: var(--color-mint-green);
+    border-radius: 20px;
+    margin: 0 18px;
+    padding: 40px 56px;
+    display: flex;
+    align-items: center;
+}
+
+.info_content {
+    width: 100%;
+}
+
+.overview_title {
+    font-size: var(--hd-ctasecondtitle-font-size);
+    font-weight: var(--hd-medium-font-weight);
+    letter-spacing: var(--hd-letter-spacing);
+    line-height: var(--line-height-heading-normol);
+    color: var(--color-body-text-black);
+    margin-bottom: 25px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.overview_title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 100%;
+    height: 10px;
+    background-color: #fdf59a;
+    z-index: -1;
+}
+
+.overview_text {
+    font-size: var(--bdt-profile-info-font-size);
+    font-weight: var(--bdt-light-font-weight);
+    letter-spacing: var(--bdt-tight-letter-spacing);
+    line-height: var(--line-height-heading-extra);
+    color: var(--color-body-text-black);
+    margin-bottom: 40px;
+}
+
+.section_one_detail {
+    margin-bottom: 35px;
+}
+
+.detail_title {
+    display: block;
+    font-size: var(--bdt-profile-info-font-size);
+    font-weight: var(--hd-medium-font-weight);
+    letter-spacing: var(--hd-letter-spacing);
+    line-height: var(--line-height-heading-normol);
+    color: var(--color-heading-text-black);
+    text-decoration: underline;
+    margin-bottom: 12px;
+}
+
+.detail_text {
+    font-size: var(--bdt-btn-font-size);
+    font-weight: var(--bdt-light-font-weight);
+    letter-spacing: var(--bdt-tight-letter-spacing);
+    color: var(--color-heading-text-black);
+    margin-bottom: 30px;
+}
+
+.highlight {
+    color: var(--color-secondary-green);
+
+}
+
+.highlight:hover {
+    color: var(--color-heading-text-black);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    transition: all 0.3s ease;
+}
+
+
+
+/* section_two */
