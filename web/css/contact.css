@@ -161,7 +161,7 @@
 }
 
 .form-title {
-    font-size: var(--hd-ctasecondtitle-font-size);
+    font-size: var(--hd-ctamaintitle-font-size);
     font-weight: var(--hd-medium-font-weight);
     letter-spacing: var(--hd-letter-spacing);
     line-height: var(--line-height-heading-light);
@@ -232,7 +232,21 @@
 
     /* section_two */
 
+    .section_two {
+        padding: 96px 30px 0;
+    }
 
+    .container_two {
+        gap: 40px;
+    }
+
+    .form-grid {
+        gap: 12px;
+    }
+
+
+
+    /* section_three */
 
 }
 
@@ -279,5 +293,28 @@
 
 
     /* section_two */
+
+    .section_two {
+        padding: 96px 30px 0;
+    }
+
+    .container_two {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .input-group {
+        grid-column: 1;
+    }
+
+
+
+    /* section_three */
+
 
 }
