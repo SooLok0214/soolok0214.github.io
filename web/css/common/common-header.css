@@ -19,7 +19,7 @@ header img {
 .menu-item a {
     color: var(--color-header-main-menu);
     font-size: var(--bdt-ui-content-font-size);
-    font-weight: var(--bdt-semibold-font-weight);
+    font-weight: var(--bdt-medium-font-weight);
     letter-spacing: var(--bdt-tight-letter-spacing);
     line-height: 1.0;
 }
