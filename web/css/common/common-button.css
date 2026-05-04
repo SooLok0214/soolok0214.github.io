@@ -29,6 +29,8 @@
     z-index: 3;
 }
 
+.btn-underline-default i,
+.btn-underline-default a,
 .btn i,
 .btn a {
     transition: transform 0.3s ease, opacity 0.4s ease;
@@ -45,6 +47,7 @@
 .btn-green-arrow::before {
     color: var(--color-btn-hover-green-dark);
 }
+
 
 .btn:hover::before {
     transform: translateX(-75px);
@@ -131,6 +134,34 @@
 }
 
 /* === button underline section === */
+.btn-underline-default {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--bdt-btn-font-size);
+    font-weight: var(--bdt-semibold-font-weight);
+    letter-spacing: var(--bdt-ui-components-letter-spacing);
+    padding: 15px 5px;
+    border-radius: var(--btn-radius-default);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-underline-default:hover::before {
+    transform: translateX(-95px);
+    opacity: 1;
+}
+
+.btn-underline-default:hover a {
+    transform: translateX(20px);
+}
+
+.btn-underline-default:hover i {
+    transform: translateX(1000px);
+    opacity: 0;
+}
+
 .btn-underline {
     border: none;
     box-shadow: 0px 2px 0px var(--color-gray-hard);
@@ -138,7 +169,7 @@
 }
 
 .btn-underline:hover {
-    box-shadow: 0px 2px 0px var(--color-btn-default-black);
+    box-shadow: 0px 2px 0px var(--color-btn-hover-green-dark);
 }
 
 .btn-transparent {
