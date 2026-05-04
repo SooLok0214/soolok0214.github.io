@@ -1,5 +1,5 @@
 .section-one {
-    margin: 60px 0px;
+    margin: 100px 0px;
 }
 
 .section-one-wrapper {
@@ -70,10 +70,6 @@
     font-weight: 600;
     line-height: 1.4;
     white-space: normal;
-}
-
-.section-two {
-    padding: 60px 0;
 }
 
 .section-two-header {
@@ -160,7 +156,7 @@
 
 
 .section-three {
-    padding: 80px 0;
+    margin: 100px 0;
 }
 
 .section-three-wrapper {
@@ -205,7 +201,7 @@
 
 
 .section-four {
-    padding: 60px 0;
+    margin-bottom: 100px;
 }
 
 .section-four-wrapper {
