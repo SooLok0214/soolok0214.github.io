@@ -65,7 +65,11 @@
 }
 
 
-
+.section-two {
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
 
 .section-two-wrapper {
     display: flex;
@@ -169,7 +173,9 @@
 
 
 
-
+.section-four {
+    margin: 100px 0px;
+}
 
 .row-flex.section-four-wrapper {
     display: flex;
