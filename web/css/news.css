@@ -371,6 +371,142 @@
 
 
 
+
+
+
+
+.section_four {
+    width: 100%;
+    padding: 96px 110px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container_four {
+    width: 100%;
+    max-width: 1440px;
+}
+
+
+.hero_banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+
+.hero_banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.info_card {
+    height: 387px;
+    border-radius: 20px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_inner h5,
+.bottom_title {
+    font-weight: var(--hd-medium-font-weight);
+    letter-spacing: var(--hd-letter-spacing);
+    line-height: var(--line-height-heading-normol);
+}
+
+
+/* 颜色定义 */
+.four_bg_green {
+    background-color: var(--color-secondary-green);
+}
+
+.four_bg_yellow {
+    background-color: var(--color-yellow);
+}
+
+.four_bg_dark_green {
+    background-color: var(--color-deep-green);
+}
+
+/* bg_green */
+
+.four_bg_green h5 {
+    font-size: var(--bdt-hero-subtitle-font-size);
+    color: var(--color-heading-text-white);
+    margin-top: 10px;
+}
+
+.line_separator {
+    width: 50px;
+    height: 1px;
+    background-color: var(--color-gray-light);
+    margin-top: 20px;
+}
+
+.icon_box img {
+    width: 91px;
+    margin-top: 40px;
+}
+
+.four_bg_green p {
+    font-size: var(--bdt-btn-font-size);
+    font-weight: var(--bdt-regular-font-weight);
+    letter-spacing: var(--bdt-tight-letter-spacing);
+    line-height: var(--line-height-heading-medium);
+    color: var(--color-btn-text-white);
+    margin-top: 20px;
+}
+
+
+/* bg_yellow */
+
+.four_bg_yellow h5 {
+    font-size: var(--hd-ctasecondtitle-font-size);
+    color: var(--color-heading-text-black);
+    width: 90%;
+    margin-bottom: 60px;
+    margin-top: 10px;
+}
+
+/* bg_dark_gree*/
+
+.four_bg_dark_green .top_text {
+    font-size: var(--bdt-card-bodytext-font-size);
+    color: var(--color-btn-text-white);
+    margin-top: 10px;
+}
+
+
+.arrow_icon {
+    font-size: 60px;
+    color: var(--color-heading-text-white);
+    margin-top: 60px;
+    border-bottom: 1px solid var(--color-primary-white);
+    width: 70px;
+}
+
+
+.bottom_title {
+    font-size: var(--bdt-hero-subtitle-font-size);
+    color: var(--color-heading-text-white);
+    margin-top: 40px;
+}
+
+
+
 @media (max-width: 1200px) {
     .section_one {
         padding: 96px 30px 0;
