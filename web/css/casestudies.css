@@ -200,7 +200,7 @@
     color: var(--color-heading-text-white);
 }
 
-.marking-green {
+.marking-yellow-green {
     font-size: var(--bdt-card-bodytext-font-size);
     font-weight: var(--bdt-regular-font-weight);
     letter-spacing: var(--bdt-tight-letter-spacing);
