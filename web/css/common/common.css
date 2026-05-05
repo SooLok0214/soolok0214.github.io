@@ -126,7 +126,7 @@ a {
     position: absolute;
     left: 0;
     bottom: -2px;
-    border-top: 12px solid color-mix(in srgb, var(--color-secondary-green), transparent 60%);
+    border-top: 12px solid color-mix(in srgb, var(--color-brand-green-soft), transparent 80%);
     width: 100%;
     z-index: -10;
 }
@@ -170,6 +170,35 @@ a {
     z-index: -10;
 }
 
+
+.highlight {
+    color: var(--color-secondary-green);
+
+}
+
+.highlight:hover {
+    color: var(--color-body-text-black);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    transition: all 0.3s ease;
+}
+
+
+.card-title {
+    font-size: var(--bdt-banner-subtitle-font-size);
+    font-weight: var(--hd-medium-font-weight);
+    letter-spacing: var(--hd-letter-spacing);
+    line-height: var(--line-height-heading-light);
+    color: var(--color-heading-text-black);
+}
+
+.card-title:hover {
+    color: var(--color-body-text-black);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
 
 @media only screen and (max-width: 1200px) {
     .hero-container {

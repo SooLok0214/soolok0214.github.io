@@ -163,10 +163,8 @@
 
 .container-three {
     background-color: var(--color-green);
-    z-index: -1;
     padding: 32px 80px 80px;
     border-radius: 30px;
-    position: relative;
     text-align: center;
     color: var(--color-heading-text-white);
 }
