@@ -1,4 +1,4 @@
-/* Headings katherineang*/
+﻿/* Headings katherineang*/
 
 h1,
 h2,
@@ -65,7 +65,7 @@ p {
     color: var(--color-black-light);
 }
 
-.date .hero_subtitle,
+.date .hero-subtitle,
 .illus-subtitle,
 .card-content,
 .banner-bodytext {
@@ -88,7 +88,7 @@ p {
 }
 
 .date,
-.hero_subtitle .illus-subtitle,
+.hero-subtitle .illus-subtitle,
 .card-content {
     font-weight: var(--bdt-medium-font-weight);
 }
@@ -112,7 +112,7 @@ p {
     font-size: var(--bdt-date-font-size);
 }
 
-.hero_subtitle {
+.hero-subtitle {
     font-size: var(--bdt-hero-subtitle-font-size);
 }
 

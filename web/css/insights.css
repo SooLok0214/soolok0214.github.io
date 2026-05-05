@@ -1,4 +1,4 @@
-@import url("common/common-variables.css");
+﻿@import url("common/common-variables.css");
 
 .section-one {
     margin: 100px 0;
@@ -291,7 +291,7 @@
         background-color: white;
     }
 
-    .subscribe_input {
+    .subscribe-input {
         width: 100%;
         text-align: left;
     }
