@@ -1,4 +1,4 @@
-/* Footer katherineang*/
+﻿/* Footer katherineang*/
 /* === input katherineang === */
 .form-title {
     font-size: 24px;
@@ -73,7 +73,7 @@
     padding: var(--btn-input-padding);
 }
 
-.subscribe_input {
+.subscribe-input {
     flex: 1;
     border: none;
     outline: none;
@@ -83,7 +83,7 @@
     margin: 0;
 }
 
-.subscribe_input:hover {
+.subscribe-input:hover {
     border-radius: var(--btn-radius-default);
     border: 1.5px solid var(--color-secondary-green);
 }
