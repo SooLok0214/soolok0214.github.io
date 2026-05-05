@@ -1,7 +1,3 @@
-.section-one {
-    margin: 100px 0px;
-}
-
 .section-one-wrapper {
     display: flex;
     justify-content: space-between;
@@ -154,11 +150,6 @@
 
 
 
-
-.section-three {
-    margin: 100px 0;
-}
-
 .section-three-wrapper {
     display: flex;
     justify-content: space-between;
@@ -198,11 +189,6 @@
     max-width: 350px;
 }
 
-
-
-.section-four {
-    margin-bottom: 100px;
-}
 
 .section-four-wrapper {
     display: flex;

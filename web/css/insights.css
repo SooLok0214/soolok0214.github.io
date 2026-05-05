@@ -1,9 +1,5 @@
 ﻿@import url("common/common-variables.css");
 
-.section-one {
-    margin: 100px 0;
-}
-
 .spotlight-bar {
     display: flex;
     width: 100%;
@@ -140,11 +136,6 @@
     line-height: 1;
 }
 
-
-.section-three {
-    margin: 100px 0px;
-}
-
 .section-three-header {
     margin-bottom: 40px;
 }
@@ -222,10 +213,6 @@
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: auto;
-}
-
-.section-four {
-    margin: 0px 0px 100px 0px;
 }
 
 .newsletter-card {

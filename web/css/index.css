@@ -20,10 +20,6 @@
     color: var(--color-secondary-green);
 }
 
-.two-section {
-    margin: 100px 0px;
-}
-
 .section-header {
     margin-bottom: 60px;
 }
@@ -79,11 +75,10 @@
     margin-bottom: 10px;
 }
 
-.three-section {
+.section-three {
     background-color: var(--color-white-light);
     border-radius: var(--card-radius-default);
     padding: 107px 30px 80px 30px;
-    margin-bottom: 60px;
     position: relative;
     z-index: -3;
 }
@@ -119,7 +114,7 @@
     margin: 10px;
 }
 
-.four-section {
+.section-four {
     display: flex;
     flex-direction: column;
     align-items: center;
