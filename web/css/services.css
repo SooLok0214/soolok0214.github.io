@@ -7,10 +7,6 @@
     width: 100%;
 }
 
-.section-one {
-    margin: 100px 0px;
-}
-
 .section-header-sect1 {
     margin-bottom: 60px;
 }
@@ -136,12 +132,6 @@
 }
 
 
-
-
-.section-three {
-    margin: 100px 0px;
-}
-
 .section-three-wrapper {
     display: flex;
     justify-content: space-between;
@@ -171,11 +161,6 @@
     max-width: 500px;
 }
 
-
-
-.section-four {
-    margin: 100px 0px;
-}
 
 .section-four-wrapper {
     display: flex;
