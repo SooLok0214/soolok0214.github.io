@@ -142,11 +142,11 @@
 }
 
 
-/* section-three */
-
+/* section-two */
 
 .section-two {
     background-color: var(--color-white-light);
+    padding: 96px 60px;
     border-radius: 20px;
 }
 
@@ -250,9 +250,10 @@
 }
 
 
-/* section-four */
+/* section-three */
 
 .section-three-header {
+    width: 97%;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -390,7 +391,11 @@
 }
 
 
-/* section-five */
+/* section-four */
+
+.section-four {
+    text-align: center;
+}
 
 .section-four-header {
     margin-bottom: 70px;
@@ -418,7 +423,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20px;
+    gap: 100px;
     margin: 0 auto;
 }
 
@@ -431,7 +436,7 @@
 }
 
 .award-images {
-    width: 140px;
+    width: 150px;
     height: auto;
     margin-bottom: 25px;
     opacity: 0.8;
@@ -445,7 +450,7 @@
 
 @media (max-width: 1200px) {
 
-    /* section-two */
+    /* section-one */
 
     .text h4,
     .text p {
@@ -502,7 +507,7 @@
         margin: 0;
     }
 
-    /* section-three */
+    /* section-two */
 
     .two-header {
         grid-template-columns: repeat(2, 1fr);
@@ -521,7 +526,7 @@
         padding: 0;
     }
 
-    /* section-four */
+    /* section-three */
 
     .stats-grid {
         display: grid;
@@ -534,12 +539,25 @@
         max-width: 100%;
     }
 
+
+
+    /* section-four */
+
+    .awards-grid {
+        gap: 25px;
+        width: 95%;
+    }
+
+    .award-images {
+        width: 80%;
+        height: auto;
+    }
 }
 
 
 @media (max-width: 820px) {
 
-    /* section-two */
+    /* section-one */
     .container {
         max-width: 100%;
         padding: 0;
@@ -587,7 +605,7 @@
     }
 
 
-    /* section-three */
+    /* section-two */
 
     .two-header {
         display: flex;
@@ -652,4 +670,8 @@
         gap: 50px;
     }
 
+    .award-images {
+        width: 150px;
+        height: auto;
+    }
 }
