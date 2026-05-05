@@ -68,6 +68,14 @@ body {
     margin: var(--dt-body-padding);
 }
 
+.section-one,
+.section-two,
+.section-three,
+.section-four {
+    margin: 100px 0;
+}
+
+
 img {
     border-radius: 20px;
 }
