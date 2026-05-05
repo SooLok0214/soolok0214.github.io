@@ -1,11 +1,11 @@
 .container-one {
-    width: 100%;
-    max-width: 1440px;
     height: 600px;
     display: flex;
     background-color: var(--color-white-light);
     border-radius: 20px;
     overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -21,27 +21,16 @@
 
 .top-arrow i {
     font-size: 200px;
-    margin-bottom: 40px;
     color: var(--color-gray-light);
     display: inline-block;
     margin-left: -50px;
+    margin-top: -50px;
 }
 
 
 .top-arrow img {
     width: 100%;
 }
-
-.marking-green {
-    position: relative;
-    font-size: var(--bdt-card-bodytext-font-size);
-    font-weight: var(--bdt-regular-font-weight);
-    letter-spacing: var(--bdt-tight-letter-spacing);
-    color: var(--color-body-text-black);
-    margin-bottom: 15px;
-    z-index: 1;
-}
-
 
 .main-title {
     font-size: var(--hd-maintitle-font-size);
@@ -50,6 +39,7 @@
     line-height: var(--line-height-heading-light);
     color: var(--color-heading-text-black);
     margin-bottom: 30px;
+    margin-top: 15px;
 }
 
 
@@ -83,8 +73,6 @@
 /* section-two */
 
 .container-two {
-    width: 100%;
-    max-width: 1440px;
     display: grid;
     grid-template-columns: 1fr 2.1fr;
     gap: 50px;
@@ -101,17 +89,7 @@
     color: var(--color-heading-text-black);
 }
 
-.marking-yellow {
-    position: relative;
-    font-size: var(--bdt-card-bodytext-font-size);
-    font-weight: var(--bdt-regular-font-weight);
-    letter-spacing: var(--bdt-tight-letter-spacing);
-    color: var(--color-body-text-black);
-    margin-bottom: 15px;
-    bottom: 4px;
-}
-
-.marking-yellow::after {
+.contact-info .marking-yellow::after {
     bottom: 2px;
 }
 
@@ -122,6 +100,7 @@
     letter-spacing: var(--bdt-tight-letter-spacing);
     color: var(--color-body-text-black);
     margin-bottom: 40px;
+    margin-top: 15px;
 }
 
 .info-block p {
@@ -196,8 +175,6 @@
 /* section-three */
 
 .container-three {
-    width: 100%;
-    max-width: 1440px;
     background-color: var(--color-secondary-green);
     border-radius: 20px;
     display: flex;
@@ -275,14 +252,6 @@
 
 /* section-four */
 
-.container-four {
-    width: 100%;
-    max-width: 1440px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .faq-header {
     text-align: center;
     margin-bottom: 40px;
@@ -294,20 +263,7 @@
     letter-spacing: var(--hd-letter-spacing);
     line-height: var(--line-height-heading-light);
     color: var(--color-heading-text-black);
-}
-
-.marking-yellow {
-    position: relative;
-    font-size: var(--bdt-card-bodytext-font-size);
-    font-weight: var(--bdt-regular-font-weight);
-    letter-spacing: var(--bdt-tight-letter-spacing);
-    color: var(--color-body-text-black);
-    margin-bottom: 15px;
-}
-
-
-.marking-yellow::after {
-    bottom: -3px;
+    margin-top: 20px;
 }
 
 .faq-grid {
@@ -371,16 +327,6 @@
 }
 
 @media (max-width: 1200px) {
-
-    .content-box {
-        padding: 0 20px;
-    }
-
-    .container-one {
-        max-width: 1200px;
-    }
-
-
 
     /* section-two */
 

@@ -12,15 +12,6 @@
     border-bottom: 1px solid var(--color-gray-light);
 }
 
-.marking-yellow {
-    font-size: var(--bdt-card-bodytext-font-size);
-    font-weight: var(--bdt-regular-font-weight);
-    letter-spacing: var(--bdt-tight-letter-spacing);
-    color: var(--color-black-light);
-    position: relative;
-    z-index: 1;
-}
-
 .heading {
     font-size: var(--hd-maintitle-font-size);
     font-weight: var(--hd-medium-font-weight);
@@ -148,6 +139,8 @@
     background-color: var(--color-white-light);
     padding: 96px 60px;
     border-radius: 20px;
+    position: relative;
+    z-index: -1;
 }
 
 .two-header {
@@ -163,14 +156,6 @@
     justify-content: flex-start;
     padding: 24px 72px 0 0;
     margin: 0 19px;
-}
-
-.marking-yellow {
-    font-size: var(--bdt-card-bodytext-font-size);
-    font-weight: var(--bdt-regular-font-weight);
-    letter-spacing: var(--bdt-tight-letter-spacing);
-    position: relative;
-    z-index: 1;
 }
 
 .two-heading {
@@ -256,24 +241,6 @@
     width: 97%;
     margin-bottom: 50px;
     text-align: center;
-}
-
-.three-subtitle {
-    font-size: var(--bdt-card-bodytext-font-size);
-    font-weight: var(--bdt-regular-font-weight);
-    letter-spacing: var(--bdt-tight-letter-spacing);
-    color: var(--color-body-text-black);
-    position: relative;
-}
-
-.three-subtitle:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    border-top: 10px solid color-mix(in srgb, var(--color-yellow), transparent 60%);
-    width: 100%;
-    z-index: -10;
 }
 
 .three-heading {

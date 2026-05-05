@@ -73,6 +73,8 @@ body {
 .section-three,
 .section-four {
     margin: 100px 0;
+    display: flex;
+    justify-content: center;
 }
 
 img {
@@ -111,6 +113,10 @@ a {
 }
 
 .marking-green {
+    font-size: var(--bdt-card-bodytext-font-size);
+    font-weight: var(--bdt-regular-font-weight);
+    letter-spacing: var(--bdt-tight-letter-spacing);
+    color: var(--color-body-text-black);
     position: relative;
     display: inline-block;
 }
@@ -126,6 +132,10 @@ a {
 }
 
 .marking-yellow {
+    font-size: var(--bdt-card-bodytext-font-size);
+    font-weight: var(--bdt-regular-font-weight);
+    letter-spacing: var(--bdt-tight-letter-spacing);
+    color: var(--color-body-text-black);
     position: relative;
     display: inline-block;
 }
@@ -142,6 +152,10 @@ a {
 
 
 .marking-yellow-green {
+    font-size: var(--bdt-card-bodytext-font-size);
+    font-weight: var(--bdt-regular-font-weight);
+    letter-spacing: var(--bdt-tight-letter-spacing);
+    color: var(--color-brand-green-soft);
     position: relative;
     display: inline-block;
 }
