@@ -1,0 +1,168 @@
+/* === Header Original Base === */
+header {
+    background-color: var(--color-header-bg);
+    padding: 0px 72px;
+    position: relative;
+    z-index: 999;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item a {
+    color: var(--color-header-main-menu);
+    font-size: var(--bdt-ui-content-font-size);
+    font-weight: var(--bdt-medium-font-weight);
+    padding: 0 15px;
+}
+
+.fa-bars-staggered {
+    color: var(--color-main-black);
+    font-size: 38px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fa-bars-staggered:hover {
+    color: var(--color-secondary-green);
+}
+
+/* === Burger Menu Overlay Logic === */
+.burger-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 28, 28, 0.96);
+    /* 变黑带透明度 */
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+
+    /* 淡淡出现的效果 */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.burger-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.burger-content-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    padding: 100px 60px;
+    position: relative;
+    /* 从右侧淡淡出来的位移效果 */
+    transform: translateX(30px);
+    transition: transform 0.6s ease-out;
+}
+
+.burger-menu-overlay.active .burger-content-wrapper {
+    transform: translateX(0);
+}
+
+/* === Burger Elements Styles === */
+.burger-close-area {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.burger-close-btn {
+    font-size: 48px;
+    color: #888;
+    cursor: pointer;
+}
+
+.burger-close-btn:hover {
+    color: white;
+}
+
+.vertical-divider {
+    width: 1px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0 60px;
+}
+
+.burger-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.burger-nav-links a {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.burger-nav-links a:hover {
+    color: var(--color-secondary-green);
+}
+
+.brand-green-soft-font {
+    color: var(--color-brand-green-soft);
+}
+
+.secondary-green-font {
+    color: var(--color-secondary-green) !important;
+}
+
+.underline-text {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.burger-image-container {
+    width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.burger-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* === Responsive === */
+@media only screen and (max-width: 1200px) {
+    header {
+        padding: 0px 30px;
+    }
+
+    #main-menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .burger-main-row {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .vertical-divider,
+    .burger-image-column {
+        display: none;
+    }
+
+    .burger-nav-links a {
+        font-size: 28px;
+    }
+
+    .burger-content-wrapper {
+        padding: 80px 30px;
+    }
+}
