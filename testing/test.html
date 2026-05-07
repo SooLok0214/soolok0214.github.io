@@ -1,83 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/test.css" />
-    <script src="https://kit.fontawesome.com/468b895245.js" crossorigin="anonymous"></script>
-    <title>Common Sample</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .submenu {
+            opacity: 0;
+            /* make submenu not visible */
+            position: absolute;
+            pointer-events: none;
+            /* make the submenu not hoverable or clickable */
+            transition: all 0.5s;
+            /* transition effect */
+        }
+
+        .submenu a {
+            display: block;
+            /* make second link to next line */
+            padding: 5px;
+        }
+
+        .has-submenu>a::after {
+            content: "⇂";
+            margin-left: 2px;
+        }
+
+        .has-submenu:hover>.submenu {
+            opacity: 1;
+            /* visible when hover menu item */
+            pointer-events: auto;
+            /* make the submenu hoverable/clickable again */
+        }
+    </style>
 </head>
 
 <body>
-    <!--column-->
-    <div class="card max-width">
-        <h3>2 Columns (Main Gap: 66px)</h3>
-        <div class="row-flex gap-two-main">
-            <div class="column-two box">Two Columns on Desktop/Tablet/Mobile</div>
-            <div class="column-two box">Two Columns on Desktop/Tablet/Mobile </div>
+    <div class="menu">
+        <a href="#">Home</a>
+        <div class="has-submenu">
+            <a href="#">About</a>
+            <div class="submenu">
+
+                <a href="#">Our Mission</a>
+                <a href="#">Our CEO</a>
+            </div>
         </div>
+        <div class="has-submenu">
+            <a href="#">Services</a>
+            <div class="submenu">
+                <a href="#">Web Development</a>
+                <a href="#">App Development</a>
+            </div>
+        </div>
+        <a href="#">Contact</a>
     </div>
 
-    <div class="card max-width">
-        <h3>2 Columns (Secandary Gap: 30px)</h3>
-        <div class="row-flex gap-two-secandary">
-            <div class="column-two-secondary box">1</div>
-            <div class="column-two-secondary box">2</div>
-        </div>
-    </div>
-    <div class="card max-width">
-        <h3>2 Columns (Special Main Gap: 92px)</h3>
-        <div class="row-flex gap-two-special-main">
-            <div class="column-two-specaial-main box">1</div>
-            <div class="column-two-specaial-main box">2</div>
-        </div>
-    </div>
-    <div class="card max-width">
-        <h3>2 Columns (Special Secandary Gap: 36px)</h3>
-        <div class="row-flex gap-two-special-secandary">
-            <div class="column-two-special-secondary box">1</div>
-            <div class="column-two-special-secondary box">2</div>
-        </div>
-    </div>
-
-    <div class="card max-width">
-        <h3>3 Columns (Main Gap: 40px)</h3>
-        <div class="row-flex gap-three-main">
-            <div class="column-three box">1</div>
-            <div class="column-three box">2</div>
-            <div class="column-three box">3</div>
-        </div>
-    </div>
-    <div class="card max-width">
-        <h3>3 Columns (Secandary Gap: 18px)</h3>
-        <div class="row-flex gap-three-secandary">
-            <div class="column-three-secandary box">1</div>
-            <div class="column-three-secandary box">2</div>
-            <div class="column-three-secandary box">3</div>
-        </div>
-    </div>
-
-    <div class="card max-width">
-        <h3>4 Columns (Gap: 36px)</h3>
-        <div class="row-flex gap-four">
-            <div class="column-four box">1</div>
-            <div class="column-four box">2</div>
-            <div class="column-four box">3</div>
-            <div class="column-four box">4</div>
-        </div>
-    </div>
-
-    <div class="card max-width">
-        <h3>5 Columns (Gap: 40px)</h3>
-        <div class="row-flex gap-five">
-            <div class="column-five box">1</div>
-            <div class="column-five box">2</div>
-            <div class="column-five box">3</div>
-            <div class="column-five box">4</div>
-            <div class="column-five box">5</div>
-        </div>
-    </div>
 </body>
 
 </html>

@@ -35,32 +35,54 @@ header img {
     text-underline-offset: 10px;
 }
 
+
+
+.submenu-item2,
 .submenu-item {
     opacity: 0;
     position: absolute;
     transition: all 0.5s;
-    top: 90px;
-    left: 48%;
-    width: 200px;
+    width: 180px;
     text-align: center;
+    pointer-events: none;
 }
 
+.submenu-item {
+    top: 55px;
+}
+
+.submenu-item2 {
+    top: 55px;
+
+}
+
+.submenu-item2 a,
 .submenu-item a {
     display: block;
     padding: 26px 24px;
 }
 
+.has-submenu-item>a::after {
+    content: "     \ea4e";
+    font-family: "remixicon";
+    font-size: 17px;
+}
+
+.has-submenu-item:hover>.submenu-item2,
 .has-submenu-item:hover>.submenu-item {
     opacity: 1;
     background-color: var(--color-primary-white);
     box-shadow: #1C1C1C 0px 0px 60px -28px;
     border-radius: var(--btn-radius-default);
     overflow: hidden;
+    pointer-events: auto;
 }
 
 a.submenu-item-hover:hover {
     background-color: var(--color-header-bg);
 }
+
+
 
 img.logo {
     width: 190px;
@@ -84,10 +106,6 @@ img.logo {
 .fa-bars-staggered:hover {
     color: var(--color-secondary-green);
     cursor: pointer;
-}
-
-.has-submenu-item a.ri-arrow-drop-down-line {
-    font-size: 17px;
 }
 
 .menu-btn {
@@ -142,7 +160,7 @@ a.buger-bar-menu-active {
 .burger-content-wrapper {
     width: 100%;
     max-width: 1440px;
-    padding: 70px 60px;
+    padding: 70px 90px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -161,7 +179,7 @@ a.buger-bar-menu-active {
 }
 
 .burger-close-btn:hover {
-    color: var(--color-secondary-green);
+    color: var(--color-primary-white);
 }
 
 .burger-close-area {
@@ -191,7 +209,7 @@ a.buger-bar-menu-active {
 }
 
 .burger-nav-column {
-    width: 20%;
+    width: 30%;
 }
 
 .burger-nav-links {
