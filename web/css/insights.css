@@ -178,6 +178,11 @@
     border-radius: 15px;
     text-align: center;
     min-width: 70px;
+    transition: all 0.3s;
+}
+
+.date-badge:hover {
+    background-color: var(--color-primary-white);
 }
 
 .date-day {
@@ -198,6 +203,7 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .secondary-green-font {

@@ -22,7 +22,7 @@
     <!--header soowenglok-->
     <header>
         <div class="header">
-            <a href="index.html"><img class="logo" src="assets/img/logo.png" alt="Logo"></a>
+            <a href="index.html"><img class="logo" src="assets/img/logo.png" alt="Logo" /></a>
             <nav id="main-menu" class="row-flex justify-center">
                 <div class="menu-item">
                     <a href="index.html">Home</a>
@@ -30,18 +30,19 @@
                 <div class="menu-item">
                     <a href="about.html">About Us</a>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item has-submenu-item">
                     <a href="services.html">Services</a>
+                    <div class="submenu-item2">
+                        <a href="casestudies.html" class="submenu-item-hover submenu-first"><span class="#">Case
+                                Studies</span></a>
+                        <a href="hiring.html" class="submenu-item-hover submenu-second"><span class="#">Hiring
+                                Advice</span></a>
+                    </div>
                 </div>
                 <div class="menu-item has-submenu-item">
-                    <a href="#"><span class="menu-active">Pages<i class="ri-arrow-drop-down-line"></i></span></a>
-                    <div class="submenu-item">
-                        <a href="casestudies.html" class="submenu-item-hover submenu-top">Case
-                            Studies</a>
-                        <a href="hiring.html" class="submenu-item-hover submenu-mid-first">Hiring
-                            Advice</a>
-                        <a href="news.html" class="submenu-item-hover submenu-mid-second">News</a>
-                        <a href="#" class="submenu-item-hover submenu-bottom"><span
+                    <a href="news.html">News</a>
+                    <div class="submenu-item ">
+                        <a href="insights.html" class="submenu-item-hover submenu-news-first"><span
                                 class="menu-active">Insights</span></a>
                     </div>
                 </div>
@@ -56,7 +57,75 @@
                     <a class="btn-black-font" href="contact.html">Hire A Talent <i
                             class="ri-arrow-right-down-line"></i></a>
                 </div>
-                <i class="fa-solid fa-bars-staggered"></i>
+
+                <i class="fa-solid fa-bars-staggered" id="openBurger"></i>
+            </div>
+        </div>
+
+
+        <div class="burger-menu-static">
+            <div class="burger-content-wrapper">
+                <div class="burger-close-area">
+                    <div class="burger-close-btn">
+                        <i class="ri-close-line" id="closeBurger"></i>
+                    </div>
+                </div>
+
+                <div class="burger-main-row">
+                    <div class="burger-nav-column">
+                        <div class="burger-nav-links gray-light-font date">
+                            <a href="index.html" class="#">Home</a>
+                            <a href="about.html" class="#">About Us</a>
+                            <a href="services.html" class="#">Our Services</a>
+                            <a href="casestudies.html.html" class="#">Case Studies</a>
+                            <a href="hiring.html" class="#">Hiring Advice</a>
+                            <a href="news.html" class="#">News</a>
+                            <a href="insight.html" class="buger-bar-menu-active">Insights</a>
+                            <a href="contact.html" class="#">Contact Us</a>
+                        </div>
+                    </div>
+
+                    <div class="buger-bar-line"></div>
+
+                    <div class="burger-contact-column">
+                        <h4 class="gray-light-font">Get In Touch</h4>
+
+                        <div class="contact-info-block">
+                            <h6 class="green-font marking-yellow-green">Head Office</h6>
+                            <p class="gray-light-font banner-bodytext-s give-margin">101 Main Street, Queens, New York
+                                <br> United
+                                States
+                                —
+                                11435
+                            </p>
+                        </div>
+
+                        <div class="burger-contact-info-block">
+                            <h6 class="green-font marking-yellow-green">Email</h6>
+                            <p class="gray-light-font banner-bodytext-s give-margin">info[at]avada-company.com</p>
+                        </div>
+
+                        <div class="burger-contact-info-block gotphonenum">
+                            <h6 class="green-font marking-yellow-green">Call Helpline</h6>
+                            <p class="gray-light-font illus-subtitle give-margin">+1 (800) 555 5555</p>
+                            <p class="gray-light-font banner-bodytext-s">[Monday to Friday : 9 AM - 6 PM]</p>
+                        </div>
+
+                        <div class="burger-social-icons-row">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-fill"></i></a>
+                            <a href="https://x.com/" target="_blank"><i class="ri-twitter-x-fill"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="ri-youtube-fill"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                            <a href="https://mail.google.com/" target="_blank"><i class="ri-mail-fill"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="burger-image-column">
+                        <div class="burger-image-container">
+                            <img src="assets/img/home/jobs-testimonials-1-800x878.jpg" alt="Menu Image">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -67,7 +136,6 @@
             <a class="btn-black-font" href="#">Hire A Talent <i class="ri-arrow-right-down-line"></i></a>
         </div>
     </div>
-    <!--header soowenglok-->
 
 
 
@@ -83,7 +151,7 @@
             </div>
 
             <div class="hero-image">
-                <img src="assets/img/job-placement-03.jpg" alt="hero image">
+                <img src="assets/img/career-counseling-1.jpg" alt="hero image">
             </div>
         </section>
 
@@ -175,12 +243,16 @@
                         </div>
                     </div>
                     <div class="blog-content-card">
-                        <p class="category-text">Category : <span class="secondary-green-font">Talent Strategies</span>
-                        </p>
-                        <h5 class="black-font">The Future Of Recruitment: Trends To Watch By Job Seekers</h5>
+                        <div>
+                            <p class="category-text">Category : <span class="secondary-green-font">Talent
+                                    Strategies</span>
+                            </p>
+                            <h5 class="black-font">The Future Of Recruitment: Trends To Watch By Job Seekers</h5>
+                        </div>
                         <div
                             class="btn btn-underline btn-transparent btn-font-hover-green btn-green-arrow change-margin-top">
-                            <a class="btn-black-font" href="#">Read More <i class="ri-arrow-right-down-line"></i></a>
+                            <a class="btn-black-font" href="services.html">Read More <i
+                                    class="ri-arrow-right-down-line"></i></a>
                         </div>
                     </div>
                 </div>
@@ -195,11 +267,15 @@
                         </div>
                     </div>
                     <div class="blog-content-card">
-                        <p class="category-text">Category : <span class="secondary-green-font">Recruitment</span></p>
-                        <h5 class="black-font">How Recruitment Agencies Can Help Startups Build Teams</h5>
+                        <div>
+                            <p class="category-text">Category : <span class="secondary-green-font">Recruitment</span>
+                            </p>
+                            <h5 class="black-font">How Recruitment Agencies Can Help Startups Build Teams</h5>
+                        </div>
                         <div
                             class="btn btn-underline btn-transparent btn-font-hover-green btn-green-arrow change-margin-top">
-                            <a class="btn-black-font" href="#">Read More <i class="ri-arrow-right-down-line"></i></a>
+                            <a class="btn-black-font" href="services.html">Read More <i
+                                    class="ri-arrow-right-down-line"></i></a>
                         </div>
                     </div>
                 </div>
@@ -214,10 +290,14 @@
                         </div>
                     </div>
                     <div class="blog-content-card">
-                        <p class="category-text">Category : <span class="secondary-green-font">For Employers</span></p>
-                        <h5 class="black-font">Your Perfect Guide To Navigate Salary Negotiations</h5>
+                        <div>
+                            <p class="category-text">Category : <span class="secondary-green-font">For Employers</span>
+                            </p>
+                            <h5 class="black-font">Your Perfect Guide To Navigate Salary Negotiations</h5>
+                        </div>
                         <div class="btn btn-underline btn-transparent btn-font-hover-green btn-green-arrow">
-                            <a class="btn-black-font" href="#">Read More <i class="ri-arrow-right-down-line"></i></a>
+                            <a class="btn-black-font" href="services.html">Read More <i
+                                    class="ri-arrow-right-down-line"></i></a>
                         </div>
                     </div>
                 </div>
@@ -236,7 +316,7 @@
                         <div class="subscribe">
                             <input type="email" class="subscribe-input" placeholder="Enter your email .. *" required>
                             <div class="btn btn-default-color-green btn-hover-green-drak btn-white-arrow">
-                                <a class="btn-white-font" href="#">SUBSCRIBE <i
+                                <a class="btn-white-font" href="contact.html">SUBSCRIBE <i
                                         class="ri-arrow-right-down-line"></i></a>
                             </div>
                         </div>

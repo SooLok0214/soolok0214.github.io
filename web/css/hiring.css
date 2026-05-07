@@ -126,12 +126,17 @@
     right: 20px;
     width: 60px;
     height: 60px;
-    background-color: var(--color-yellow);
+    background-color: var(--color-brand-yellow);
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 5;
+    transition: all 0.3s;
+}
+
+.badge-icon:hover {
+    background-color: var(--color-primary-white);
 }
 
 .badge-icon img {
