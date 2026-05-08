@@ -81,42 +81,19 @@
 }
 
 .section-three {
-    position: absolute;
+    position: relative;
     background-color: var(--color-white-light);
     border-radius: var(--card-radius-default);
     padding: 107px 30px 80px 30px;
-    position: relative;
     z-index: -3;
 }
 
 .employee-card {
-    position: relative;
     flex: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
-}
-
-.social-media-icon-links {
-    background-color: var(--color-brand-yellow);
-    width: 80%;
-    padding: 10px;
-    position: absolute;
-    top: 250px;
-    display: flex;
-    border-radius: var(--btn-radius-default);
-    gap: 10px;
-    justify-content: center;
-}
-
-.employee-image:hover.social-media-icon-links {
-    top: -40px;
-}
-
-.employee-card-social-icon {
-    position: relative;
-    color: var(--color-black-light);
 }
 
 
@@ -188,6 +165,12 @@
     width: 100%;
     height: 2px;
     background-color: var(--color-white-light)
+}
+
+.faq-answer {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
 }
 
 .main-button-group-tb-mb,
