@@ -59,6 +59,11 @@
 .card-icon img {
     width: 80px;
     border-radius: 0%;
+    transition: all 0.3s;
+}
+
+.card-icon:hover img {
+    margin-left: 50px;
 }
 
 .sector-card-title-info {
@@ -76,6 +81,7 @@
 }
 
 .section-three {
+    position: absolute;
     background-color: var(--color-white-light);
     border-radius: var(--card-radius-default);
     padding: 107px 30px 80px 30px;
@@ -83,12 +89,8 @@
     z-index: -3;
 }
 
-.position {
-    position: relative;
-    z-index: 3;
-}
-
 .employee-card {
+    position: relative;
     flex: none;
     display: flex;
     flex-direction: column;
@@ -96,12 +98,38 @@
     text-align: left;
 }
 
+.social-media-icon-links {
+    background-color: var(--color-brand-yellow);
+    width: 80%;
+    padding: 10px;
+    position: absolute;
+    top: 250px;
+    display: flex;
+    border-radius: var(--btn-radius-default);
+    gap: 10px;
+    justify-content: center;
+}
+
+.employee-image:hover.social-media-icon-links {
+    top: -40px;
+}
+
+.employee-card-social-icon {
+    position: relative;
+    color: var(--color-black-light);
+}
+
+
+
 .employee-image img {
     width: 100%;
     display: block;
 }
 
 .employee-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 280px;
 }
 
