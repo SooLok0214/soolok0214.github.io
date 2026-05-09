@@ -266,7 +266,27 @@ a.buger-bar-menu-active {
     object-fit: cover;
 }
 
+.back-to-top {
+    position: fixed;
+    bottom: 35px;
+    right: 80px;
+    width: 3vw;
+    height: 3vw;
+    background-color: var(--color-secondary-green);
+    color: var(--color-primary-white);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
 
+
+.back-to-top:hover {
+    background-color: var(--color-deep-green);
+}
 
 @media only screen and (max-width: 1200px) {
     header {
@@ -362,5 +382,9 @@ a.buger-bar-menu-active {
     .burger-social-icons-row {
         margin-top: 20px;
         justify-content: flex-start;
+    }
+
+    .back-to-top {
+        display: none;
     }
 }
