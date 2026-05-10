@@ -68,8 +68,13 @@ p {
 .hero-subtitle,
 .illus-subtitle,
 .card-content,
-.banner-bodytext {
+.banner-bodytext,
+.state-number {
     letter-spacing: var(--bdt-extratight-letter-spacing);
+}
+
+.percent-number {
+    letter-spacing: var(--bdt-tight-letter-spacing);
 }
 
 .banner-subtitle,
@@ -88,8 +93,10 @@ p {
 }
 
 .date,
-.hero-subtitle .illus-subtitle,
-.card-content {
+.hero-subtitle,
+.illus-subtitle,
+.card-content,
+.state-number {
     font-weight: var(--bdt-medium-font-weight);
 }
 
@@ -100,13 +107,19 @@ p {
 
 .banner-subtitle,
 .banner-bodytext-s,
-.profile-info {
+.profile-info,
+.percent-number {
     font-weight: var(--bdt-light-font-weight);
 }
 
 .state-number {
     font-size: var(--bdt-state-number-size);
 }
+
+.percent-number {
+    font-size: var(--bdt-percent-number-size);
+}
+
 
 .date {
     font-size: var(--bdt-date-font-size);
@@ -165,17 +178,22 @@ p {
     color: var(var(--color-secondary-green));
 }
 
-.ui-content {
+
+.ui-content,
+.banner-bodytext-l {
     line-height: var(--line-height-heading-medium);
 }
 
 .date,
-.banner-subtitle {
+.banner-subtitle,
+.state-number,
+.card-bodytext {
     line-height: var(--line-height-heading-light);
 }
 
 .illus-subtitle,
-.profile-info {
+.profile-info,
+.card-content {
     line-height: var(--line-height-heading-normol);
 }
 

@@ -10,10 +10,6 @@
 
 .header-title {
     width: 60%;
-    font-size: var(--hd-secondtitle-font-size);
-    font-weight: var(--hd-medium-font-weight);
-    letter-spacing: var(--hd-letter-spacing);
-    line-height: var(--line-height-heading-light);
     color: var(--color-heading-text-black);
 }
 
@@ -61,23 +57,20 @@
     border-radius: 20px;
 }
 
-.info-link-title h4 {
-    font-size: var(--bdt-banner-subtitle-font-size);
+.banner-subtitle.info-link-title p {
     font-weight: var(--hd-medium-font-weight);
     letter-spacing: var(--hd-letter-spacing);
-    line-height: var(--line-height-heading-light);
     color: var(--color-heading-text-black);
     margin-bottom: 15px;
 }
 
-.info-link-tag p {
+.profile-info.info-link-tag p {
     font-size: var(--bdt-profile-info-font-size);
     font-weight: var(--bdt-light-font-weight);
     letter-spacing: var(--bdt-tight-letter-spacing);
     color: var(--color-body-text-black);
 }
 
-.info-box h4:hover,
 .info-box p:hover {
     text-decoration: underline;
     text-decoration-thickness: 1px;
@@ -90,10 +83,6 @@
 /* section-two*/
 
 .main-title {
-    font-size: var(--hd-secondtitle-font-size);
-    font-weight: var(--hd-medium-font-weight);
-    letter-spacing: var(--hd-letter-spacing);
-    line-height: var(--line-height-heading-light);
     text-align: center;
     color: var(--color-heading-text-black);
     margin-bottom: 50px;
@@ -140,19 +129,12 @@
 }
 
 .service-item h5 {
-    font-size: var(--bdt-illus-subtitle-font-size);
-    font-weight: var(--bdt-medium-font-weight);
-    letter-spacing: var(--bdt-extratight-letter-spacing);
-    line-height: var(--line-height-heading-normol);
     color: var(--color-heading-text-black);
     margin-bottom: 20px;
 }
 
-.service-item p {
-    font-size: var(--bdt-btn-font-size);
+.ui-content.service {
     font-weight: var(--bdt-light-font-weight);
-    letter-spacing: var(--bdt-tight-letter-spacing);
-    line-height: var(--line-height-heading-medium);
     color: var(--color-body-text-black);
     margin: 0;
 }
@@ -163,17 +145,13 @@
 
 .container-three {
     background-color: var(--color-green);
-    padding: 32px 80px 80px;
+    padding: 80px 80px;
     border-radius: 30px;
     text-align: center;
     color: var(--color-heading-text-white);
 }
 
 .section-title {
-    font-size: var(--hd-maintitle-font-size);
-    font-weight: var(--hd-medium-font-weight);
-    letter-spacing: var(--hd-letter-spacing);
-    line-height: var(--line-height-heading-light);
     margin-bottom: 50px;
     margin-top: 24px;
 }
@@ -185,20 +163,18 @@
     margin: 0 auto;
 }
 
-.cat-btn {
+.card-bodytext.cat-btn {
     padding: 22px 50px;
     margin: 0 5px 20px;
     border: 2px solid color-mix(in srgb, var(--color-gray-light), transparent 80%);
     border-radius: 50px;
     color: var(--color-gray-light);
     text-decoration: none;
-    font-size: var(--bdt-card-bodytext-font-size);
     font-weight: var(--bdt-semibold-font-weight);
-    letter-spacing: var(--bdt-tight-letter-spacing);
     transition: all 0.3s ease;
 }
 
-.cat-btn:hover {
+.card-bodytext.cat-btn:hover {
     border-color: color-mix(in srgb, var(--color-brand-green-soft), transparent 50%);
 }
 
@@ -220,11 +196,9 @@
     margin: 64px 0 40px;
 }
 
-.stats-text {
-    font-size: var(--bdt-card-bodytext-font-size);
+.card-bodytext.stats-text {
     font-weight: var(--bdt-medium-font-weight);
     letter-spacing: var(--bdt-extratight-letter-spacing);
-    line-height: var(--line-height-heading-light);
     color: var(--color-heading-text-white);
     margin-bottom: 20px;
 }
@@ -239,10 +213,6 @@
 }
 
 .section-four-title {
-    font-size: var(--hd-maintitle-font-size);
-    font-weight: var(--hd-medium-font-weight);
-    letter-spacing: var(--hd-letter-spacing);
-    line-height: var(--line-height-heading-light);
     color: var(--color-heading-text-black);
     margin-top: 20px;
 }
@@ -290,30 +260,23 @@
 }
 
 
-.four-info-link-title h4 {
-    font-size: var(--bdt-banner-subtitle-font-size);
+.banner-subtitle.info-link-title p {
     font-weight: var(--hd-medium-font-weight);
     letter-spacing: var(--hd-letter-spacing);
-    line-height: var(--line-height-heading-light);
     color: var(--color-heading-text-black);
     margin-bottom: 15px;
 }
 
 
-.four-info-link-tag p {
-    font-size: var(--bdt-profile-info-font-size);
-    font-weight: var(--bdt-light-font-weight);
-    letter-spacing: var(--bdt-tight-letter-spacing);
+.profile-info.info-link-tag p {
     color: var(--color-body-text-black);
 }
 
-.four-info-box h4,
 .four-info-box p {
     text-decoration: none;
     display: block;
 }
 
-.four-info-box h4:hover,
 .four-info-box p:hover {
     text-decoration: underline;
     text-decoration-thickness: 1px;
@@ -399,7 +362,6 @@
     .header-title {
         width: 98%;
         padding-bottom: 96px;
-        font-size: var(--mb-hd-secondtitle-font-size);
     }
 
     .content-grid {
@@ -443,7 +405,6 @@
     }
 
     .main-title {
-        font-size: var(--mb-hd-secondtitle-font-size);
         text-align: left;
         margin-bottom: 60px;
         width: 100%;
@@ -476,7 +437,6 @@
     .section-four-title {
         width: 98%;
         padding-bottom: 60px;
-        font-size: var(--mb-hd-secondtitle-font-size);
     }
 
     .case-grid {
