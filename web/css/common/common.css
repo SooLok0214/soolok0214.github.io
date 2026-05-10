@@ -197,13 +197,6 @@ a {
     color: var(--color-heading-text-black);
 }
 
-.card-title:hover {
-    color: var(--color-body-text-black);
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 2px;
-}
-
 @media only screen and (max-width: 1200px) {
     .hero-container {
         padding: 0;

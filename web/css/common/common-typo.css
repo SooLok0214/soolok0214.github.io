@@ -64,7 +64,8 @@ p {
     color: var(--color-black-light);
 }
 
-.date .hero-subtitle,
+.date,
+.hero-subtitle,
 .illus-subtitle,
 .card-content,
 .banner-bodytext {
@@ -163,6 +164,21 @@ p {
 .green-font {
     color: var(var(--color-secondary-green));
 }
+
+.ui-content {
+    line-height: var(--line-height-heading-medium);
+}
+
+.date,
+.banner-subtitle {
+    line-height: var(--line-height-heading-light);
+}
+
+.illus-subtitle,
+.profile-info {
+    line-height: var(--line-height-heading-normol);
+}
+
 
 @media only screen and (max-width: 820px) {
     h1 {

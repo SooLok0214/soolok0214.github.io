@@ -42,11 +42,7 @@
     bottom: 2px;
 }
 
-.overview-text {
-    font-size: var(--bdt-profile-info-font-size);
-    font-weight: var(--bdt-light-font-weight);
-    letter-spacing: var(--bdt-tight-letter-spacing);
-    line-height: var(--line-height-heading-extra);
+.profile-info {
     color: var(--color-body-text-black);
     margin-bottom: 40px;
     margin-top: 12px;
@@ -67,10 +63,8 @@
     margin-bottom: 12px;
 }
 
-.detail-text {
-    font-size: var(--bdt-btn-font-size);
+.ui-content {
     font-weight: var(--bdt-light-font-weight);
-    letter-spacing: var(--bdt-tight-letter-spacing);
     color: var(--color-heading-text-black);
     margin-bottom: 30px;
 }
@@ -89,11 +83,7 @@
     margin-bottom: 50px;
 }
 
-.main-title {
-    font-size: var(--hd-maintitle-font-size);
-    font-weight: var(--hd-medium-font-weight);
-    letter-spacing: var(--hd-letter-spacing);
-    line-height: var(--line-height-heading-light);
+.h2 {
     color: var(--color-heading-text-black);
     margin-top: 20px;
 }
@@ -129,7 +119,12 @@
     object-fit: cover;
 }
 
-.date-badge {
+.profile-info.light {
+    margin: 0;
+    padding: 8px 0 24px;
+}
+
+.date {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -140,21 +135,17 @@
     width: 82px;
     border-radius: 12px;
     text-align: center;
-    font-size: var(--bdt-date-font-size);
-    font-weight: var(--bdt-medium-font-weight);
-    letter-spacing: var(--bdt-extratight-letter-spacing);
-    line-height: var(--line-height-heading-light);
     color: var(--color-body-text-black);
 }
 
-.date-badge span {
+.date span {
     display: block;
     font-size: var(--bdt-btn-font-size);
     font-weight: var(--bdt-light-font-weight);
     letter-spacing: var(--bdt-tight-letter-spacing);
 }
 
-.card-content {
+.banner-subtitle {
     padding: 40px;
 }
 
@@ -163,16 +154,29 @@
     transition: all 0.5s ease;
 }
 
-.card-content h3 {
-    font-size: var(--bdt-banner-subtitle-font-size);
+.banner-subtitle .text {
     font-weight: var(--hd-medium-font-weight);
     letter-spacing: var(--hd-letter-spacing);
-    line-height: var(--line-height-heading-light);
-    color: var(--color-heading-text-black);
+    color: var(--color-btn-text-white);
     margin: 8px 0 24px;
 }
 
-.category {
+.card-title:hover,
+.banner-subtitle .text:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+.card-title :hover {
+    color: var(--color-body-text-black);
+}
+
+.banner-subtitle .text:hover {
+    color: var(--color-gray-light);
+}
+
+.profile-info.category {
     color: var(--color-body-text-black);
 }
 
@@ -192,24 +196,24 @@
 .bg-purple h3,
 .bg-dark-green h3,
 .bg-grey h3,
-.category-light {
+.profile-info.light {
     color: var(--color-heading-text-white);
 }
 
-.category-light,
-.author,
-.category {
-    font-size: var(--bdt-profile-info-font-size);
-    font-weight: var(--bdt-light-font-weight);
-    letter-spacing: var(--bdt-tight-letter-spacing);
+.profile-info.author,
+.profile-info.category {
     margin: 8px 0 24px;
 }
 
-.category-light {
-    color: var(--color-heading-text-white);
+.profile-info.light:hover {
+    color: var(--color-brand-green-soft);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    transition: all 0.3s ease;
 }
 
-.author {
+.profile-info.author {
     color: var(--color-gray-light);
 }
 
@@ -248,9 +252,6 @@
 }
 
 .blog-meta {
-    font-size: var(--bdt-profile-info-font-size);
-    font-weight: var(--bdt-light-font-weight);
-    letter-spacing: var(--bdt-tight-letter-spacing);
     color: var(--color-body-text-black);
     margin-bottom: 25px;
     position: relative;
@@ -311,10 +312,8 @@
     height: 70%;
 }
 
-.card-inner h5,
+.card-inner h4,
 .bottom-title {
-    font-weight: var(--hd-medium-font-weight);
-    letter-spacing: var(--hd-letter-spacing);
     line-height: var(--line-height-heading-normol);
 }
 
@@ -332,8 +331,7 @@
 
 /* bg-green */
 
-.four-bg-green h5 {
-    font-size: var(--bdt-hero-subtitle-font-size);
+.four-bg-green h4 {
     color: var(--color-heading-text-white);
 }
 
@@ -350,10 +348,7 @@
 }
 
 .four-bg-green p {
-    font-size: var(--bdt-btn-font-size);
     font-weight: var(--bdt-regular-font-weight);
-    letter-spacing: var(--bdt-tight-letter-spacing);
-    line-height: var(--line-height-heading-medium);
     color: var(--color-btn-text-white);
     margin-top: 20px;
 }
@@ -362,7 +357,6 @@
 /* bg-yellow */
 
 .four-bg-yellow h5 {
-    font-size: var(--hd-ctasecondtitle-font-size);
     color: var(--color-heading-text-black);
     width: 90%;
     margin-bottom: auto;
@@ -371,7 +365,6 @@
 /* bg-dark-gree*/
 
 .four-bg-dark-green .top-text {
-    font-size: var(--bdt-card-bodytext-font-size);
     color: var(--color-btn-text-white);
 }
 
@@ -386,13 +379,12 @@
 
 
 .bottom-title {
-    font-size: var(--bdt-hero-subtitle-font-size);
     color: var(--color-heading-text-white);
     margin-top: 40px;
 }
 
 .bottom-title:hover,
-.four-bg-green h5:hover {
+.four-bg-green h4:hover {
     text-decoration: underline;
     color: var(--color-gray-light);
     text-decoration-thickness: 1px;
@@ -434,7 +426,7 @@
         height: 520px;
     }
 
-    .date-badge {
+    .date {
         width: 133px;
         right: 15px;
         bottom: 15px;
@@ -469,7 +461,7 @@
     }
 
     .four-bg-yellow h5,
-    .four-bg-green h5,
+    .four-bg-green h4,
     .four-bg-dark-green .top-text {
         margin-top: 0;
     }
@@ -508,8 +500,7 @@
         gap: 20px;
     }
 
-    .main-title {
-        font-size: var(--mb-hd-maintitle-font-size);
+    .h2 {
         margin-bottom: 15px;
     }
 
@@ -526,7 +517,7 @@
         height: 760px;
     }
 
-    .date-badge {
+    .date {
         width: 277px;
         padding: 10px 15px;
         right: 56px;
