@@ -42,7 +42,7 @@
     bottom: 2px;
 }
 
-.profile-info {
+.profile-info.text {
     color: var(--color-body-text-black);
     margin-bottom: 40px;
     margin-top: 12px;
@@ -63,13 +63,13 @@
     margin-bottom: 12px;
 }
 
-.ui-content {
+.ui-content.subtitle {
     font-weight: var(--bdt-light-font-weight);
     color: var(--color-heading-text-black);
     margin-bottom: 30px;
 }
 
-.highlight {
+.ui-content.subtitle.highlight {
     color: var(--color-secondary-green);
 
 }
@@ -83,7 +83,7 @@
     margin-bottom: 50px;
 }
 
-.h2 {
+.main-title {
     color: var(--color-heading-text-black);
     margin-top: 20px;
 }
@@ -145,7 +145,7 @@
     letter-spacing: var(--bdt-tight-letter-spacing);
 }
 
-.banner-subtitle {
+.banner-subtitle.box {
     padding: 40px;
 }
 
@@ -154,11 +154,19 @@
     transition: all 0.5s ease;
 }
 
-.banner-subtitle .text {
+.banner-subtitle .text,
+.card-title {
     font-weight: var(--hd-medium-font-weight);
     letter-spacing: var(--hd-letter-spacing);
-    color: var(--color-btn-text-white);
     margin: 8px 0 24px;
+}
+
+.banner-subtitle .text {
+    color: var(--color-btn-text-white);
+}
+
+.card-title {
+    color: var(--color-btn-text-black);
 }
 
 .card-title:hover,
@@ -193,10 +201,9 @@
     background-color: var(--color-black-light);
 }
 
-.bg-purple h3,
-.bg-dark-green h3,
-.bg-grey h3,
-.profile-info.light {
+.bg-purple p,
+.bg-dark-green p,
+.bg-grey p {
     color: var(--color-heading-text-white);
 }
 

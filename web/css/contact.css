@@ -106,7 +106,7 @@
 }
 
 .form-title {
-    color: var(--color-heading-text-black);
+    color: var(--color-body-text-black);
     margin-bottom: 40px;
 }
 
@@ -136,7 +136,7 @@
 
 .input:focus,
 .textarea:focus {
-    border: 1px solid #27ae60;
+    border: 1px solid var(--color-secondary-green);
 }
 
 .textarea {
@@ -147,7 +147,15 @@
     grid-column: span 2;
 }
 
+.ui-content.info-block a {
+    color: var(--color-heading-text-black);
+    transition: all 0.3s ease;
+}
 
+.ui-content.info-block a:hover {
+    color: var(--color-secondary-green);
+    text-decoration: underline;
+}
 
 /* section-three */
 

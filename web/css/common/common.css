@@ -188,15 +188,6 @@ a {
     transition: all 0.3s ease;
 }
 
-
-.card-title {
-    font-size: var(--bdt-banner-subtitle-font-size);
-    font-weight: var(--hd-medium-font-weight);
-    letter-spacing: var(--hd-letter-spacing);
-    line-height: var(--line-height-heading-light);
-    color: var(--color-heading-text-black);
-}
-
 @media only screen and (max-width: 1200px) {
     .hero-container {
         padding: 0;
