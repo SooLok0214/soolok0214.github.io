@@ -504,8 +504,12 @@
         margin-bottom: 15px;
     }
 
-    .btn {
+    .btn.btn-default-color-white.btn-hover-green-drak.btn-padding-small.btn-gray-arrow {
         display: none;
+    }
+
+    .card-title {
+        margin-bottom: 20px;
     }
 
     .news-grid {
