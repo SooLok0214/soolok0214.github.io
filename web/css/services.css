@@ -188,7 +188,7 @@
 .form-grid {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
 .form-row {
@@ -355,5 +355,9 @@
 
     .image-sect-four-container.need-hide-dt {
         display: block;
+    }
+
+    .form-row {
+        flex-direction: column;
     }
 }
