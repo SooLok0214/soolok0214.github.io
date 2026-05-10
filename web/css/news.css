@@ -160,7 +160,7 @@
 
 .bg-gray:hover {
     background-color: var(--color-mint-green);
-    transition: all 0.5Ss ease;
+    transition: all 0.5s ease;
 }
 
 .card-content h3 {

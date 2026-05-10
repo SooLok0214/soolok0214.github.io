@@ -326,6 +326,13 @@
     background-color: var(--color-secondary-green);
 }
 
+.faq-text {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    padding-bottom: 0px;
+}
+
 @media (max-width: 1200px) {
 
     /* section-two */

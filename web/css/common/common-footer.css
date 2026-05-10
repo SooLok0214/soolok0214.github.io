@@ -53,11 +53,15 @@
     font-size: var(--ft-primary-address-font-size);
     font-weight: var(--ft-light-font-weight);
     letter-spacing: var(--ft-tight-letter-spacing);
-    margin-bottom: 15px;
+    margin-bottom: 17px;
+    margin-top: 20px;
 }
 
 .footer-column a {
     color: var(--color-footer-text-highlight);
+    margin: 0;
+    margin-top: 17px;
+    margin-bottom: 17px;
 }
 
 .footer-column p a:hover {
@@ -74,14 +78,16 @@
     font-size: var(--ft-phone-number-font-size);
     font-weight: var(--ft-regulard-font-weight);
     letter-spacing: var(--ft-tight-letter-spacing);
-    margin-top: 20px;
-    margin: 15px 0;
+    margin: 0;
 }
 
 .footer-column .date-time {
     font-size: var(--ft-date-time-font-size);
     font-weight: var(--ft-light-font-weight);
     letter-spacing: var(--ft-tight-letter-spacing);
+    margin: 0;
+    margin-top: 14px;
+    margin-bottom: 14px;
 }
 
 .footer-column ul {
@@ -217,11 +223,11 @@
     }
 
     .footer-column {
+        max-width: 100%;
         width: 100%;
     }
 
     .footer-mid {
-        gap: 30px;
         justify-content: center;
         padding: 48px 30px;
     }
