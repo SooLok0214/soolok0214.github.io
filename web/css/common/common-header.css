@@ -308,7 +308,7 @@ a.buger-bar-menu-active {
 }
 
 @media only screen and (max-width: 1200px) {
-    header {
+    .header {
         padding: 0px 30px;
     }
 

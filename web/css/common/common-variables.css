@@ -202,7 +202,7 @@
 
     /* body setting */
     --dt-body-padding: 90px 110px;
-    --tb-mb-body-padding: 0px 30px;
+    --tb-mb-body-padding: 90px 30px;
 
     /* ETS */
     --gap-default: 30px;
