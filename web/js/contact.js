@@ -1,36 +1,41 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const myFaqs = document.querySelectorAll(".faq-item");
+document.querySelectorAll(".faq-question").forEach((question) => {
 
-    myFaqs.forEach((item) => {
-        item.addEventListener("click", function () {
-            const text = this.querySelector(".faq-text");
-            const isOpen = text.classList.contains("is-active");
-
-            document.querySelectorAll(".faq-text.is-active").forEach((activeText) => {
-                if (activeText !== text) {
-                    gsap.to(activeText, { height: 0, opacity: 0, duration: 0.3 });
-                    activeText.classList.remove("is-active");
-                }
-            });
-
-            if (isOpen) {
-                gsap.to(text, { height: 0, opacity: 0, duration: 0.3, ease: "power2.inOut" });
-                text.classList.remove("is-active");
-            } else {
-                gsap.set(text, { height: "auto" });
-                const targetHeight = text.offsetHeight;
-
-                gsap.fromTo(text,
-                    { height: 0, opacity: 0 },
-                    {
-                        height: targetHeight,
-                        opacity: 1,
-                        duration: 0.4,
-                        ease: "power2.out"
-                    }
-                );
-                text.classList.add("is-active");
+    question.addEventListener("click", () => {
+        const answer = question.parentElement.nextElementSibling;
+        document.querySelectorAll(".faq-text.open").forEach((openAnswer) => {
+            if (openAnswer !== answer) {
+                gsap.to(openAnswer, {
+                    height: 0,
+                    opacity: 0,
+                    duration: 0.4,
+                    ease: "power2.inOut"
+                });
+                openAnswer.classList.remove("open");
             }
         });
+
+        if (answer.classList.contains("open")) {
+            gsap.to(answer, {
+                height: 0,
+                opacity: 0,
+                duration: 0.4,
+                ease: "power2.inOut"
+            });
+            answer.classList.remove("open");
+        } else {
+            gsap.set(answer, { height: "auto" });
+            let fullHeight = answer.offsetHeight;
+
+            gsap.fromTo(answer,
+                { height: 0, opacity: 0 },
+                {
+                    height: fullHeight,
+                    opacity: 1,
+                    duration: 0.4,
+                    ease: "power2.inOut"
+                }
+            );
+            answer.classList.add("open");
+        }
     });
 });
