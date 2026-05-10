@@ -581,4 +581,8 @@
         width: 150px;
         height: auto;
     }
+
+    .two-header-text {
+        padding: 0;
+    }
 }
