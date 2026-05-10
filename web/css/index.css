@@ -96,6 +96,31 @@
     text-align: left;
 }
 
+/*
+.social-media-icon-links a {
+    color: var(--color-main-black);
+}
+
+.employee-card-social-icon:hover {
+    color: var(--color-secondary-green);
+}
+
+.social-media-icon-links {
+    color: var(--color-main-black);
+    background-color: var(--color-brand-yellow);
+    width: auto;
+    padding: 10px 16px;
+    position: absolute;
+    bottom: 120px;
+    display: flex;
+    border-radius: var(--btn-radius-default);
+    gap: 10px;
+    justify-content: center;
+}
+
+.employee-image:hover>.social-media-icon-links {
+    bottom: -10px;
+}*/
 
 
 .employee-image img {
