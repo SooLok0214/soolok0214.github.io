@@ -21,6 +21,15 @@
 .header-arrow {
     font-size: 120px;
     color: var(--color-gray-light);
+    transition: all 0.5s;
+}
+
+.section-one:hover .header-arrow {
+    transform: rotate(90deg);
+}
+
+.header-arrow:hover {
+    color: var(--color-main-black);
 }
 
 .content-wrapper {

@@ -136,6 +136,7 @@
     border-radius: 12px;
     text-align: center;
     color: var(--color-body-text-black);
+    transition: all 0.2s ease;
 }
 
 .date.new span {
@@ -143,6 +144,10 @@
     font-size: var(--bdt-btn-font-size);
     font-weight: var(--bdt-light-font-weight);
     letter-spacing: var(--bdt-tight-letter-spacing);
+}
+
+.card-image:hover>.date.new {
+    bottom: -10px;
 }
 
 .banner-subtitle.box {

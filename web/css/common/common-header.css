@@ -1,18 +1,25 @@
 /* Footer katherineang*/
 /* === Navigation Menu soowenglok === */
-header {
-    background-color: var(--color-header-bg);
-    padding: 0px 72px;
-}
-
 header img {
     border-radius: 0%;
 }
 
 .header {
+    background-color: var(--color-header-bg);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 72px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+.header-hidden {
+    transform: translateY(-100%);
 }
 
 
