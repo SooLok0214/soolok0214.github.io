@@ -38,12 +38,15 @@ header img {
     height: 1px;
     pointer-events: none;
     transition: none;
+
 }
 
 .menu-active,
 .menu-active a {
+    position: relative;
     text-decoration: underline 1px var(--color-secondary-green);
     text-underline-offset: 12px;
+    z-index: 0;
 }
 
 
@@ -56,6 +59,7 @@ header img {
     width: 180px;
     text-align: center;
     pointer-events: none;
+    z-index: 9999;
 }
 
 .submenu-item2,
