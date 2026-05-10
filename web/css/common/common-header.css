@@ -24,15 +24,26 @@ header img {
     line-height: 1.0;
 }
 
-.menu-item a:hover {
-    text-decoration: underline 1px var(--color-secondary-green);
-    text-underline-offset: 10px;
+.underline-animate {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.underline {
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 1px;
+    pointer-events: none;
+    transition: none;
 }
 
 .menu-active,
 .menu-active a {
     text-decoration: underline 1px var(--color-secondary-green);
-    text-underline-offset: 10px;
+    text-underline-offset: 12px;
 }
 
 
@@ -47,13 +58,9 @@ header img {
     pointer-events: none;
 }
 
+.submenu-item2,
 .submenu-item {
-    top: 55px;
-}
-
-.submenu-item2 {
-    top: 55px;
-
+    top: 20px;
 }
 
 .submenu-item2 a,
