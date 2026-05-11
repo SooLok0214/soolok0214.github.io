@@ -449,6 +449,14 @@
         text-align: center;
     }
 
+    .two-heading {
+        max-width: 100%;
+    }
+
+    .ui-content.two-text {
+        max-width: 100%;
+    }
+
     .expert-card {
         grid-column: span 1;
         margin: 0;
