@@ -1,4 +1,3 @@
-/* Footer katherineang*/
 /* === Navigation Menu soowenglok === */
 header img {
     border-radius: 0%;
@@ -148,7 +147,7 @@ div.btn.menu-btn-mb {
     color: var(--color-secondary-green)
 }
 
-a.buger-bar-menu-active {
+a.burger-bar-menu-active {
     color: var(--color-secondary-green) !important;
 }
 
@@ -220,7 +219,7 @@ a.buger-bar-menu-active {
     align-items: flex-start;
 }
 
-.buger-bar-line {
+.burger-bar-line {
     width: 1px;
     height: 100%;
     background-color: var(--color-gray-hard);
@@ -374,7 +373,7 @@ a.buger-bar-menu-active {
         gap: 40px;
     }
 
-    .buger-bar-line {
+    .burger-bar-line {
         display: none;
     }
 
