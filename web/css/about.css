@@ -535,6 +535,11 @@
 
     /* section-two */
 
+    .section-two {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .two-header {
         display: flex;
         flex-direction: column;
