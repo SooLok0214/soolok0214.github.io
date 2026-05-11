@@ -218,4 +218,8 @@ a {
         gap: 20px;
     }
 
+    .section-part {
+        margin: var(--mb-body-padding);
+    }
+
 }
