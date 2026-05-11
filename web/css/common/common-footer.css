@@ -90,6 +90,10 @@
     margin-bottom: 14px;
 }
 
+.footer-column ul li a:hover {
+    cursor: pointer;
+}
+
 .footer-column ul {
     color: var(--color-footer-text);
     font-size: var(--ft-column-font-size);
