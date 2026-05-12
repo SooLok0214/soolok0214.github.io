@@ -16,7 +16,7 @@ body {
     color: var(--color-body-text-black);
     background: var(--color-);
     max-width: 1440px;
-    min-width: 380px;
+    min-width: 360px;
     margin: auto;
 }
 
